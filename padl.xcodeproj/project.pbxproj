@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9235CA6B20D098B300627FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235CA6A20D098B300627FAB /* AppDelegate.swift */; };
-		9235CA6D20D098B300627FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235CA6C20D098B300627FAB /* ViewController.swift */; };
 		9235CA7020D098B300627FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA6E20D098B300627FAB /* Main.storyboard */; };
 		9235CA7220D098B300627FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7120D098B300627FAB /* Assets.xcassets */; };
 		9235CA7520D098B300627FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7320D098B300627FAB /* LaunchScreen.storyboard */; };
@@ -16,12 +15,21 @@
 		92BA286920D0A36B003977A4 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286820D0A36A003977A4 /* Playball-Regular.ttf */; };
 		92BA286D20D0A599003977A4 /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286C20D0A599003977A4 /* FuturaPTBook.otf */; };
 		A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1979FD75632677554F78944 /* Pods_padl.framework */; };
+		E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */; };
+		E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */; };
+		E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */; };
+		E253730420D1B5EF00E9C5A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */; };
+		E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */; };
+		E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */; };
+		E253730920D1B5EF00E9C5A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372FE20D1B5EE00E9C5A0 /* HomeViewController.swift */; };
+		E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */; };
+		E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731320D1CC3000E9C5A0 /* StyleUtils.swift */; };
+		E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9235CA6720D098B300627FAB /* padl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = padl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9235CA6A20D098B300627FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9235CA6C20D098B300627FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9235CA6F20D098B300627FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9235CA7120D098B300627FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9235CA7420D098B300627FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +39,16 @@
 		92BA286C20D0A599003977A4 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
 		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
+		E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PadlLoginRegisterViewController.swift; path = /Users/mattfeng/padl/padl/padl/PadlLoginRegisterViewController.swift; sourceTree = "<absolute>"; };
+		E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSceneViewController.swift; sourceTree = "<group>"; };
+		E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E25372FE20D1B5EE00E9C5A0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlBaseViewController.swift; sourceTree = "<group>"; };
+		E253731320D1CC3000E9C5A0 /* StyleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleUtils.swift; sourceTree = "<group>"; };
+		E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlRoundedButton.swift; sourceTree = "<group>"; };
 		E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.release.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,13 +86,15 @@
 		9235CA6920D098B300627FAB /* padl */ = {
 			isa = PBXGroup;
 			children = (
-				9235CA7620D098B300627FAB /* Info.plist */,
+				E253731220D1CC1E00E9C5A0 /* View */,
+				E253731120D1C63000E9C5A0 /* Model */,
 				9235CA6A20D098B300627FAB /* AppDelegate.swift */,
-				9235CA6C20D098B300627FAB /* ViewController.swift */,
+				9235CA7620D098B300627FAB /* Info.plist */,
 				9235CA6E20D098B300627FAB /* Main.storyboard */,
 				9235CA7120D098B300627FAB /* Assets.xcassets */,
 				9235CA7320D098B300627FAB /* LaunchScreen.storyboard */,
 				9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */,
+				E253731020D1C62700E9C5A0 /* Controller */,
 			);
 			path = padl;
 			sourceTree = "<group>";
@@ -103,6 +123,37 @@
 				B1979FD75632677554F78944 /* Pods_padl.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E253731020D1C62700E9C5A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */,
+				E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */,
+				E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */,
+				E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */,
+				E25372FE20D1B5EE00E9C5A0 /* HomeViewController.swift */,
+				E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */,
+				E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */,
+				E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E253731120D1C63000E9C5A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E253731220D1CC1E00E9C5A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E253731320D1CC3000E9C5A0 /* StyleUtils.swift */,
+				E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9235CA6D20D098B300627FAB /* ViewController.swift in Sources */,
+				E253730420D1B5EF00E9C5A0 /* LoginViewController.swift in Sources */,
+				E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */,
+				E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */,
 				9235CA6B20D098B300627FAB /* AppDelegate.swift in Sources */,
+				E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */,
+				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
+				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
+				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
+				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,
+				E253730920D1B5EF00E9C5A0 /* HomeViewController.swift in Sources */,
+				E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KQZNC92LC2;
+				DEVELOPMENT_TEAM = 47S2N53K33;
 				INFOPLIST_FILE = padl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = store.padl.padl;
@@ -391,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KQZNC92LC2;
+				DEVELOPMENT_TEAM = 47S2N53K33;
 				INFOPLIST_FILE = padl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = store.padl.padl;
