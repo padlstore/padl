@@ -9,8 +9,8 @@ import UIKit
 
 class PadlLoginRegisterViewController: PadlBaseViewController {
     
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: PadlRoundedButton!
+    @IBOutlet weak var registerButton: PadlRoundedButton!
     
     override func viewDidLoad() {
         super.viewDidLoad();

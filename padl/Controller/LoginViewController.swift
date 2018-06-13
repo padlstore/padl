@@ -8,6 +8,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: PadlBaseViewController {
+    
+    @IBOutlet weak var loginButton: PadlRoundedButton!
     
 }

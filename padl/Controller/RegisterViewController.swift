@@ -8,6 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: PadlBaseViewController {
     
+    @IBOutlet weak var registerButton: PadlRoundedButton!
 }
