@@ -12,6 +12,10 @@
 		9235CA7020D098B300627FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA6E20D098B300627FAB /* Main.storyboard */; };
 		9235CA7220D098B300627FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7120D098B300627FAB /* Assets.xcassets */; };
 		9235CA7520D098B300627FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7320D098B300627FAB /* LaunchScreen.storyboard */; };
+		9235CA7D20D0995D00627FAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */; };
+		92BA286920D0A36B003977A4 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286820D0A36A003977A4 /* Playball-Regular.ttf */; };
+		92BA286D20D0A599003977A4 /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286C20D0A599003977A4 /* FuturaPTBook.otf */; };
+		A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1979FD75632677554F78944 /* Pods_padl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		9235CA7120D098B300627FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9235CA7420D098B300627FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9235CA7620D098B300627FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92BA286820D0A36A003977A4 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
+		92BA286C20D0A599003977A4 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
+		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
+		E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.release.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +49,11 @@
 		9235CA5E20D098B300627FAB = {
 			isa = PBXGroup;
 			children = (
+				92BA286A20D0A3E7003977A4 /* Resources */,
 				9235CA6920D098B300627FAB /* padl */,
 				9235CA6820D098B300627FAB /* Products */,
+				9B83493D70631E2828990772 /* Pods */,
+				A2CC89D86CD9E376637E25F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +68,41 @@
 		9235CA6920D098B300627FAB /* padl */ = {
 			isa = PBXGroup;
 			children = (
+				9235CA7620D098B300627FAB /* Info.plist */,
 				9235CA6A20D098B300627FAB /* AppDelegate.swift */,
 				9235CA6C20D098B300627FAB /* ViewController.swift */,
 				9235CA6E20D098B300627FAB /* Main.storyboard */,
 				9235CA7120D098B300627FAB /* Assets.xcassets */,
 				9235CA7320D098B300627FAB /* LaunchScreen.storyboard */,
-				9235CA7620D098B300627FAB /* Info.plist */,
+				9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */,
 			);
 			path = padl;
+			sourceTree = "<group>";
+		};
+		92BA286A20D0A3E7003977A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92BA286820D0A36A003977A4 /* Playball-Regular.ttf */,
+				92BA286C20D0A599003977A4 /* FuturaPTBook.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9B83493D70631E2828990772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */,
+				E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2CC89D86CD9E376637E25F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1979FD75632677554F78944 /* Pods_padl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9235CA7920D098B300627FAB /* Build configuration list for PBXNativeTarget "padl" */;
 			buildPhases = (
+				03031A63A4AB5F52DE18E642 /* [CP] Check Pods Manifest.lock */,
 				9235CA6320D098B300627FAB /* Sources */,
 				9235CA6420D098B300627FAB /* Frameworks */,
 				9235CA6520D098B300627FAB /* Resources */,
+				1BF59AC10EE965F9AF66B973 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,12 +167,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				9235CA7520D098B300627FAB /* LaunchScreen.storyboard in Resources */,
+				9235CA7D20D0995D00627FAB /* GoogleService-Info.plist in Resources */,
+				92BA286920D0A36B003977A4 /* Playball-Regular.ttf in Resources */,
+				92BA286D20D0A599003977A4 /* FuturaPTBook.otf in Resources */,
 				9235CA7220D098B300627FAB /* Assets.xcassets in Resources */,
 				9235CA7020D098B300627FAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03031A63A4AB5F52DE18E642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-padl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BF59AC10EE965F9AF66B973 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-padl/Pods-padl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-padl/Pods-padl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9235CA6320D098B300627FAB /* Sources */ = {
@@ -272,6 +371,7 @@
 		};
 		9235CA7A20D098B300627FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +387,7 @@
 		};
 		9235CA7B20D098B300627FAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
