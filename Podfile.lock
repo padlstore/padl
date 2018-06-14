@@ -32,6 +32,7 @@ PODS:
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
+  - FontAwesomeIconFactory (3.0)
   - GoogleToolboxForMac/DebugUtils (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GoogleToolboxForMac/Defines (2.1.4)
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - FontAwesomeIconFactory
   - JSQMessagesViewController
   - Macaw (= 0.9.1)
 
@@ -73,6 +75,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - FontAwesomeIconFactory
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - JSQMessagesViewController
@@ -90,6 +93,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
   FirebaseStorage: 0c223481c8f89ed300cf1239ddd2d9833622c65f
+  FontAwesomeIconFactory: dfc89a126ff158d3a642aeeb265eaa9b179ad496
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
@@ -99,6 +103,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SWXMLHash: 3c39a53723202800e9e1a87f14b2fe7ac1da98ec
 
-PODFILE CHECKSUM: 89629f5df37a8153887bfdf3d8100e9e45a3c5aa
+PODFILE CHECKSUM: 5a23af529ac4581d973f8f7e6ddd8225e30570d4
 
 COCOAPODS: 1.5.3
