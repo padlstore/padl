@@ -6,6 +6,7 @@
 	<array>
 		<string>Playball-Regular.ttf</string>
 		<string>FuturaPTBook.otf</string>
+		<string>Font Awesome 5 Pro-Solid-900.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
