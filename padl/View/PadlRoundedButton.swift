@@ -10,21 +10,22 @@ import UIKit
 
 class PadlRoundedButton: UIButton {
     
-    let defaultButtonWidth: CGFloat = 200.0;
     let defaultButtonHeight: CGFloat = 50.0;
     
     override func awakeFromNib() {
         super.awakeFromNib();
         
         let center: CGPoint = self.center;
+        let height: CGFloat = self.frame.height;
+        let width: CGFloat = self.frame.width;
         
-        let originX = center.x - defaultButtonWidth / 2;
-        let originY = center.y - defaultButtonHeight / 2;
+        let originX = center.x - width / 2;
+        let originY = center.y - height / 2;
         
         self.frame = CGRect(x: originX, y: originY,
-                            width: defaultButtonWidth, height: defaultButtonHeight);
+                            width: width, height: height);
         
-        self.layer.cornerRadius = self.frame.size.height / 2;
+        self.layer.cornerRadius = height / 2;
         self.clipsToBounds = true;
         self.backgroundColor = .clear;
         self.layer.borderColor = UIColor.white.cgColor;

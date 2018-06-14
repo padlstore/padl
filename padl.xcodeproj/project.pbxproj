@@ -26,6 +26,9 @@
 		E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731320D1CC3000E9C5A0 /* StyleUtils.swift */; };
 		E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */; };
 		E2C7854220D1DA2B005E838C /* PadlRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */; };
+		E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */; };
+		E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */; };
+		E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854920D32A07005E838C /* ServerRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlRoundedButton.swift; sourceTree = "<group>"; };
 		E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.release.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.release.xcconfig"; sourceTree = "<group>"; };
 		E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlRoundedTextField.swift; sourceTree = "<group>"; };
+		E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceTabBarController.swift; sourceTree = "<group>"; };
+		E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureImageView.swift; sourceTree = "<group>"; };
+		E2C7854920D32A07005E838C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */,
 				E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */,
 				E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */,
+				E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 		E253731120D1C63000E9C5A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2C7854920D32A07005E838C /* ServerRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 				E253731320D1CC3000E9C5A0 /* StyleUtils.swift */,
 				E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */,
 				E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */,
+				E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,11 +307,14 @@
 				E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */,
 				9235CA6B20D098B300627FAB /* AppDelegate.swift in Sources */,
 				E2C7854220D1DA2B005E838C /* PadlRoundedTextField.swift in Sources */,
+				E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */,
 				E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */,
+				E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */,
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
 				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
 				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,
+				E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */,
 				E253730920D1B5EF00E9C5A0 /* HomeViewController.swift in Sources */,
 				E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */,
 			);

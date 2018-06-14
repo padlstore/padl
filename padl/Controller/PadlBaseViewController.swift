@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class PadlBaseViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class PadlBaseViewController: UIViewController {
     var keyboardAdjusted = false;
     var lastKeyboardOffset: CGFloat = 0.0;
     
+    lazy var auth = Auth.auth();
+
     override func viewDidLoad() {
         super.viewDidLoad();
         

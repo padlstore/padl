@@ -7,7 +7,20 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: PadlBaseViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        
+        if let user = auth.currentUser {
+            // User is authenticated
+            
+        } else {
+            // User is in guest mode
+            print("User is not authenticated.")
+        }
+    }
     
 }
