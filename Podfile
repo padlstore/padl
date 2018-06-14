@@ -13,5 +13,6 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod "Macaw", "0.9.1"
 pod 'JSQMessagesViewController'
+pod 'FontAwesomeIconFactory'
 
 end

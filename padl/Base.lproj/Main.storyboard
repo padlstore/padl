@@ -217,7 +217,16 @@
         <scene sceneID="E0y-1b-bY2">
             <objects>
                 <navigationController title="MessagingNavigationController" id="kB3-1q-0LA" customClass="MessagingNav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="gaj-18-TsQ"/>
+                    <tabBarItem key="tabBarItem" title="" id="gaj-18-TsQ" customClass="NIKFontAwesomeTabBarItem">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <color key="badgeColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f075"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WL7-Yg-B1s">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -270,6 +279,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="8dp-ck-1wV" kind="relationship" relationship="viewControllers" id="pCL-QG-Sv5"/>
@@ -347,7 +362,16 @@
         <scene sceneID="7pb-Z8-RvX">
             <objects>
                 <navigationController title="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="8dp-ck-1wV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="FTa-X0-16e"/>
+                    <tabBarItem key="tabBarItem" title="" id="FTa-X0-16e" customClass="NIKFontAwesomeTabBarItem">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <color key="badgeColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f015"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GNN-9T-6rB">
                         <autoresizingMask key="autoresizingMask"/>
@@ -365,7 +389,15 @@
         <scene sceneID="pFQ-fl-v5X">
             <objects>
                 <navigationController title="CameraNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="uVJ-ox-hW2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="quF-gZ-itY"/>
+                    <tabBarItem key="tabBarItem" title="" id="quF-gZ-itY" customClass="NIKFontAwesomeTabBarItem">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f030"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="33S-tq-CA2">
                         <autoresizingMask key="autoresizingMask"/>
@@ -383,7 +415,15 @@
         <scene sceneID="P4S-ge-tbJ">
             <objects>
                 <navigationController title="NotificationsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="pRH-Mg-V7i" userLabel="NotificationsNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="iSb-4G-QU5"/>
+                    <tabBarItem key="tabBarItem" title="" id="iSb-4G-QU5" customClass="NIKFontAwesomeTabBarItem">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f0f3"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zFt-hm-lKM">
                         <autoresizingMask key="autoresizingMask"/>
@@ -401,7 +441,15 @@
         <scene sceneID="2ga-ul-ruT">
             <objects>
                 <navigationController title="ProfileNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="boc-au-cCw" userLabel="ProfileNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="jGY-Rn-fCb"/>
+                    <tabBarItem key="tabBarItem" title="" id="jGY-Rn-fCb" customClass="NIKFontAwesomeTabBarItem">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f007"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tvK-AN-fK7">
                         <autoresizingMask key="autoresizingMask"/>
