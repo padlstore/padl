@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.2)
   - Firebase/Auth (4.13.0):
     - Firebase/Core
     - FirebaseAuth (= 4.6.1)
@@ -55,9 +56,11 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftyJSON (4.1.0)
   - SWXMLHash (4.6.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -65,9 +68,11 @@ DEPENDENCIES:
   - FontAwesomeIconFactory
   - JSQMessagesViewController
   - Macaw (= 0.9.1)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -83,9 +88,11 @@ SPEC REPOS:
     - leveldb-library
     - Macaw
     - nanopb
+    - SwiftyJSON
     - SWXMLHash
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
@@ -101,8 +108,9 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Macaw: 8b13bb7ae2f527b3c7b2787988bbc5461a1c66e3
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SWXMLHash: 3c39a53723202800e9e1a87f14b2fe7ac1da98ec
 
-PODFILE CHECKSUM: 5a23af529ac4581d973f8f7e6ddd8225e30570d4
+PODFILE CHECKSUM: 02b8a40b3af1f73a6d9bbf7f12e38a54872a0ccb
 
 COCOAPODS: 1.5.3
