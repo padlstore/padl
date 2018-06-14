@@ -38,6 +38,7 @@
 		9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92BA286820D0A36A003977A4 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
 		92BA286C20D0A599003977A4 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
+		92BA286E20D1E7F9003977A4 /* Font Awesome 5 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Solid-900.otf"; sourceTree = "<group>"; };
 		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
 		E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			children = (
 				92BA286820D0A36A003977A4 /* Playball-Regular.ttf */,
 				92BA286C20D0A599003977A4 /* FuturaPTBook.otf */,
+				92BA286E20D1E7F9003977A4 /* Font Awesome 5 Pro-Solid-900.otf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
