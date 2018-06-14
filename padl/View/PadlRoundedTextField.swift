@@ -37,5 +37,8 @@ class PadlRoundedTextField: UITextField {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(15.0), height: defaultHeight));
         self.leftView = paddingView;
         self.leftViewMode = UITextFieldViewMode.always;
+        
+        self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "",
+                                                        attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightText]);
     }
 }
