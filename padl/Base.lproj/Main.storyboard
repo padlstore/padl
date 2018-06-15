@@ -156,35 +156,6 @@
             </objects>
             <point key="canvasLocation" x="2184.5" y="71.5"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="UBK-8s-YON">
-            <objects>
-                <tableViewController id="C6V-Zr-jWH" customClass="HomeViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Atw-Af-uRL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="C4U-gn-EaN">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C4U-gn-EaN" id="kBh-Q8-1re">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="C6V-Zr-jWH" id="7la-qn-g2T"/>
-                            <outlet property="delegate" destination="C6V-Zr-jWH" id="NYR-4m-UFS"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="mka-UN-Gfl"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="09G-ry-lZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="156" y="2351"/>
-        </scene>
         <!--CameraSceneViewController-->
         <scene sceneID="2lR-QJ-iuv">
             <objects>
@@ -200,6 +171,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddl-nq-7OX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1801" y="2351"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="XXM-3V-C5j">
+            <objects>
+                <viewController id="MG8-T4-K1D" customClass="HomeViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6c-kL-Sax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Vng-Zn-mcp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U6g-LU-FU6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrW-qq-N3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="2351"/>
         </scene>
         <!--MessagingTableViewController-->
         <scene sceneID="hbm-t1-nSw">
@@ -365,7 +352,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review us on the app store!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzu-h0-hXz">
-                                <rect key="frame" x="16" y="565" width="343" height="38"/>
+                                <rect key="frame" x="16" y="562" width="343" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -491,7 +478,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="C6V-Zr-jWH" kind="relationship" relationship="rootViewController" id="DPS-mU-fTG"/>
+                        <segue destination="MG8-T4-K1D" kind="relationship" relationship="rootViewController" id="AFV-sM-sBz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U5-HO-W3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
