@@ -332,7 +332,7 @@
         <!--MainInterfaceTabBarController-->
         <scene sceneID="OM9-Vx-IGB">
             <objects>
-                <tabBarController title="MainInterfaceTabBarController" id="MF8-iR-q6Y" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainInterfaceTabBarController" title="MainInterfaceTabBarController" id="MF8-iR-q6Y" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XLJ-EJ-pGD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -400,6 +400,9 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUpButtonTouchUpInside:" destination="NZ4-b4-40H" eventType="touchUpInside" id="BX2-po-dKp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.61176470588235299" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -407,8 +410,11 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ymT-DC-uGQ"/>
                     <connections>
+                        <outlet property="emailTextField" destination="uKW-k4-DCD" id="WE7-Km-99b"/>
+                        <outlet property="nameTextField" destination="NdH-Im-b2g" id="m7L-7O-xNR"/>
+                        <outlet property="passwordTextField" destination="ZZC-SF-bbC" id="xo7-qm-djy"/>
                         <outlet property="registerButton" destination="bRl-XY-eOA" id="mCH-Oo-Vjo"/>
-                        <segue destination="MF8-iR-q6Y" kind="presentation" identifier="SignUpToHome" id="OXt-ir-iPt"/>
+                        <segue destination="MF8-iR-q6Y" kind="presentation" identifier="SignUpToHome" modalTransitionStyle="coverVertical" id="OXt-ir-iPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNA-L8-Uyp" userLabel="First Responder" sceneMemberID="firstResponder"/>

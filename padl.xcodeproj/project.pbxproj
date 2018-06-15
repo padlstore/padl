@@ -25,6 +25,7 @@
 		E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */; };
 		E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731320D1CC3000E9C5A0 /* StyleUtils.swift */; };
 		E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */; };
+		E28BBC9120D34CBD00BD0D8B /* ControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */; };
 		E2C7854220D1DA2B005E838C /* PadlRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */; };
 		E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */; };
 		E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */; };
@@ -54,6 +55,7 @@
 		E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlBaseViewController.swift; sourceTree = "<group>"; };
 		E253731320D1CC3000E9C5A0 /* StyleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleUtils.swift; sourceTree = "<group>"; };
 		E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlRoundedButton.swift; sourceTree = "<group>"; };
+		E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerUtils.swift; sourceTree = "<group>"; };
 		E29B1E9AF984A910BB3BC932 /* Pods-padl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.release.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.release.xcconfig"; sourceTree = "<group>"; };
 		E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlRoundedTextField.swift; sourceTree = "<group>"; };
 		E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceTabBarController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */,
 				E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */,
 				E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */,
+				E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */,
 				9235CA6B20D098B300627FAB /* AppDelegate.swift in Sources */,
 				E2C7854220D1DA2B005E838C /* PadlRoundedTextField.swift in Sources */,
+				E28BBC9120D34CBD00BD0D8B /* ControllerUtils.swift in Sources */,
 				E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */,
 				E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */,
 				E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */,

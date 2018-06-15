@@ -18,12 +18,14 @@ class LoginViewController: PadlBaseViewController {
 
     let loginToHome = "LoginToHome";
     
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
-                self.performSegue(withIdentifier: self.loginToHome, sender: nil);
+                let topVC = ControllerUtils.topMostController();
+                let vcToPresent = self.storyboard!.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
+                topVC.present(vcToPresent, animated: true, completion: nil);
             }
         }
     }

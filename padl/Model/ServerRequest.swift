@@ -11,17 +11,26 @@ import Alamofire
 
 class ServerRequest {
     
-    let serverURL: NSURL = NSURL(string: "testing.padl.store")!
+    static let serverURL: String = "https://testing.padl.store";
+    static let registerTarget: String = "/newaccount";
     
-    static func registerAccount(with email: String, and password: String, name: String, location) -> (success: Bool, message: String) {
-        var request: NSMutableURLRequest = NSMutableURLRequest(URL: url);
+    static func registerAccount(with email: String, and password: String, name: String,
+                                school: String, location: String, completion: @escaping (_: DataResponse<Any>) -> ()) {
         
-        var bodyData = "";
+        let parameters: Parameters = [
+            "email":        email,
+            "password":     password,
+            "displayName":  name,
+            "location":     location,
+        ];
         
-        request.httpMethod = "POST";
-
+        Alamofire.request(serverURL + registerTarget,
+                          method: .post,
+                          parameters: parameters)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                completion(response);
+            }
     }
-    
-    
-    
+
 }

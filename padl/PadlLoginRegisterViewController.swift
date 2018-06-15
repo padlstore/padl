@@ -15,9 +15,15 @@ class PadlLoginRegisterViewController: PadlBaseViewController {
     
     let loginAutomatically = "LoginAutomatically";
     
-    override func viewDidLoad() {
-        super.viewDidLoad();
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
         
+        do {
+            try Auth.auth().signOut();
+        } catch {
+            
+        }
+
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
                 self.performSegue(withIdentifier: self.loginAutomatically, sender: nil);
