@@ -14,6 +14,9 @@
 		9235CA7D20D0995D00627FAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9235CA7C20D0995D00627FAB /* GoogleService-Info.plist */; };
 		92BA286920D0A36B003977A4 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286820D0A36A003977A4 /* Playball-Regular.ttf */; };
 		92BA286D20D0A599003977A4 /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92BA286C20D0A599003977A4 /* FuturaPTBook.otf */; };
+		92BA287020D33AFD003977A4 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA286F20D33AFD003977A4 /* OfferCollectionViewCell.swift */; };
+		92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287120D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift */; };
+		92BA287420D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287320D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift */; };
 		A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1979FD75632677554F78944 /* Pods_padl.framework */; };
 		E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */; };
 		E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */; };
@@ -42,6 +45,9 @@
 		92BA286820D0A36A003977A4 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
 		92BA286C20D0A599003977A4 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
 		92BA286E20D1E7F9003977A4 /* Font Awesome 5 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Solid-900.otf"; sourceTree = "<group>"; };
+		92BA286F20D33AFD003977A4 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		92BA287120D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoughtCollectionViewCell.swift; sourceTree = "<group>"; };
+		92BA287320D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSoldCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
 		E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				E253731520D1D12700E9C5A0 /* PadlRoundedButton.swift */,
 				E2C7854120D1DA2B005E838C /* PadlRoundedTextField.swift */,
 				E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */,
+				92BA286F20D33AFD003977A4 /* OfferCollectionViewCell.swift */,
+				92BA287120D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift */,
+				92BA287320D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,14 +316,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E253730420D1B5EF00E9C5A0 /* LoginViewController.swift in Sources */,
+				92BA287020D33AFD003977A4 /* OfferCollectionViewCell.swift in Sources */,
 				E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */,
 				E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */,
+				92BA287420D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift in Sources */,
 				9235CA6B20D098B300627FAB /* AppDelegate.swift in Sources */,
 				E2C7854220D1DA2B005E838C /* PadlRoundedTextField.swift in Sources */,
 				E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */,
 				E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */,
 				E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */,
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
+				92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */,
 				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
 				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,

@@ -7,21 +7,10 @@
 //
 
 import Foundation
-import Alamofire
 
 class ServerRequest {
     
     let serverURL: NSURL = NSURL(string: "testing.padl.store")!
-    
-    static func registerAccount(with email: String, and password: String, name: String, location) -> (success: Bool, message: String) {
-        var request: NSMutableURLRequest = NSMutableURLRequest(URL: url);
-        
-        var bodyData = "";
-        
-        request.httpMethod = "POST";
-
-    }
-    
     
     
 }
