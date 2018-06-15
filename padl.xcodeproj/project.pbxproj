@@ -18,7 +18,6 @@
 		92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287120D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift */; };
 		92BA287420D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287320D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift */; };
 		92BA287620D347E1003977A4 /* HomeOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287520D347E1003977A4 /* HomeOfferCollectionViewCell.swift */; };
-		92BA287820D34AE2003977A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287720D34AE2003977A4 /* HomeViewController.swift */; };
 		A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1979FD75632677554F78944 /* Pods_padl.framework */; };
 		E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */; };
 		E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */; };
@@ -34,6 +33,7 @@
 		E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */; };
 		E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */; };
 		E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854920D32A07005E838C /* ServerRequest.swift */; };
+		E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,6 @@
 		92BA287120D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoughtCollectionViewCell.swift; sourceTree = "<group>"; };
 		92BA287320D33EF1003977A4 /* ProfileSoldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSoldCollectionViewCell.swift; sourceTree = "<group>"; };
 		92BA287520D347E1003977A4 /* HomeOfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOfferCollectionViewCell.swift; sourceTree = "<group>"; };
-		92BA287720D34AE2003977A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "/Users/nikhilmu/Dropbox (MIT)/School/2017-2018/Xcode/padl/padl/Controller/HomeViewController.swift"; sourceTree = "<absolute>"; };
 		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
 		E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceTabBarController.swift; sourceTree = "<group>"; };
 		E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureImageView.swift; sourceTree = "<group>"; };
 		E2C7854920D32A07005E838C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
+		E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,12 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				E253730E20D1C29A00E9C5A0 /* PadlBaseViewController.swift */,
-				92BA287720D34AE2003977A4 /* HomeViewController.swift */,
 				E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */,
 				E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */,
 				E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */,
 				E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */,
 				E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */,
+				E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */,
 				E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */,
 				E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */,
 				E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */,
@@ -283,6 +283,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-padl/Pods-padl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesomeIconFactory/FontAwesomeIconFactory.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -290,11 +291,13 @@
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeIconFactory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -302,6 +305,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -319,7 +323,6 @@
 			files = (
 				E253730420D1B5EF00E9C5A0 /* LoginViewController.swift in Sources */,
 				92BA287020D33AFD003977A4 /* OfferCollectionViewCell.swift in Sources */,
-				92BA287820D34AE2003977A4 /* HomeViewController.swift in Sources */,
 				E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */,
 				92BA287620D347E1003977A4 /* HomeOfferCollectionViewCell.swift in Sources */,
 				E253730F20D1C29A00E9C5A0 /* PadlBaseViewController.swift in Sources */,
@@ -333,6 +336,7 @@
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
 				92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */,
 				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
+				E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
 				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,
 				E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */,
