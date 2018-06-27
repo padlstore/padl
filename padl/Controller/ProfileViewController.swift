@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Alamofire
 
 class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -49,6 +50,26 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         boughtCollectionView.dataSource = self
         soldCollectionView.dataSource = self
         
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            if let user = user {
+                // The user's ID, unique to the Firebase project.
+                // Do NOT use this value to authenticate with your backend server,
+                // if you have one. Use getTokenWithCompletion:completion: instead.
+                let uid = user.uid
+                
+                Alamofire.request("https://testing.padl.store/users/" + uid)
+                    .responseJSON { response in
+                        print(response)
+                }
+                
+            }
+        } else {
+            // No user is signed in.
+            // ...
+        }
+        
+        /*
         if let user = auth.currentUser {
             // User is authenticated
             
@@ -56,6 +77,7 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             // User is in guest mode
             print("User is not authenticated.")
         }
+         */
     }
     
 }
