@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Alamofire
+import SwiftyJSON
 
 class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -16,6 +17,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     
     @IBOutlet weak var soldCollectionView: UICollectionView!
     
+    @IBOutlet weak var displayName: UILabel!
+    @IBOutlet weak var propic: ProfilePictureImageView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -60,7 +63,20 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
                 
                 Alamofire.request("https://testing.padl.store/users/" + uid)
                     .responseJSON { response in
+                        
                         print(response)
+                        
+                        if let json_result = response.result.value {
+                            let json = JSON(json_result)
+                            
+                            self.displayName.text = json["displayName"].stringValue
+                            
+                            let url = URL(string: json["propic"].stringValue)
+                            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                            self.propic.image = UIImage(data: data!)
+                            
+                        }
+                        
                 }
                 
             }
