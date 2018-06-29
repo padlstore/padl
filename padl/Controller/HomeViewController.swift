@@ -10,6 +10,9 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    // Specify the Home -> Offer segue.
+    let homeToOffer: String = "HomeToOffer";
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +22,11 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(HomeOfferCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,7 +56,7 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:HomeOfferCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "offerCell", for: indexPath) as! HomeOfferCollectionViewCell
+        let cell: HomeOfferCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "offerCell", for: indexPath) as! HomeOfferCollectionViewCell
         
         cell.imageView.image = UIImage(named: "MIT.jpg")
         
@@ -89,5 +93,11 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     }
     */
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath);
+        let cell = collectionView.cellForItem(at: indexPath);
+        self.performSegue(withIdentifier: self.homeToOffer, sender: cell);
+    }
 
 }

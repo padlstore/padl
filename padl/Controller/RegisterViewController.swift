@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Foundation
 
 class RegisterViewController: PadlBaseViewController {
     
-    @IBOutlet weak var registerButton: PadlRoundedButton!
+    @IBOutlet weak var registerButton: PadlSubmitTransitionButton!
     
     @IBOutlet weak var emailTextField: PadlRoundedTextField!
     @IBOutlet weak var passwordTextField: PadlRoundedTextField!
@@ -26,12 +27,18 @@ class RegisterViewController: PadlBaseViewController {
 
         self.auth.addStateDidChangeListener() { auth, user in
             if user != nil {
-                UIApplication.shared.keyWindow?.rootViewController?.performSegue(withIdentifier: self.signUpToHome, sender: nil);
+                self.registerButton.startFinishAnimation(1) {
+                    let sb = UIStoryboard(name: "Main", bundle: nil);
+                    let vc = sb.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
+                    vc.transitioningDelegate = self;
+                    self.present(vc, animated: true, completion: nil);
+                }
+//                self.performSegue(withIdentifier: self.signUpToHome, sender: nil);
             }
         }
     }
     
-    @IBAction func onSignUpButtonTouchUpInside(_ sender: PadlRoundedButton) {
+    @IBAction func onSignUpButtonTouchUpInside(_ sender: PadlSubmitTransitionButton) {
         let email = emailTextField.text ?? "";
         let password = passwordTextField.text ?? "";
         let name = nameTextField.text ?? "";
@@ -44,6 +51,8 @@ class RegisterViewController: PadlBaseViewController {
             return;
         }
         
+        self.registerButton.startLoadingAnimation();
+        
         ServerRequest.registerAccount(with: email, and: password,
                                       name: name, school: self.school, location: self.location)
         { response in
@@ -55,6 +64,10 @@ class RegisterViewController: PadlBaseViewController {
                 alert.addAction(UIAlertAction(title: "OK", style: .default));
                 
                 self.present(alert, animated: true, completion: nil);
+                
+                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+                    self.registerButton.setOriginalState();
+                }
                 return;
             }
             // Account creation was successful
@@ -68,10 +81,15 @@ class RegisterViewController: PadlBaseViewController {
                                                   preferredStyle: .alert);
                     alert.addAction(UIAlertAction(title: "OK", style: .default));
                     self.present(alert, animated: true, completion: nil);
+                    
+                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+                        self.registerButton.setOriginalState();
+                    }
+                    
+                    self.navigationController?.popToRootViewController(animated: true);
                     return;
                     // TODO: move the user to the initial login screen if this happens, which hopefully won't.
                 }
-                
             }
         }
         

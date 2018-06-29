@@ -57,9 +57,11 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Nuke (7.2.1)
   - Stripe (13.0.0)
   - SwiftyJSON (4.1.0)
   - SWXMLHash (4.6.0)
+  - TKSubmitTransition (2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -71,8 +73,10 @@ DEPENDENCIES:
   - FontAwesomeIconFactory
   - JSQMessagesViewController
   - Macaw (= 0.9.1)
+  - Nuke (~> 7.0)
   - Stripe
   - SwiftyJSON (~> 4.0)
+  - TKSubmitTransition (from `https://github.com/entotsu/TKSubmitTransition.git`, branch `swift4`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -93,9 +97,20 @@ SPEC REPOS:
     - leveldb-library
     - Macaw
     - nanopb
+    - Nuke
     - Stripe
     - SwiftyJSON
     - SWXMLHash
+
+EXTERNAL SOURCES:
+  TKSubmitTransition:
+    :branch: swift4
+    :git: https://github.com/entotsu/TKSubmitTransition.git
+
+CHECKOUT OPTIONS:
+  TKSubmitTransition:
+    :commit: 29fac6072451a4def5cde567075bfc62a728bb1f
+    :git: https://github.com/entotsu/TKSubmitTransition.git
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -115,10 +130,12 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Macaw: 8b13bb7ae2f527b3c7b2787988bbc5461a1c66e3
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Nuke: a4a20e945a32a8da57830628ff1e0ea2a1904d0a
   Stripe: 542f2c4493ce31a99fa041fe4973206e8c868f29
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SWXMLHash: 3c39a53723202800e9e1a87f14b2fe7ac1da98ec
+  TKSubmitTransition: 647b907508da58ba864141e3c4382442ec536d40
 
-PODFILE CHECKSUM: fc488827e94ed9c2380b958a59c6144bc8ac6e7f
+PODFILE CHECKSUM: f18f9ee1fca8a0754d5697b518e85446b276d19d
 
 COCOAPODS: 1.5.3

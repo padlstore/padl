@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Foundation
 import FirebaseAuth
 
 class LoginViewController: PadlBaseViewController {
     
-    @IBOutlet weak var loginButton: PadlRoundedButton!
+    @IBOutlet weak var loginButton: PadlSubmitTransitionButton!
     
     @IBOutlet weak var emailTextField: PadlRoundedTextField!
     @IBOutlet weak var passwordTextField: PadlRoundedTextField!
@@ -23,14 +24,19 @@ class LoginViewController: PadlBaseViewController {
 
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
-                let topVC = ControllerUtils.topMostController();
-                let vcToPresent = self.storyboard!.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
-                topVC.present(vcToPresent, animated: true, completion: nil);
+                self.loginButton.startFinishAnimation(1) {
+                    print("Logging in")
+                    let sb = UIStoryboard(name: "Main", bundle: nil);
+                    let vc = sb.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
+                    vc.transitioningDelegate = self;
+                    self.present(vc, animated: true, completion: nil);
+                }
+//                self.performSegue(withIdentifier: self.loginToHome, sender: nil);
             }
         }
     }
     
-    @IBAction func loginDidTouchUpInside(_ sender: PadlRoundedButton) {
+    @IBAction func loginDidTouchUpInside(_ sender: PadlSubmitTransitionButton) {
         let email = emailTextField.text ?? "";
         let password = passwordTextField.text ?? "";
         
@@ -41,6 +47,9 @@ class LoginViewController: PadlBaseViewController {
                 return;
         }
         
+        self.loginButton.startLoadingAnimation();
+        
+        
         Auth.auth().signIn(withEmail: email, password: password) {
             (user, error) in
             if let error = error, user == nil {
@@ -50,6 +59,9 @@ class LoginViewController: PadlBaseViewController {
                 alert.addAction(UIAlertAction(title: "OK", style: .default));
                 
                 self.present(alert, animated: true, completion: nil);
+                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+                    self.loginButton.setOriginalState();
+                }
             }
         }
     }

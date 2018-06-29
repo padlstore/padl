@@ -1,16 +1,15 @@
 //
-//  PadlRoundedButton.swift
+//  PadlSubmitTransitionButton.swift
 //  padl
 //
-//  Created by Matthew Feng on 6/13/18.
+//  Created by Matthew Feng on 6/29/18.
 //  Copyright © 2018 Padl. All rights reserved.
 //
 
+import TKSubmitTransition
 import UIKit
 
-class PadlRoundedButton: UIButton {
-    
-    let defaultButtonHeight: CGFloat = 50.0;
+class PadlSubmitTransitionButton: TKTransitionSubmitButton {
     
     override func awakeFromNib() {
         super.awakeFromNib();
@@ -30,7 +29,7 @@ class PadlRoundedButton: UIButton {
         self.backgroundColor = .clear;
         self.layer.borderWidth = 1.0;
     }
-    
+
     @IBInspectable var borderColor: UIColor? {
         didSet {
             self.layer.borderColor = borderColor?.cgColor

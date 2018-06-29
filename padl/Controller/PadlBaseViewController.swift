@@ -8,8 +8,9 @@
 
 import UIKit
 import FirebaseAuth
+import TKSubmitTransition
 
-class PadlBaseViewController: UIViewController {
+class PadlBaseViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     let notificationCenter = NotificationCenter.default;
     
@@ -63,6 +64,14 @@ class PadlBaseViewController: UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true);
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil;
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return TKFadeInAnimator(transitionDuration: 0.5, startingAlpha: 0.8)
     }
     
 }

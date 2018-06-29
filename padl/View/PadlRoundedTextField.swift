@@ -32,6 +32,7 @@ class PadlRoundedTextField: UITextField {
         // Set text color
         self.textColor = UIColor.white;
         self.font = UIFont.init(name: "Futura PT Book", size: 12);
+        self.tintColor = UIColor.white;
         
         // Set left padding
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(15.0), height: defaultHeight));
