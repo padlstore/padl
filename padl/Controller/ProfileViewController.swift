@@ -54,60 +54,25 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         soldCollectionView.dataSource = self
         
         if Auth.auth().currentUser != nil {
-            let user = Auth.auth().currentUser
-            if let user = user {
-                // The user's ID, unique to the Firebase project.
-                // Do NOT use this value to authenticate with your backend server,
-                // if you have one. Use getTokenWithCompletion:completion: instead.
-                let uid = user.uid
-                
-                Alamofire.request("https://testing.padl.store/users/" + uid)
-                    .responseJSON { response in
-                        
-                        print(response)
-                        
-                        if let json_result = response.result.value {
-                            let json = JSON(json_result)
-                            
-                            self.displayName.text = json["displayName"].stringValue
-                            
-                            let url = URL(string: json["propic"].stringValue)
-                            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                            self.propic.image = UIImage(data: data!)
-                            
-                            print("---")
-                            
-                            print(json["offers"])
-                            print("---")
-                            
-                            var offerIdArray = [String]()
-                            for (key,subJson):(String, JSON) in json["offers"] {
-                                if key != "sentinel"{
-                                    offerIdArray.append(key)
-                                }
-                            }
-                            
-                            print(offerIdArray)
-                            
-                        }
-                        
-                }
-                
-            }
+            
+            self.setProfileInfo()
+            
+            ProfileRequest.setupProfile()
+            
+            self.setProfileInfo()
+            
         } else {
             // No user is signed in.
             // ...
         }
+    }
+    
+    func setProfileInfo() {
         
-        /*
-        if let user = auth.currentUser {
-            // User is authenticated
-            
-        } else {
-            // User is in guest mode
-            print("User is not authenticated.")
-        }
-         */
+        //UserDefaults.standard.set(self.offers, forKey: "offers")
+        
+        self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
+        self.propic.image = UserDefaults.standard.object(forKey: "profilePic") as? UIImage
     }
     
 }

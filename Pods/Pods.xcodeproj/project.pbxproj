@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00C75187EBD1C2B560EDDED4B9AEDAA6 /* STPPaymentMethodsInternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92896267F0B61591439CA26A901C078 /* STPPaymentMethodsInternalViewController.m */; };
+		0115CE99196CEF52E5291D4761616256 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF36D38A53ABF0FF2669449134C92F3 /* CoreLocation.framework */; };
 		011AA254C34289CC70F49010267BD9DF /* stp_card_unionpay_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7E3F1EF1FD76454B6AA9F4A3F4B9CB /* stp_card_unionpay_en@2x.png */; };
 		016F27C991CE8CE5A0A6A4781203CCC6 /* bloom.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA351598EC590964F927F5754542FC10 /* bloom.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		017A4EC1B38AB50FC4CB46643A0A77F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		019A5EC4999B6321EE8D9336F16B6AEC /* STPShippingAddressViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2954FF22535A27EBBEFE9D40E3C50B /* STPShippingAddressViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		022BA60EB6ADD7B97EE365CCCE52A1C2 /* arena.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9327685D5EA719A5BA442CCBF852E9 /* arena.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0258A1B465E4F0F23E354076BDAA6361 /* JSQMessagesToolbarButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 245E565CE327F702F7D1E4C00BFC58F4 /* JSQMessagesToolbarButtonFactory.m */; };
@@ -25,7 +25,6 @@
 		04FB72F24AF27D40767F25E599F0C211 /* stp_icon_checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A5A50B477FFC2E478EF99E9D61F2FD /* stp_icon_checkmark.png */; };
 		0507FA39D1FC8E64AD9A8F2AC565B9F7 /* leveldb-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D194DD20CA01579CA98BB249158384 /* leveldb-library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		051FCF520A54455EDD30162D4310555E /* cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 37D41A75B4E0120D805058590362D5D3 /* cache.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		0654721E591A32A4FAA7EF12F12F66B5 /* STPStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D027FE5A4DD4AA7D28087429CDCAA4ED /* STPStringUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		06AFF9B2ABD30B7B2834673A480D1A20 /* STPUserInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 254ABF165F66CCED65844678768EABF4 /* STPUserInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06B12894858F45B70129A3D390BACEB6 /* NSURLComponents+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = 355130DDD223937F3F211D6C5B6C030A /* NSURLComponents+Stripe.m */; };
@@ -41,10 +40,8 @@
 		091A19BC5BB11ACC182889739AC91E23 /* ShapeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1134925FA3D8B004F423264292E48 /* ShapeInterpolation.swift */; };
 		097366A38923584102B06AD45ED83F4A /* STPAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B96F745CDE04EB5E3AE2AB5E1F40E02 /* STPAspects.m */; };
 		098B2F5B897FC29D4E8715B06ACD7614 /* port_posix_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3623B4F449BF11AB330C2FB19770150 /* port_posix_sse.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		09D29C5FB9B50B63B2FC2F979FE09F3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		09E105AFFA1C89E6C9E475604A51AF58 /* FontAwesomeIconFactory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2881141A62B9BAE75F12B788B362DFA9 /* FontAwesomeIconFactory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A567779D3CA18BC397E4B8B45901525 /* testharness.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED1D28A4F60B0BC858470C9268C56CF /* testharness.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0A61DA50ABB497C35FC193DD168AE4C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		0AF06FC4A1A578D0DA60F3DDB2661C5D /* PathBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4706EE35FB9423381459E3B2E28F1 /* PathBounds.swift */; };
 		0B03566BB9EB6FF635216727CE92B9D3 /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF6EF434B6B465D6D9A60F58F456E7 /* CGExtensions.swift */; };
 		0B216A7C1B05938D337BBF761F829E02 /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE03114E7098CE5D67CA045F40CA6AF /* Baseline.swift */; };
@@ -78,7 +75,6 @@
 		13586D6D92F42CAB02411F648698277E /* STPPaymentActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14891F1D837C8D075D5609F07216EF05 /* STPPaymentActivityIndicatorView.m */; };
 		13C9F4B3B66F841C3D98F047C5876C66 /* STPAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BB3A76E3D3A154CDDF29DD2A480945 /* STPAPIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		13D12B8EF396B759230E3094A180F6C4 /* STPInternalAPIResponseDecodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7629D59542573AAC09FE3D5EEED91FC5 /* STPInternalAPIResponseDecodable.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1443D49FB730877409559DF15ED59EAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372495CA37EC564A947D9838E8914D38 /* AVFoundation.framework */; };
 		14E9331AC9F7A776715366DF87121BAD /* UIViewController+Stripe_KeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 92202294A6DF9D31E201CE18B4EEEE71 /* UIViewController+Stripe_KeyboardAvoiding.m */; };
 		1550AE32DC5ADF0FCB9BD311A4B5B1B3 /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDFD67FECD3BC27817FE98299BF5CB7 /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		157E734578C789C8D18F6191543706B2 /* version_edit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBC04D14EB5F4DCC926BB8047C9E68B /* version_edit.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -103,7 +99,6 @@
 		1C940DD92443AC7C200C769F68172FAB /* PKPayment+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A120CDAC3EA345CA017968FA5D8FE /* PKPayment+Stripe.m */; };
 		1D132DFFC36234264F24080860192ECB /* STPCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = A093F7A67D4D4099F62ED37798377347 /* STPCustomer.m */; };
 		1D175A520B3D6B2B3134593270CF4C3B /* JSQPhotoMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 76743A4170CCE020BA68F530B9FB52A9 /* JSQPhotoMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D1D1FE3E3FBAF8A1CD081DF3B41E098 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9859920E052DFCDAAEDDDE38CED404 /* QuartzCore.framework */; };
 		1DC598B02E00449B6B535DC816BDB0B9 /* TransformInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181710B4EB7686FB29294F84C469B700 /* TransformInterpolation.swift */; };
 		1E2F2D7B160B35EA0C63B60BB3189602 /* DisjunctiveFaceting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336548648DD5919F59A3B93099FE8A0 /* DisjunctiveFaceting.swift */; };
 		1EA2E6DFBE4AC13642F05FDAA29C2C50 /* JSQMessagesInputToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB98C0E29C445D87F5AE78205E55234 /* JSQMessagesInputToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,6 +126,7 @@
 		270B15C4DE612546E02F689DDFBB13DF /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F41825619EF8872C70DC09A1F30798 /* SWXMLHash+TypeConversion.swift */; };
 		27ACC394CCEEE5AD288E742F3F3DE60F /* STPSourceReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = AE26256DEB67597E1CDCD4051BD2D523 /* STPSourceReceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C3E9A53ECD14254E6795B8AD028748 /* STPSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB326560D2D4E615F1C054DFC255D104 /* STPSwitchTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28DAFF24F8BC2848741416339B590151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		29B73968F1BA2987FEF099C812351349 /* JSQMessagesToolbarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ECE60C0756BF664EDD60AE232FF3CC /* JSQMessagesToolbarContentView.m */; };
 		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 901FEF97626754963208EB66BC0D2523 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A04F25E0C4C54F7DEC5C47981B10CC5 /* MorphingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C2AFA1A50075F09ADE439C86616D0 /* MorphingAnimation.swift */; };
@@ -152,16 +148,21 @@
 		31601DA0AC7B7B1F9AA18434BFD3B2E5 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81ABA9E02508F704B14B111F198F4A /* CGRectEx.swift */; };
 		3192466CF30FA957EDBE85EFC6C7A776 /* STPCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050E1CB3AF4874348415A0D2966F6372 /* STPCoreViewController.m */; };
 		319E1BA9E6B38CE41234EDABD73C4C38 /* NSBundle+JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 582F157BBDEE03EB40CBCFCC61580DA3 /* NSBundle+JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		327A08B2B5DD195AE73626DE03B62558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
+		32898C616C670B9FAECF9F865B571EB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F791151BBB9D547E810BAAA61FE078 /* UIKit.framework */; };
 		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0D063BE9B7765EA6D4936D3F6B471B /* GoogleToolboxForMac-dummy.m */; };
 		3300868941AB92AE4BD4AAC963B87866 /* STPBINRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0BB89CDF07FA9F0D0158A2375F25A /* STPBINRange.m */; };
+		330D2CF3872BB88C42438CC6E02EC2DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		33381B6D20BAC7243D6B0C92C1B2FED1 /* stp_card_diners_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A34E9CCD70A9C030F17B397D611D8E7 /* stp_card_diners_template.png */; };
 		335000B85BD7360B387A8FAA389663E3 /* stp_card_unionpay_template_zh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD26692AF2442508D80CF885C9FDE /* stp_card_unionpay_template_zh@2x.png */; };
 		33BB9AD3741F3ECF75411A4E3C82B74D /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DA86DF6AFC84A09B90698012DE1837 /* JSQSystemSoundPlayer.m */; };
 		34AEE5E46A58FA4F6AB5578E8132B06C /* memtable.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAA4316F9FC995DCEEABD80F8D6E76C /* memtable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34B61547FBD32B3AA75E76E284575CC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		354472221F32940DFC8920C104BE0CE3 /* UIViewController+Stripe_NavigationItemProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 870C8FB32EACEEC82BCF83C9C095EEA2 /* UIViewController+Stripe_NavigationItemProxy.m */; };
 		354A09223511753F8D3272434EACAF5D /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E475E916A6407CADEF071A6746AA16 /* RenderContext.swift */; };
 		357D7C84290EBD2CF71498C07886F110 /* FSPagerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 700814F2F8D712AB17BA14B69DCFBF48 /* FSPagerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		357E97E6ABC2B898AB4AC5588B775A59 /* STPFile+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3243863D056A52E995579BDDE2D98F /* STPFile+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3601AC47F4FB8B29F70EA1B06B3A2FD7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161E67E53879D8E71BD47B85411461CF /* CoreText.framework */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF8614A3A3570521C44DF9F884767 /* TaskDelegate.swift */; };
 		364DAA30E3CF477FB38186597D602452 /* STPEphemeralKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52906721D58F3EC3C719CB29E6971CE2 /* STPEphemeralKeyManager.m */; };
 		3739D46629519F13C17BD3A44AE4729E /* STPAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C8C8A8FE8EED5B715C6F2FE4F34DC /* STPAPIRequest.m */; };
@@ -207,7 +208,6 @@
 		41D50BBEA635DAD4E95FF71D4DD1D8AA /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A8DDE1FDF397BDC031C2B476C97F7536 /* JSQMessagesAssets.bundle */; };
 		42AB4EECB33A816AC6C3EE0219048522 /* STPPaymentConfiguration+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4986A1DC6D6DB71F48FD1818CBB54B /* STPPaymentConfiguration+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		42DCF1546C0531E8EE55650B1F0C0DED /* AbstractQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAA363209C929CFCC7D2828F78E099 /* AbstractQuery.swift */; };
-		42F1BA081F36DECD056D08ABB5DBA74E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		432EC7285D6998269EAFF9CE5649B82B /* STPAPIClient+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B945653FC30906192BB540DD1827B /* STPAPIClient+ApplePay.m */; };
 		43CBAFDA69817CF0854A5E1BC5DCB040 /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B42032C02935B4686C2B83CDB531A1 /* OpacityAnimation.swift */; };
 		4465AD0C41B312B6691FCD9C73A8288E /* filter_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2999D274FFE8E70F769B52E850E278A7 /* filter_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -227,6 +227,7 @@
 		472380E3E4CD788E953BA6AD3090C97C /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = F888BE4F45823B5CB18DDAC77ECB76B0 /* block.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47343845FF35E9F24D26B7EEABD22308 /* port_example.h in Headers */ = {isa = PBXBuildFile; fileRef = 81352608A991DAA4D2FD6BD06464861B /* port_example.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47712CECF75618F038EFAAAFBD558E81 /* STPDispatchFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2BD07E9344943F7D5BF3DB2DAAA93 /* STPDispatchFunctions.m */; };
+		487DE653CDC5FEB433F292D637812626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1EF427ADB9B0DCD6425D1BF78451 /* CoreGraphics.framework */; };
 		49149EDB16A947143ACF664739D2B130 /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81900927D90F04B4B035135E4A1396 /* AnimationSequence.swift */; };
 		493694E6DC8073F166EEE1EC69061944 /* stp_card_unionpay_zh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0531E91BA8E77696204646FB7FF83499 /* stp_card_unionpay_zh@3x.png */; };
 		498AEA0920D5D3CAEE5BEAE049C91871 /* STPPaymentCardTextField+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DDB58BC0572CD21A53FEF544812730 /* STPPaymentCardTextField+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -245,7 +246,9 @@
 		4DD4380EF127F5AB79DDA1A58FF5FDA0 /* STPAspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 928C7DF8DE0C5E2AF587B64B72D6C825 /* STPAspects.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4DD6FC6E199FF7EED9F09B6FB5981B09 /* STPImageLibrary+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932ACAB313983810288556923F68538 /* STPImageLibrary+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4E3CBCE8E9860F72EAE02AE7A597EE42 /* UIViewController+Stripe_ParentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCFDE69A9DD24FAF517AB49549E292A /* UIViewController+Stripe_ParentViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E68B84CFD16DD7746453D4162C0CD1A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF36D38A53ABF0FF2669449134C92F3 /* CoreLocation.framework */; };
 		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 77AECF6B2ADFD24D4D15CCEA45223509 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50090CA13A5A6A5DA5594547582E514A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		504662996B6BFF5CC173033F8C65325C /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175765C2CF6514272A21F13C8BF94531 /* Polyline.swift */; };
 		506861039E9BB3AA0E3C90A8F38F125A /* NIKFontAwesomeIconTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFCDFCF4DBBFC064E45A524C378F511 /* NIKFontAwesomeIconTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507F59E50F66417C27B001131A84FF61 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A5F00224AF0E45AD6598DA1822A6C /* Disposable.swift */; };
@@ -255,17 +258,15 @@
 		523985DCBCFF0F95DA244BA5BD0C3780 /* JSQVideoMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BFE3B01F4B76981EC2578928737F0E /* JSQVideoMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52CB5FD92DA121D0B6F8FB487B0DCAE4 /* ShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A886A599C3037BD5EA8E4885826DF3B /* ShapeAnimation.swift */; };
 		52DA1B88D686932BE49815B707AC509C /* NSDictionary+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5528AF9AC8D9CB8A208DA06D0565FB /* NSDictionary+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52F333DF6E858B07AEBCB2DBF2A99976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		5355B863454ECCB868665FAC23184493 /* STPPaymentMethodsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5250D9B5E46189EB5301B2E87C362508 /* STPPaymentMethodsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD6F57078791048B47E6269009220 /* Request.swift */; };
-		53927224C9956F91B958DD562CDCD045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		53AD7F58B5F485EF2086AD81FE3CA027 /* Stripe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C956FB39E55E2E40C56854A8CD3DB4C0 /* Stripe-dummy.m */; };
-		541289ABC41ACA07DD60E7D4FF7F4B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		54B4C7E82F92DD998C63F9EC869C20C9 /* JSQMessagesBubbleImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97ABAEC771406267FC9EEC09862B18 /* JSQMessagesBubbleImageFactory.m */; };
 		54E53179690B836EF29505854DD2BAAB /* STPApplePayPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 511161A0FEF8C3CC97A5E8164ADB1636 /* STPApplePayPaymentMethod.m */; };
 		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B59DE8972B10A26A07461239778A110 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
 		55262A9D1F11D1C47917C0A23B6E1D54 /* STPCoreScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B07E5C8F94689F0F46CBC1FE430ED3A0 /* STPCoreScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5557A47BDD033621359CD6C61513D1B8 /* testutil.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FBAE101AC846F937DA42F8C7775BB9 /* testutil.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5578C864769D93530F9B38542F1C9B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		55C84E1B5654883B9137BC7BEA92F73D /* table_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1E2D5F5D43531DB47724B4EF49891C /* table_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55D190B2A2B2B5BE0F8B320BDA5A439A /* JSQMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F28579E1E77FBDEFF7931375E2A4BB /* JSQMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 6290AEDE631BEE1BBEC154337D18026F /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
@@ -278,7 +279,6 @@
 		574AF1CA23B5A72444676139BDE3055C /* stp_card_diners_template@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AAD179CE671ACFB14F2BF5E81A59ECA /* stp_card_diners_template@2x.png */; };
 		579F5B08F5D8299F4BB0A9AB44C84FA7 /* JSQMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E4099AB9A2D1B019869ED26638F4E4 /* JSQMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5832B6C6DF42450FCAB70E67F464E040 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88BD00816B0D7351BCE85FF3DFC61D /* FSPagerViewLayoutAttributes.swift */; };
-		58A75E7B4605D32631C72C48E3DEA91F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90404140889DAA5E91E3F6480A19CE1 /* WebKit.framework */; };
 		58BD23E49069CDB97DB822D30EC5579F /* memtable.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7EE84BED818E1298FC15F4E18FF8D0D8 /* memtable.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		5918CF13EA2C77C2DA8D86FBDE938A08 /* AnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB99A602981BC2E50428DA9A8ED290 /* AnimationProducer.swift */; };
 		5934B0CC62E7138850DD82A8D3B0693B /* UITableViewCell+Stripe_Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = F72776279527822B1BA51EAF25D58F5B /* UITableViewCell+Stripe_Borders.m */; };
@@ -290,6 +290,7 @@
 		5B5843881CB146CFE868C16FCE95FCE3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B247A5B26C142AA4B03303BEC5117 /* Group.swift */; };
 		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 325B07DB46403FB1BA39E1EE0857734C /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5BCDE1A12135CC4050C80CDCBADBF914 /* STPShippingAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F496BBC34B637758D5D4ADA8AF03186 /* STPShippingAddressViewController.m */; };
+		5C289DA32C834EEA0B1E99E6D051F165 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B46B6D3F7C8E390E9E1D27B5675777 /* Contacts.framework */; };
 		5CC14863F1CE18295BCA9D191A728C9A /* version_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = C47CB023532C981702B10B185B6CA2DE /* version_set.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		5CD7C8621803918060683A99265ADAF4 /* RequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1565155E87D3492EC59FD5418718ADCF /* RequestOptions.swift */; };
 		5CE7E9473C68A0EE87FDFDAC87224F5F /* ContentsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8785F78E0C1DD7B562A9D631A755A69D /* ContentsAnimation.swift */; };
@@ -310,6 +311,7 @@
 		6263BC39648BEBE52A0A5D0AB8ED9A4A /* STPURLCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 88413C2E07DDE8C6B38CBB0387DCD431 /* STPURLCallbackHandler.m */; };
 		62E43BC1B8BA865A91CC23D5105C8D05 /* stp_card_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 214FCAE948EDAC77C0FCBC28D43F88BB /* stp_card_mastercard.png */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB6F4F2AA1FBE2993AEABD12DB43E4 /* ServerTrustPolicy.swift */; };
+		6300B879DFE96F385E29C08ED3628137 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563099FAEFF96CE3D66112B70300D09B /* QuartzCore.framework */; };
 		6339216593EB8720D9DD41BFB24217E1 /* STPPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67D94DD3D20F6CA51F1D6ED4199A38 /* STPPromise.m */; };
 		6346B60CAC89E1AF5FCA46BD6C6558A6 /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0419EA098C0D0C23FF0F901A6FEAAA4 /* TransformAnimation.swift */; };
 		638D4086C988445EEC88BF66F3B5D3B9 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1C9604A2B7FA784D258275607D664 /* FSPageViewTransformer.swift */; };
@@ -319,8 +321,8 @@
 		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F3633E902765ADD3D4FB6FB5212D2 /* GTMSessionFetcher.m */; };
 		64FB49C625C27217A2E3C65328FADFD1 /* stp_card_unionpay_template_en@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A1A31CB3355A7A36A1E687D51AAB4E /* stp_card_unionpay_template_en@3x.png */; };
 		650F57215E14217D2239224F1C022B40 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB250B0F28DA44A81DA31D4D0F2EBD4 /* Effect.swift */; };
+		651BDF3B76A7B67F4295125F1E1E5E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		65601461F40FEB4309163846DA78E496 /* AbstractClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFCA7473597A9FC34A3EC2FE5EA337A /* AbstractClient.swift */; };
-		6588DC8F1C4B1AB3E9A8F6EDD938AD33 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD44E84B7CBACB93E3A40ED998039D /* CoreText.framework */; };
 		65F3308F5618F443DC2BD093BF9B63C8 /* dbformat.h in Headers */ = {isa = PBXBuildFile; fileRef = A592FDF747A07F6ED8809EF7B251BB32 /* dbformat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		66232D1BE755648FD777470C06F4B8B8 /* UINavigationBar+Stripe_Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A85976B157CAFB851BA57728175 /* UINavigationBar+Stripe_Theme.m */; };
 		6669039765889B753932B60405E06528 /* Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6DE1F9B3C940B13A55939DA0CDBB86 /* Stripe.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -332,6 +334,7 @@
 		69255DC69C8EFFFC8148848BA6E86313 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957EA84D32A8752B48A8C56FC7F32BF /* Polygon.swift */; };
 		693506C149D914AC36B92C78D789544A /* UINavigationController+Stripe_Completion.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC32B728A4F66DBCDE122B577C1E9 /* UINavigationController+Stripe_Completion.m */; };
 		6A47F3969AE049E7773633B8EFF6E25F /* NIKFontAwesomeIconFactory+OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 17495FF84E7672A485F548D15FD63945 /* NIKFontAwesomeIconFactory+OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A6A0E9D396BDA435775D3FF1D653708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		6B3E1EF3C0A0280C1E99603DFC2966F0 /* JSQMessagesViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C5D9B518B2546DCA2512CAAE348AEC /* JSQMessagesViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B7A2E453CA58D06485712583C25F42E /* MDisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCA39E1620BCDE60FAFD8A1240A8FF /* MDisplayLink.swift */; };
 		6C2637B8F95266DC956A1AF43799D7B8 /* stp_test_upload_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B5D668029C55A3BF26EC1E7D4194679E /* stp_test_upload_image.jpeg */; };
@@ -362,12 +365,9 @@
 		733E8CA810F0F437C9C7FDE6DA60B9E9 /* JSQMessagesInputToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ECCA7E983D44BEA593D4A4971C3943 /* JSQMessagesInputToolbar.m */; };
 		735593B54C3EC1C38CBFE58A68515850 /* UIToolbar+Stripe_InputAccessory.h in Headers */ = {isa = PBXBuildFile; fileRef = 104FDA12DB347F205C1862DE112F4227 /* UIToolbar+Stripe_InputAccessory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73AA91E8022B830A22D4D03472DC6581 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4779085B8D1E0EC4AD93102584ED85BC /* SWXMLHash-dummy.m */; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		74EAADDADC835AE371509AF4BC19EED7 /* JSQMessagesKeyboardController.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A23758596DF3F6B64193FA51B541C /* JSQMessagesKeyboardController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7508890E942DE743B9D61CED63E1B09D /* ImagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B0C6C8C8737122AF3D64DBE016CE6 /* ImagePipeline.swift */; };
-		76029ACA145F5C322AF6C95B852B9814 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881CE69AEC2A8B52C2B04518413486C3 /* Security.framework */; };
 		765B39289878900B83DBEAE17EBC9303 /* STPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FB8A3E4D6491797E2A443DA1DECAE7 /* STPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		766C44B923C22D6143C77BAC15E2B7F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF41D76B4E18FE5A8D5FCA9D8E66C32F /* UIKit.framework */; };
 		768F1DE7CA5E754BE0F06A52066B3544 /* JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = D82B020DCA92957EBB5F927A98B2C5E1 /* JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76BF099548A995AC0D13F411EB5EE614 /* ImageDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF766B97ECC899AA8685C64CA80AB387 /* ImageDecoding.swift */; };
 		76D0F39BAD3FED1DAEA25E532F02B9B3 /* STPPaymentConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = DC73723303DC7CE7C59FE60927EBB503 /* STPPaymentConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -379,6 +379,7 @@
 		7A16F2A86CB1A5D66DDBCFEE7B6BAA20 /* JSQMessagesMediaPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 958BA55F1BC3074D31FDCF41C1E8A776 /* JSQMessagesMediaPlaceholderView.m */; };
 		7A605C5FC5DE331939A4FA9AF686A78C /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235DFB583D7A53EBFA22A30648F027B9 /* Index.swift */; };
 		7A85258A02BDF4123CE0AD7D0AADF460 /* LocusInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86866B1E6D61F7033319D7A95A1935 /* LocusInterpolation.swift */; };
+		7AA4771554DA60EEAB631524ED452F40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1EF427ADB9B0DCD6425D1BF78451 /* CoreGraphics.framework */; };
 		7B186EF1ECCA96CE9E79BC2E47B208F0 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE201C6D186959C8E80E487947C0B6 /* STPCard.m */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0153B5505D63D2902B260F6515F0750D /* SessionDelegate.swift */; };
 		7B68FD19A17C6AD4CDF28410EED7AFAF /* StripeError.h in Headers */ = {isa = PBXBuildFile; fileRef = 343E835F1B15B13883B5D59DE38EF55E /* StripeError.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -389,6 +390,7 @@
 		7BFA139D3445227A50D8060077FAA0BD /* STPSourceVerification+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7F2ABD80F3480731D9793EBD823F4B /* STPSourceVerification+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7C0DFC42A7F62610E8C97C26C45CD242 /* STPCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 894E1C96A59750C4038D8929B013179A /* STPCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C1D30DBA9EEA5E97E4B48E2B78CFDAD /* NSArray+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = F333FC1FC1AA2697963C730D98F46C95 /* NSArray+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C6E90B7866994E249B221A131026F3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F791151BBB9D547E810BAAA61FE078 /* UIKit.framework */; };
 		7C6EDB31A8F31EA79FFC1C5BE8FDB33B /* STPSourceSEPADebitDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E00D0162CC7ED301009BC109408CAB /* STPSourceSEPADebitDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CF908BF27D6F7564308939CEC081909 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8507FE7E84527CB0C2251C181B8E76 /* random.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7D03D83FCA0DAD02AEF71C242E23FEB6 /* stp_card_visa_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 2167C6FBC36C7575918C968BDA8CD7DC /* stp_card_visa_template.png */; };
@@ -396,7 +398,6 @@
 		7D1B5B4C25882691A5C7EC6A2E8501C7 /* GroupDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71659F4B31917E86C9C12E0D6B4B953 /* GroupDisposable.swift */; };
 		7D2555C1128878DFD35EF8335CE612A4 /* STPLegalEntityParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 656524D980A5C99759A0D7518C0A8450 /* STPLegalEntityParams.m */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824FC57A3F585C78EE2C8957371AEB6F /* Result.swift */; };
-		7E8F914D4CA9F638231996CCACC953C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		7ED00AC3CE29C48B43EB9568B1CC1C98 /* NSCharacterSet+Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AEEEBA2215F96B6477424EB51BEEC3 /* NSCharacterSet+Stripe.m */; };
 		7F74806E8C578A734C440F88CF4B49EA /* stp_card_amex_template.png in Resources */ = {isa = PBXBuildFile; fileRef = 9465BA464C2DEE34C308496407A31E8B /* stp_card_amex_template.png */; };
 		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B6025E83DCD4FADEF479F62166B959 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -410,6 +411,7 @@
 		822CC5F06E42BC92D3347292BFD7DE5F /* Localizations in Resources */ = {isa = PBXBuildFile; fileRef = 8EA37AEF0B1B8333E52E76BE67EEB805 /* Localizations */; };
 		82D8FC5094297E72CC9A42C33760A3CB /* STPPaymentMethodsInternalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E165900D1978787B2CD472DB6548B6A8 /* STPPaymentMethodsInternalViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		82FF49F3E7A0384217FD46D6214BC695 /* NIKFontAwesomeIconFactory+iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AFEE3CB1CB26CC9129AEE24D75E0F8 /* NIKFontAwesomeIconFactory+iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		838BD1D2FCD856E3E7AAD63C498E9A92 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC05EAEC407F46258D5A5D90636F86C /* FSPageControl.swift */; };
 		8403C14A26559BCEC2965D0D5F199E8F /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3727BD138BE72EC00F4256FEB95C0A38 /* ShapeRenderer.swift */; };
 		843166B023307AD37F03434FAC558E4F /* JSQMessagesCollectionViewCellOutgoing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1619A7D1931DDA7CA7437ADA0E04A04C /* JSQMessagesCollectionViewCellOutgoing.m */; };
@@ -429,7 +431,6 @@
 		89D842477092AE8F70A518FB11893B8E /* UIImage+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 213D591553B559BE7FFB77074D7119CB /* UIImage+JSQMessages.m */; };
 		89F1A198DA9B8CD6FA08B944D50F7A56 /* STPCardParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2754E9C97BE13FA3DA7AEC796A1AA3 /* STPCardParams.m */; };
 		8AA338A0AF85F68433B9CE2BD0A3A9E9 /* STPAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A582EB909FB9EA341437996552D80F08 /* STPAddCardViewController.m */; };
-		8B3A9028185C10BF269A2C70CCA66D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		8B949E2EFFC4130C691F2DBB4286265D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06D1AD93348E3E05644D31A582D3384 /* Helpers.swift */; };
 		8BDBC8468328DC735418F419C6609A37 /* StrokeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99B4A95E8B950111F00A0A7E6184F06 /* StrokeInterpolation.swift */; };
 		8CF27DDD56556F901EA411AF3261639E /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C61DBB0EDBA10F4C4EA969795F13AA /* JSQMessagesMediaViewBubbleImageMasker.m */; };
@@ -448,7 +449,6 @@
 		8FA42B0FF32F02B636DFD634D554A1D4 /* coding.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7787F8E0298FDDA5A620354074AB1EB9 /* coding.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		8FF808C38E2A1978A476C0C1D72C9F97 /* JSQAudioMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB662647A23A9F9BDEDBA1F2D93E8A3D /* JSQAudioMediaItem.m */; };
 		9022B43E902DFE27B8107A37AC8B3726 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E6B6451C31BFA2E2184E19D4C9B75 /* JSQMessagesCollectionViewLayoutAttributes.m */; };
-		9024F4774BD8DDE03700B223CF7F8164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		918299D5140DDA034923F697E993CC51 /* stp_card_unionpay_template_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445FB586D7AD3F1568CE199428E6DFF7 /* stp_card_unionpay_template_en@2x.png */; };
 		91A4CEB58A353FE3D5BECC447BAACE78 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A64495ACA762240E1D75E782692904 /* logging.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		91FDB6DF27ADE4C6F29B25DA4CF1226C /* Stripe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 861675BD08CCAFB6A529159CEA3ACA55 /* Stripe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -463,8 +463,6 @@
 		952CF88229619673143E13D92591F7BA /* two_level_iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D833621B714E36D8DA87A25B22874FB /* two_level_iterator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F995AB8A8417410B9F3EAB679ED01E /* GTMSessionFetcherService.m */; };
 		9612BD794106C91F3A014520E02DF505 /* Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389BDF527BD410B8844894826CB5C6E /* Interpolable.swift */; };
-		9641B491B9EFBEBF48F47134B919902D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAE32DDAF8AAEB2584B26D418555A3E /* CoreLocation.framework */; };
-		9666ED9A0A60673AA69328CC380656E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF503C27462DFDEAA4D4AE3F16E8757 /* AudioToolbox.framework */; };
 		96729370B8DBE56DA44020FE63918B3D /* STPCoreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D323D760FE37095C9F740475244E9B2 /* STPCoreViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96FFBD7185E6E541C9EBE2B463552E0A /* STPEphemeralKeyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CCB020949EEC6CD9D5008704A892F2 /* STPEphemeralKeyProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9731774D281D249F697A306B087826EC /* UIBarButtonItem+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = A85752DE6EA00DB07C4A8B821DA99FDE /* UIBarButtonItem+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -488,7 +486,6 @@
 		9CC971CE0EA48027B893A8AA5F2C452C /* JSQMessagesBubbleImageFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 693E6AEBA0CBE04EA39B15B1F3E14F01 /* JSQMessagesBubbleImageFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D320C706C49D4DAA1EDD96EE1322506 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7408FEDF27CAB2BB5DA5A52668DD8 /* SpinerLayer.swift */; };
 		9D40804A22EBA95694E40EB3C71004C8 /* db_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C6A2CB9ACE5EDAEBCFC112BB55AE9 /* db_impl.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		9DA28C3544749A7DB9AB129BEC773550 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881CE69AEC2A8B52C2B04518413486C3 /* Security.framework */; };
 		9DA28DA0F90442403DEAC56577BF1C18 /* STPLegalEntityParams.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C49C869B9ED68F9CB609FE10B45BEB /* STPLegalEntityParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B049A1DD84F47ED9904F3C3E0F75BBE /* AFError.swift */; };
 		9F80FD930EFABE333171E6812AFFFF89 /* UIView+JSQMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E3A8A9593D9E74F294B52C6A78C8A7 /* UIView+JSQMessages.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -499,6 +496,7 @@
 		A26D3B59CA5603FBBF14ED01F90F95A7 /* OpacityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505AF3C40FF70AAE775D652EA8589B3 /* OpacityGenerator.swift */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926346DFA6980B85C43D99F064471D56 /* NetworkReachabilityManager.swift */; };
 		A3B390C2CC9CDC12E88987C9B80EA0DB /* leveldb-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D21C2D186775A0D81D22A40133527EAA /* leveldb-library-dummy.m */; };
+		A40AFF81B238EEFB54FB1208E8ED70EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		A42ED5DCC90490A28E5D5A36D0ABA684 /* STPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2277D9C43B82D8CBDA82377F32621783 /* STPFile.m */; };
 		A45C705C3456B295886685976A5DE852 /* STPCoreScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EEBFBCB002A365AF6448879C99D99E /* STPCoreScrollViewController.m */; };
 		A45F4886DE3029D155F50A58C493A803 /* STPPaymentCardTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 630CA38F35B6B35F4B75820C65DB1D93 /* STPPaymentCardTextFieldCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -514,10 +512,12 @@
 		A6FF8CA6FDE054FEC2584F9146028AF2 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86FE22342973C9672DF0D3F8D1346A /* Stop.swift */; };
 		A8E084583EE884F1E36F7D8E0F5DD9FB /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 63B360822B04876C5430F3E20B04BA03 /* crc32c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		A8E19945BE2BE637946BCAFB16BF6B93 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CCCCDA8206F47F2AD9CE5B03F072F /* Client.swift */; };
+		A8FAA4F07702698B8B8518DD371F8F6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7F8C90CE309561746250DD3FB95872 /* MapKit.framework */; };
 		A8FAB995401F31247FB4A4B87AC977B6 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBEE52FFD2894E953760AB8186DFF4 /* ImageRenderer.swift */; };
 		A932E7EAC3472FFBDAAACB5564C6858C /* stp_card_unionpay_zh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CABEC6FA31F5931C5BC50415C8C1158 /* stp_card_unionpay_zh@2x.png */; };
 		A96758AB694DBE5264C91038B46594CC /* STPShippingMethodsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC99F695BCABF6A49E841D54921ED0C /* STPShippingMethodsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A9701C6F33492296354A0A64D220C9E7 /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A8128D87ABD3B01617B1A839A2FAA /* c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		A9745D6BF7C8695C672AE63F2A451159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		A9940A861BB46673C37C4B6073C06E6F /* NIKFontAwesomePathFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 242F8BE129EA6D639A9E3DAEB9C3D0EE /* NIKFontAwesomePathFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9BF8DA7042B6EC44E0C47841195AC03 /* Graphics_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C76B918BACBFA759EF2DD2B235517 /* Graphics_iOS.swift */; };
 		A9CE5022DB21820EB25721B313D4BDD3 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D1D26B0458FF14E18A55691AB17C4 /* Touchable.swift */; };
@@ -526,17 +526,18 @@
 		AA55A56FC7809DD1E62817335FF71533 /* filter_policy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DDBC00A90072DC83300E71BDF8FD5 /* filter_policy.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		AAD88FD8641456E8E0557F4F16466571 /* STPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 638E3754D6959D01A880A4D75AB32D81 /* STPToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAEC17CF3534E78E18C46A5158525A25 /* NSString+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2788691DACADF878BE555BE7A411FC6B /* NSString+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AB0A76735FA0BF37906D7FA40D3F54D8 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4F54EF1F7EA1DFD05C58DD8394AF1F /* PassKit.framework */; };
+		AB2C5DAF51398DC69DD0C7701FA21969 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B119DF39301D609F2109B71B6DBDC783 /* WebKit.framework */; };
 		ABAE5E4F04874FD13AE219B3197BB381 /* atomic_pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CA3DFD2C42063EDBF635DCF66CA9C5 /* atomic_pointer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AC0D6F88A89E05892980CCAB53CAE35B /* stp_shipping_form.png in Resources */ = {isa = PBXBuildFile; fileRef = C21B5ADCD8CB6F0960821B7773395422 /* stp_shipping_form.png */; };
 		AC22FF3CFDD7711099B1D19A3B51E302 /* PKPaymentAuthorizationViewController+Stripe_Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A70F70D20D5C26EB7660A8BA7D4E92 /* PKPaymentAuthorizationViewController+Stripe_Blocks.m */; };
+		AC719B34C08C22358C38449489ADF8C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		ADB8FAEED9161A7936AE02891173074B /* Locus+ToPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB0143FF3676F5BCD1E480DBA4EAB5 /* Locus+ToPath.swift */; };
 		AE04D495A04D935FAF296B95064E3818 /* TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E90CCB0AF4D9A1A05D2C4CD4346546 /* TouchEvent.swift */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695A47E726A27B7763356467499E73 /* SessionManager.swift */; };
 		AE43658AABBC4FCD2D9BD0EEB13191FD /* UIViewController+Stripe_Promises.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA8E04D0A713FA3F54C55A9A3B3FE19 /* UIViewController+Stripe_Promises.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE73638A7C2DA0C1C9F0A61D1D1F133E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38948B2BBC641D2A334CE75E671CC47B /* MapKit.framework */; };
 		AE853AC0D66E64B1ACD940D97528A023 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC22875DECB4D2A6B8506961A914B0 /* PathBuilder.swift */; };
 		AE926072BA41540DD926427050B995EC /* comparator.h in Headers */ = {isa = PBXBuildFile; fileRef = B1CF2D7449EA597EB57550B90F87DAFE /* comparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE3955CB2C1B27D7A52F5465094500E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58716F150F9EB0DB4C85B033B75B2A6 /* Security.framework */; };
 		AF0D277951A4515CC909780CC1B1421C /* stp_card_form_front@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8682860C033365ECB124DECB8A914E3 /* stp_card_form_front@2x.png */; };
 		AF6D3862A9F0A318CA61C1C9B83F6BEF /* GeomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE3D109F8B4E0D0D8A04F96DEF6BF3 /* GeomUtils.swift */; };
 		AFB07038C9465FA5D4DED75CE78A4905 /* skiplist.h in Headers */ = {isa = PBXBuildFile; fileRef = 897B0171DA454379DC2F89CB0CECB19E /* skiplist.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -549,7 +550,6 @@
 		B10E68D4E247A86B32A908193339F458 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DF06524E00CA3BDE04C0F94CC148E /* AnimationUtils.swift */; };
 		B121CDBBE2E559F5C3DE36FA884B108E /* Common_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282181C4523E04EFC0CEA0B4286C187B /* Common_iOS.swift */; };
 		B16284EAB5A1F0CDB9D141653E94CF63 /* stp_card_unknown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F235F7C44BAE9C92CB2F98E5DD6BB20 /* stp_card_unknown@3x.png */; };
-		B1C16596761D85D0DD3B439AE91F79A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3FBEA871CCAAF5D6E9E6FE2C427E6E /* CoreGraphics.framework */; };
 		B1CB4C59041943A60EF6FFCCD5DBD297 /* NIKFontAwesomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BFBC74727B0B71DCB1486C0AA9C46E /* NIKFontAwesomeButton.m */; };
 		B1FAD604704480E097D792512E3AECB8 /* STPFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E8A249345C56D102A24303E660396C /* STPFormEncoder.m */; };
 		B21EA11E80B87247B828346887B82E74 /* STPCustomer+SourceTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 1978CF0B1E2C6780D7898DB2CEB92BD8 /* STPCustomer+SourceTuple.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -571,6 +571,7 @@
 		B74724F4DE7AF477390ABC79AAD35BAE /* JSQMessagesCollectionViewCellIncoming.m in Sources */ = {isa = PBXBuildFile; fileRef = 63486539DD926F4D50B4BB99362E5AF9 /* JSQMessagesCollectionViewCellIncoming.m */; };
 		B78D65523E6D0CB500917415DF41E482 /* STPValidatedTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FF431C06A741F62DF901ABF5C276EA85 /* STPValidatedTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B78FF5465584527B2785C4E8E6DF9294 /* NIKFontAwesomeImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE153D5F3EE4E5791BD7C5E49CB4C746 /* NIKFontAwesomeImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7CECD542AFEC95E09AC64904AACE79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		B7F1D9E14737FA7269D75A6D01BBB5A9 /* JSQMessagesCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61146F2B9FE2AC098B7624C73BE37807 /* JSQMessagesCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7FA093E0B6B37EA76DA94FD54D896FA /* stp_card_cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBA854054D1FA0F21216C7A8482F370 /* stp_card_cvc@2x.png */; };
 		B86980C2EE14C37B2C5624B6AB70D268 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBAC090CDBC8C89B44DC410CC53C3D /* Cache.swift */; };
@@ -581,6 +582,7 @@
 		B980D3E114D714ED76DE056C11AA0308 /* STPApplePayPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 97AF2E1AB5287FB34F1D7FDD6C3BEA72 /* STPApplePayPaymentMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FF57782B77F7CB1895543AEDB58EA /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9C946F65F417847AFF6D5C24587E091 /* JSQMessagesBubbleSizeCalculating.h in Headers */ = {isa = PBXBuildFile; fileRef = F439D73A1A234876EA7EE3EB29007F47 /* JSQMessagesBubbleSizeCalculating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E0761C1DC9C829926C434B96970D17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		BA01B1DA09B17640E23CDE65D5599AE2 /* UIToolbar+Stripe_InputAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = D060AE7961B1ADA704F5D1C71094E34F /* UIToolbar+Stripe_InputAccessory.m */; };
 		BAF1E6FF6FC82E33766FDE206A2BE153 /* GroupRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622A7CA0E732CF016D6E772A6DE5C5A /* GroupRenderer.swift */; };
 		BB40BD4523BD8AD82839EA2DA02F0934 /* Nuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F4F60F82F26D9ECE8D9128B262097F /* Nuke-dummy.m */; };
@@ -590,7 +592,6 @@
 		BC085EACB09BA00CF6FB86C809E248B5 /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FE40230D918DD48F180CEA8B90A99 /* Searchable.swift */; };
 		BC3BC3C740DFB802B3138FDDB3027373 /* ContentsInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909069C73837125D4E42C82181EEEE00 /* ContentsInterpolation.swift */; };
 		BC673DF8C7E4028D75B0A30387A7C48B /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B363F590897BB6BC862497402E3D891 /* Deprecated.swift */; };
-		BC7A4F62AA532FC6DE93C93A2490F861 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0D24FD1F94C321320A7A9AF5C00E4A /* Contacts.framework */; };
 		BD4DBE66C5321DDDADC94E55B08F934A /* table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 76FEDEAFA565283388A263B997507180 /* table.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		BD5E3C3351571BC5A7326A1C8E1E3A06 /* STPStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F915BC286AB8967374F1DB2A8E6B6932 /* STPStringUtils.m */; };
 		BD9406EBA2FB5ECF995D2BE8D627337E /* FauxPasAnnotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDA16414443C7876CB2A5A4C03FCE26 /* FauxPasAnnotations.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -613,12 +614,10 @@
 		C2604A09FF00D579F46FD527464A8E2F /* stp_card_applepay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C6DA9F7A4337C7C68D0D9F2EB9D35 /* stp_card_applepay@3x.png */; };
 		C267CA476A41DC4B9511B2AFB5E17342 /* stp_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EDE03F76F6C1979C317F0D0F310A1D /* stp_card_visa@3x.png */; };
 		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60ADDE37F083A355EAB07A0C93AB4B /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3B843F1A8E9B55C485929693FD3B2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		C3C0377ED4953304B314C54483AEEFDD /* STPLocalizationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = AFACCD16A239099CB438D8237C92786F /* STPLocalizationUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C3FC5C9BC31D748458D3C57B9613FD40 /* NodesMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2F052C33AF644EA154B770A7F5337 /* NodesMap.swift */; };
 		C438E012533EC28E3E0F1E4F5887A68C /* STPValidatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C80523346E04B52AAB6F5FEA73AF580 /* STPValidatedTextField.m */; };
 		C43DF6C7E1E7F3148A016F5D278717A8 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 2013AEB990A9C603ADAF747CFA978D9C /* format.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C4A1A63A4C67D9828DF94807BC2C3002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		C4B9CF6ACEDD92E328138753D1AE6EC4 /* STPPhoneNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D05DA1C566E1242C149AA11151A697 /* STPPhoneNumberValidator.m */; };
 		C4D2779B62454E323FB86A91F286822A /* STPPaymentMethodTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 379926626A9D36AD711335E8913291A0 /* STPPaymentMethodTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C4E58A480655F66B783240DAC5616329 /* IndexQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F4108ED2C310B316C5B00AFC3C4AD /* IndexQuery.swift */; };
@@ -639,7 +638,6 @@
 		C9A7BF29CFB2EB284506526C409DCE56 /* JSQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 678B3D81FDED53EEF2E782150655F20C /* JSQMessage.m */; };
 		CA07C533FE0456F825A4DFE193ACDEBA /* ImagePreheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199FBAF510395342487CFC980FE29091 /* ImagePreheater.swift */; };
 		CA1274C019999F7584F91BA272922021 /* STPCardParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 38AEB81D09759504D3FA4AB84E6079CF /* STPCardParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA1D14942DEAAC22F14400DDC83D4740 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3FBEA871CCAAF5D6E9E6FE2C427E6E /* CoreGraphics.framework */; };
 		CAADD87E8A66FC160AEC3292E4B422F8 /* STPPaymentActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94C519216F5433E74CE45D9E9D3DF73B /* STPPaymentActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAC8C1839B7FA6003DA44AC473857EDC /* STPSourceOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DFEED52A5D113B48F2426BA33B61B7 /* STPSourceOwner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51CEE3C09959C9E917614E63CEB376 /* Response.swift */; };
@@ -647,6 +645,7 @@
 		CD2FA930F443F0F5FAFFB4830ED13E07 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353F41B1D8C58BE8C07BD23676D94112 /* Node.swift */; };
 		CD45C42FD08AB1046EC09546E7B96259 /* MView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAF66CA2CF0D84FC58C29798D8CAB6 /* MView_macOS.swift */; };
 		CD7BC5DF783A98D3DACFD726F41CB83B /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070A065072620E978D6FB842E67FF1D /* TransitionSubmitButton.swift */; };
+		CD8472046FFB8FD649EC69102A44808B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58716F150F9EB0DB4C85B033B75B2A6 /* Security.framework */; };
 		CDDBF5FE1DD0579E87CA39E289A800FB /* STPSourceReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3969A39523425863020B9F0955DA3 /* STPSourceReceiver.m */; };
 		CDE7E3185BEDC8728BC204D53ED8F9EA /* AnimatableVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3371E3E81B23C1A4B4C2D18B68DAF45 /* AnimatableVariable.swift */; };
 		CE73BB01EB038237A7A7DE008A6DA114 /* STPRedirectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E21493882B0D84FFCEA0D5515F6B4E /* STPRedirectContext.m */; };
@@ -661,7 +660,6 @@
 		D0C4C038F83836962A703CE46CF56073 /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB02FAF5B67670F7837D701BD2DA0500 /* comparator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		D0E2BE1D78D98647D0730C3898CF08D2 /* STPCardIOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C15BDDFB7CBA2A656A93156461882295 /* STPCardIOProxy.m */; };
 		D0E9A071BF56A877E0B8BD017EB12945 /* stp_card_cvc_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D277E0383FCC739592823C131185C2 /* stp_card_cvc_amex@2x.png */; };
-		D0F706D47030E6B108D415559059D33C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		D17B2FD4B49D306F66D6DEE64A397AA4 /* STPSourceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B05539E3341404315FC950E79B419B /* STPSourceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D17CF424612AF7AC37AA4BEF8932996A /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B6165E4946C9DE288EE415EEBAD33672 /* STPToken.m */; };
 		D1A60B2518CF1D7E067BD1085298E20C /* block_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE438A57AF30D5BDFED8BD345F8BCD26 /* block_builder.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -675,7 +673,6 @@
 		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BD1333AD5FEAF619DA7323C1042427 /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3FF27E765F4ABCD21842443A3A7DB1C /* UIViewController+Stripe_KeyboardAvoiding.h in Headers */ = {isa = PBXBuildFile; fileRef = A108596E9F369B9E8B256DFAAD70E99D /* UIViewController+Stripe_KeyboardAvoiding.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4754582F38FDE320F28DFF584F263D6 /* STPConnectAccountParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA0501EB372EE4A58838BF4A3AA2B /* STPConnectAccountParams.m */; };
-		D4A925404417A0AEA2569BE8697B84D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF41D76B4E18FE5A8D5FCA9D8E66C32F /* UIKit.framework */; };
 		D523F84571966505230A38178FA9B1B3 /* table_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C0AFF7924055D546127DE93692DABA /* table_cache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D5EDF701474637548017366D85DC162B /* JSQSystemSoundPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBB194413769E574EAFDC3A154AC17F /* JSQSystemSoundPlayer-dummy.m */; };
 		D66061BD0D6A60DBE264629E85A3AC1D /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C980F957310E36CD3F5CCB623891C /* Locus.swift */; };
@@ -689,7 +686,6 @@
 		D8F530DD48E1DA46D07F8A148627CD28 /* STPCardValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 064E60F2D3A758BD3F7B119DD9516388 /* STPCardValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9011227DCC5BA6309BD9F5FBB019246 /* NIKFontAwesomeIconFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D6E0EA9CA2B3C94AA56014E51D5ED /* NIKFontAwesomeIconFactory.m */; };
 		D9069276B0CE4AE34C9CBBD993458A14 /* Fabric.h in Headers */ = {isa = PBXBuildFile; fileRef = C94BE0503F2BCECB72C18A263C6AC872 /* Fabric.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D9CF990A48E13A70612C6A23BFF70FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = F21C71DE0B4EBD6F67465ADC05F75A6C /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA66E206B0B2E5AF6E96EB337439291D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC916449BAB4A2E4DBC1A2E9D71F2D /* Network.swift */; };
 		DA777620C7CCFEB0B92AB5E7FD5CDA0E /* STPCoreTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DEFC91CF4430B24D026176FE89FE6A /* STPCoreTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -702,6 +698,7 @@
 		DCCADA9D35279770FA120A32758EF55A /* STPCategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFC3C3619BDDDE3909F1A5B17143539 /* STPCategoryLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DD2A2BCB72C62F2F32B3D2DA324636FE /* JSQMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD82641CF8275931600717ABC120C0D /* JSQMessagesViewController.xib */; };
 		DD2DA280ABDE0C9750D560AA3D8F8DF7 /* STPPaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B4E8D10380EBC75CDFD767B7D23AF /* STPPaymentContext.m */; };
+		DD46A11D252BBD0601100FA43BB08741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		DD82C41BE711BD0A6F645DB2B143AFF8 /* Pods-padl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BAF4FC263976EE200117948B7D4A5F /* Pods-padl-dummy.m */; };
 		DD91F2BE0A1A719AA42ED8A9477B05DA /* stp_card_diners@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A22CE1D17E9782602DF5FFB177CBCAB /* stp_card_diners@3x.png */; };
 		DDC94334FF57682689F2BFEBCB52597E /* JSQMessagesAvatarImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3790BA2492218E73E8E3D3B0404D601D /* JSQMessagesAvatarImageFactory.m */; };
@@ -712,7 +709,6 @@
 		DF19E861F0949042EAF5E856B2F7466B /* STPShippingMethodTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C636E3988D4CEEC4E1D1266E3F77E1C0 /* STPShippingMethodTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D8A895B76CA82BD5E9DA0DBFC6868B /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF95B5BC641B460FACD4E9F3E3061980 /* MView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B20A40CE40562B314CF84E962275D1 /* MView_iOS.swift */; };
-		DFC5EB1420796A48FCE6EAA263737F84 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAE32DDAF8AAEB2584B26D418555A3E /* CoreLocation.framework */; };
 		E03347522CDFD5D1021D07B67987ABCA /* FontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8539C388AAB19E9D9E08F29AE1A2BD48 /* FontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E041D6E9C48D009F4E662B8295016EC6 /* stp_card_unionpay_template_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = 4044D1F45B713F8BBC6EC1EA02F97330 /* stp_card_unionpay_template_zh.png */; };
 		E07DEB727F1190B13F149526E637BFEE /* stp_icon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB249E7C55AA22D9EC046A8D5B6C1D4 /* stp_icon_add@3x.png */; };
@@ -727,6 +723,7 @@
 		E3930FD2D5AE465AE8866F949E735B6B /* STPSourceParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF20BD9A6869F211AA5955E076C48D /* STPSourceParams.m */; };
 		E39BF91A36C1B67824E21353B06B6708 /* UINavigationBar+Stripe_Theme.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6F778F58101047A4FEA0BD4B9E26A3 /* UINavigationBar+Stripe_Theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3A1194D92818EA1B4A6F05836E04256 /* JSQMessagesCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D380CC3765BD67166334BE5B97893A1 /* JSQMessagesCollectionViewFlowLayout.m */; };
+		E3E0158E0848BF420FE65AC2A8D8424E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		E3EF7D1632053D75CFFF21381674D052 /* db_iter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 490FD9D05D973B5425E690C24ABF37D5 /* db_iter.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		E3F1538E71AAFE06F3FF5A1F82C7E481 /* Nuke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA4A6F02E3C1D0776CA4D77B5239685 /* Nuke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4748DA8D96A194B3D08FC18878FF8A5 /* STPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF338EBAFA1B12210E91422F315B32 /* STPTheme.m */; };
@@ -736,8 +733,10 @@
 		E55A1F3D41875AD04EDEFDCEF0BDEA48 /* write_batch_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E908820FC2EBCE11CBDCAE6BCFB0438D /* write_batch_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E5975436FB0194BA6609375F6F6786EB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F3CB3EB72F88F47E0AB6CF80E962CF /* Animation.swift */; };
 		E598E65224F3C4EEECB40E04DED83C21 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65B600D1740971728551D374A9036D /* ImageProcessing.swift */; };
+		E5A5E359784D2AAE219310A4902A758F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4816ABEB8D27DCDBE2CA0AD1B5E1B2 /* AVFoundation.framework */; };
 		E60551473EC60208779382084CC4103E /* stp_card_amex_template@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 666AB079B0D953A9D71C8C9CD679E623 /* stp_card_amex_template@3x.png */; };
 		E60C9D1FAE591C60F48D8EECE543007F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFFDAC46CC8B96129A5097C77F065B3 /* Size.swift */; };
+		E61CED1D5CBC01AF1EBD19FDD75907EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */; };
 		E62B6E720254E0F125351F5A99FCC1EC /* stp_card_error.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBDE4E3B0B1C2D19E0C093A50F9983D /* stp_card_error.png */; };
 		E6ADEB897C668773B13C4ECF6EC6E030 /* STPAnalyticsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BD381B1F33312FC38C06D8B5DC2771FF /* STPAnalyticsClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E6FCAF8C2C830A2B957CFA84DB85EDFD /* testutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D4484C03BCE6F38672A4550B124D5 /* testutil.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
@@ -775,6 +774,7 @@
 		F282AA512A336C98750D09FA8C785CA9 /* STPSourceRedirect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9333F999A2324A3BE2364BA7CBC6B293 /* STPSourceRedirect.m */; };
 		F28CEFF02311DDB81E5DB68B295E067D /* JSQMessagesCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D73EF14ABC85465014996CE97D71BB9 /* JSQMessagesCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3280B98B7E2355CC01ABEA16EC48B9D /* CGFloat+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C02DEF81C8E68ADAB762592004B8B /* CGFloat+Double.swift */; };
+		F37A231F9EF15CB2B81A0615812FA558 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674F2CDFB6B0B5803B4FE08332D8FF25 /* AudioToolbox.framework */; };
 		F38934A32307318D077BB6CED6AF8037 /* STPSourceCardDetails+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EA16C1A0B05E170F06E874E735E4AFC8 /* STPSourceCardDetails+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F3D3406B798B94A35C7F26504C44ADC9 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02F8EEBEFDE1D25C29D751684C00327 /* JSQMessagesTypingIndicatorFooterView.xib */; };
 		F4167EF7B4450587AE9B6AA6849111A6 /* NSMutableURLRequest+Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1E0A2BB3E846287741900933D6D495 /* NSMutableURLRequest+Stripe.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -782,10 +782,10 @@
 		F4C74F3BD3BB85F086660BF5CB9981A6 /* AnimationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B87E7942A9C8B13C9EF55E4C6F6B897 /* AnimationImpl.swift */; };
 		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D028CD6086A7E3C7AB9B1A4B367329 /* GTMSessionUploadFetcher.m */; };
 		F4E9E5BF69FAFDCDA5E2F60C2523220F /* JSQMessagesCollectionViewCellOutgoing.h in Headers */ = {isa = PBXBuildFile; fileRef = 38EEC1CD19619BC32F2E667A185BE508 /* JSQMessagesCollectionViewCellOutgoing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56A0DB3E98846395A5A2B0BCC871CD1 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A130D45ECEFF4B9715C494783C1213A2 /* PassKit.framework */; };
 		F5F043F34166CA899A5E599F6894F12E /* stp_card_diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A98603EF9508ADBC8A0C39DF99EB48 /* stp_card_diners@2x.png */; };
 		F5F60BFECDD16497706010633BD340BA /* BrowseIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F225258D1DB1695FC0A3248CE22D4AE /* BrowseIterator.swift */; };
 		F627319FB390A279F6963FF7EA492F27 /* FontAwesomeIconFactory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 004BB83819E14332C633BCF44A79686C /* FontAwesomeIconFactory-dummy.m */; };
-		F656BDDC962F36D4899A8AB5869D181D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */; };
 		F69F9E40843AB135EB9CE6019894BDBB /* stp_card_amex_template@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAD9D9FA7117FE65470A41D59F6FC32 /* stp_card_amex_template@2x.png */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42329C00A249D0A31720C7D9753C18 /* ResponseSerialization.swift */; };
 		F7C79ADF2F2B460CE9D74F83A87AD9B2 /* STPImageLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 586A20CB550568F5E308692FB529D46D /* STPImageLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1029,6 +1029,7 @@
 		157469232C9C474F4D794D1B2089977E /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
 		15AFEE3CB1CB26CC9129AEE24D75E0F8 /* NIKFontAwesomeIconFactory+iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+iOS.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h"; sourceTree = "<group>"; };
 		1619A7D1931DDA7CA7437ADA0E04A04C /* JSQMessagesCollectionViewCellOutgoing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessagesCollectionViewCellOutgoing.m; path = JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.m; sourceTree = "<group>"; };
+		161E67E53879D8E71BD47B85411461CF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		16936D509FA704DCA3684551C18A370F /* Graphics_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_macOS.swift; path = Source/platform/macOS/Graphics_macOS.swift; sourceTree = "<group>"; };
 		16C8D567A84A89B23A0CF7B16EFF6335 /* NSString+JSQMessages.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+JSQMessages.m"; path = "JSQMessagesViewController/Categories/NSString+JSQMessages.m"; sourceTree = "<group>"; };
 		16F28579E1E77FBDEFF7931375E2A4BB /* JSQMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSQMediaItem.h; path = JSQMessagesViewController/Model/JSQMediaItem.h; sourceTree = "<group>"; };
@@ -1053,6 +1054,7 @@
 		1B97ABAEC771406267FC9EEC09862B18 /* JSQMessagesBubbleImageFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessagesBubbleImageFactory.m; path = JSQMessagesViewController/Factories/JSQMessagesBubbleImageFactory.m; sourceTree = "<group>"; };
 		1B9BC32D7643D661B9C1D1FCEFBE5A15 /* Pods-padl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-padl-resources.sh"; sourceTree = "<group>"; };
 		1BA4135C1A98613E45C45F2F3D35A437 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		1C4816ABEB8D27DCDBE2CA0AD1B5E1B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		1C86FE22342973C9672DF0D3F8D1346A /* Stop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Source/model/draw/Stop.swift; sourceTree = "<group>"; };
 		1CD3C1BE8EF62F408FA64E06A18A20D8 /* LineJoin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineJoin.swift; path = Source/model/draw/LineJoin.swift; sourceTree = "<group>"; };
 		1CED72ACFB87BE06A9399A57B8E2EF32 /* JSQPhotoMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQPhotoMediaItem.m; path = JSQMessagesViewController/Model/JSQPhotoMediaItem.m; sourceTree = "<group>"; };
@@ -1112,12 +1114,11 @@
 		2A9327685D5EA719A5BA442CCBF852E9 /* arena.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arena.h; path = util/arena.h; sourceTree = "<group>"; };
 		2AAD179CE671ACFB14F2BF5E81A59ECA /* stp_card_diners_template@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners_template@2x.png"; path = "Stripe/Resources/Images/stp_card_diners_template@2x.png"; sourceTree = "<group>"; };
 		2ADCA0501EB372EE4A58838BF4A3AA2B /* STPConnectAccountParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPConnectAccountParams.m; path = Stripe/STPConnectAccountParams.m; sourceTree = "<group>"; };
-		2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2B4DD72DD8C474E43D1B7BCAC209CEDB /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
 		2B59DE8972B10A26A07461239778A110 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
 		2BAB56B5A97EA810B779D642362BDC72 /* TimerEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimerEx.swift; path = SubmitTransition/Classes/TimerEx.swift; sourceTree = "<group>"; };
 		2BC546C5FC899C7DA99F2156BFF4ED5F /* JSQMessagesTypingIndicatorFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessagesTypingIndicatorFooterView.m; path = JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.m; sourceTree = "<group>"; };
-		2C4F54EF1F7EA1DFD05C58DD8394AF1F /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C9C1EF427ADB9B0DCD6425D1BF78451 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		2CABEC6FA31F5931C5BC50415C8C1158 /* stp_card_unionpay_zh@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_unionpay_zh@2x.png"; path = "Stripe/Resources/Images/stp_card_unionpay_zh@2x.png"; sourceTree = "<group>"; };
 		2CFEEE2D3624B80D15E397F46A7AC6C6 /* STPCategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCategoryLoader.m; path = Stripe/STPCategoryLoader.m; sourceTree = "<group>"; };
 		2D164C6102498076EF1C7DD4F0316AF4 /* JSQMessagesToolbarContentView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = JSQMessagesToolbarContentView.xib; path = JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib; sourceTree = "<group>"; };
@@ -1153,7 +1154,6 @@
 		35CCB020949EEC6CD9D5008704A892F2 /* STPEphemeralKeyProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPEphemeralKeyProvider.h; path = Stripe/PublicHeaders/STPEphemeralKeyProvider.h; sourceTree = "<group>"; };
 		3603BDB7B58F947CCBB78E8C0B958B03 /* STPSourceOwner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPSourceOwner.m; path = Stripe/STPSourceOwner.m; sourceTree = "<group>"; };
 		362F3D2543A59B347067613EE4238955 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
-		372495CA37EC564A947D9838E8914D38 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		3727BD138BE72EC00F4256FEB95C0A38 /* ShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderer.swift; path = Source/render/ShapeRenderer.swift; sourceTree = "<group>"; };
 		3730F6574906724BC19720BDA8AF84E2 /* STPSource+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPSource+Private.h"; path = "Stripe/STPSource+Private.h"; sourceTree = "<group>"; };
 		3736A03639693F28D8CA9EFE862E36FB /* STPSourceRedirect+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPSourceRedirect+Private.h"; path = "Stripe/STPSourceRedirect+Private.h"; sourceTree = "<group>"; };
@@ -1168,7 +1168,6 @@
 		3854707FF7DBF625EBA503F8373F9885 /* STPPaymentMethodTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentMethodTableViewCell.m; path = Stripe/STPPaymentMethodTableViewCell.m; sourceTree = "<group>"; };
 		3865F9AACD088511B64AFF1E3D6349AD /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
 		38860DA7B51B8B0C457F8FA4154CBA8A /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38948B2BBC641D2A334CE75E671CC47B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		38A98603EF9508ADBC8A0C39DF99EB48 /* stp_card_diners@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_diners@2x.png"; path = "Stripe/Resources/Images/stp_card_diners@2x.png"; sourceTree = "<group>"; };
 		38AEB81D09759504D3FA4AB84E6079CF /* STPCardParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCardParams.h; path = Stripe/PublicHeaders/STPCardParams.h; sourceTree = "<group>"; };
 		38D277E0383FCC739592823C131185C2 /* stp_card_cvc_amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_cvc_amex@2x.png"; path = "Stripe/Resources/Images/stp_card_cvc_amex@2x.png"; sourceTree = "<group>"; };
@@ -1213,6 +1212,7 @@
 		4779085B8D1E0EC4AD93102584ED85BC /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
 		47F2A840D3FBF0496FBF1DA981F2CAC8 /* mutexlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutexlock.h; path = util/mutexlock.h; sourceTree = "<group>"; };
 		4812BA211429064300197705350715F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		48E8A249345C56D102A24303E660396C /* STPFormEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormEncoder.m; path = Stripe/STPFormEncoder.m; sourceTree = "<group>"; };
 		490FD9D05D973B5425E690C24ABF37D5 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
 		492A6808208A3CE24D8570E6BE3184DB /* Rect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = Source/model/geom2d/Rect.swift; sourceTree = "<group>"; };
@@ -1225,7 +1225,6 @@
 		4A0C87F2E849A47E8EA32A3CA86C148D /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
 		4A60ADDE37F083A355EAB07A0C93AB4B /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		4AFFDAC46CC8B96129A5097C77F065B3 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Source/model/geom2d/Size.swift; sourceTree = "<group>"; };
-		4B3FBEA871CCAAF5D6E9E6FE2C427E6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		4B6879537EF11D19C9C262C9C817DA59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B89B25A4E78D6BF32ECC215C4C7375B /* AlgoliaSearch-Client-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "AlgoliaSearch-Client-Swift.modulemap"; sourceTree = "<group>"; };
 		4B94B997BB6F3B0D52A7B5AF5E0ABC34 /* stp_card_jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_jcb@3x.png"; path = "Stripe/Resources/Images/stp_card_jcb@3x.png"; sourceTree = "<group>"; };
@@ -1257,6 +1256,7 @@
 		55E1441AF09DCE4A0A8EE7A890F44B7B /* STPBackendAPIAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBackendAPIAdapter.h; path = Stripe/PublicHeaders/STPBackendAPIAdapter.h; sourceTree = "<group>"; };
 		5622A7CA0E732CF016D6E772A6DE5C5A /* GroupRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupRenderer.swift; path = Source/render/GroupRenderer.swift; sourceTree = "<group>"; };
 		562FD2BAC0BF5B50E17C5449E28B48CA /* STPPaymentMethodTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentMethodTuple.h; path = Stripe/STPPaymentMethodTuple.h; sourceTree = "<group>"; };
+		563099FAEFF96CE3D66112B70300D09B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		56C19672C050421D3516EC141C08D0E8 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
 		57C1134925FA3D8B004F423264292E48 /* ShapeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeInterpolation.swift; path = Source/animation/layer_animation/Extensions/ShapeInterpolation.swift; sourceTree = "<group>"; };
 		58212B6832DC3F3EAFD142959D7C034F /* NIKFontAwesomePathFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.m; sourceTree = "<group>"; };
@@ -1315,6 +1315,7 @@
 		666AB079B0D953A9D71C8C9CD679E623 /* stp_card_amex_template@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex_template@3x.png"; path = "Stripe/Resources/Images/stp_card_amex_template@3x.png"; sourceTree = "<group>"; };
 		66D4C136B6706EE55C88156C87BA853B /* STPPaymentContextAmountModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPPaymentContextAmountModel.h; path = Stripe/STPPaymentContextAmountModel.h; sourceTree = "<group>"; };
 		66FAF66CA2CF0D84FC58C29798D8CAB6 /* MView_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_macOS.swift; path = Source/platform/macOS/MView_macOS.swift; sourceTree = "<group>"; };
+		674F2CDFB6B0B5803B4FE08332D8FF25 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		677279EE2ED17D3EA7D105C9BF3FF34A /* STPCoreTableViewController+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPCoreTableViewController+Private.h"; path = "Stripe/STPCoreTableViewController+Private.h"; sourceTree = "<group>"; };
 		678B3D81FDED53EEF2E782150655F20C /* JSQMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessage.m; path = JSQMessagesViewController/Model/JSQMessage.m; sourceTree = "<group>"; };
 		68455BDC276462E127B4F279A5C32076 /* JSQMessagesKeyboardController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessagesKeyboardController.m; path = JSQMessagesViewController/Controllers/JSQMessagesKeyboardController.m; sourceTree = "<group>"; };
@@ -1335,12 +1336,12 @@
 		6B1D48068063B2FA80EC086E90E24039 /* STPCardValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCardValidator.m; path = Stripe/STPCardValidator.m; sourceTree = "<group>"; };
 		6B9293F671C935AE52F683E86CE729AC /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		6BAF487C1829284ABBB0C5DD3584F1F7 /* iterator_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator_wrapper.h; path = table/iterator_wrapper.h; sourceTree = "<group>"; };
-		6BF503C27462DFDEAA4D4AE3F16E8757 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		6CD4F147F51B48592F4ED7E518C89914 /* STPRedirectContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPRedirectContext.h; path = Stripe/PublicHeaders/STPRedirectContext.h; sourceTree = "<group>"; };
 		6CDA16414443C7876CB2A5A4C03FCE26 /* FauxPasAnnotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FauxPasAnnotations.h; path = Stripe/PublicHeaders/FauxPasAnnotations.h; sourceTree = "<group>"; };
 		6CF44DBA2DE1EE927EA4AFAB7DDE71BC /* FillInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillInterpolation.swift; path = Source/animation/layer_animation/Extensions/FillInterpolation.swift; sourceTree = "<group>"; };
 		6D2754E9C97BE13FA3DA7AEC796A1AA3 /* STPCardParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCardParams.m; path = Stripe/STPCardParams.m; sourceTree = "<group>"; };
 		6D7E960794DACA27708DAA43C30D5483 /* STPAddCardViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAddCardViewController.h; path = Stripe/PublicHeaders/STPAddCardViewController.h; sourceTree = "<group>"; };
+		6D7F8C90CE309561746250DD3FB95872 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		6D833621B714E36D8DA87A25B22874FB /* two_level_iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = two_level_iterator.h; path = table/two_level_iterator.h; sourceTree = "<group>"; };
 		6DA28EEF94C5D170B0A8B744DE8D30DC /* STPPaymentCardTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentCardTextField.m; path = Stripe/STPPaymentCardTextField.m; sourceTree = "<group>"; };
 		6E297F69ADE909DF9BD1C05E69C6CE04 /* STPSwitchTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPSwitchTableViewCell.m; path = Stripe/STPSwitchTableViewCell.m; sourceTree = "<group>"; };
@@ -1428,7 +1429,6 @@
 		87AC51E4534D820382A47EEA9865F6E5 /* STPSectionHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPSectionHeaderView.h; path = Stripe/STPSectionHeaderView.h; sourceTree = "<group>"; };
 		87F11023156A863222B347F0ECCAD85B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87FE97353E28788C9B07B01E9A47B6D0 /* STPBundleLocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBundleLocator.h; path = Stripe/STPBundleLocator.h; sourceTree = "<group>"; };
-		881CE69AEC2A8B52C2B04518413486C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		88413C2E07DDE8C6B38CBB0387DCD431 /* STPURLCallbackHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPURLCallbackHandler.m; path = Stripe/STPURLCallbackHandler.m; sourceTree = "<group>"; };
 		890E3E657F823A0787A2D6355FF9BAC8 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "Sources/AlgoliaSearch-Client/Request.swift"; sourceTree = "<group>"; };
 		89371DDB4A34E4BC6958829D1C3E30D1 /* STPSourceRedirect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPSourceRedirect.h; path = Stripe/PublicHeaders/STPSourceRedirect.h; sourceTree = "<group>"; };
@@ -1523,10 +1523,12 @@
 		A093F7A67D4D4099F62ED37798377347 /* STPCustomer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCustomer.m; path = Stripe/STPCustomer.m; sourceTree = "<group>"; };
 		A108596E9F369B9E8B256DFAAD70E99D /* UIViewController+Stripe_KeyboardAvoiding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Stripe_KeyboardAvoiding.h"; path = "Stripe/UIViewController+Stripe_KeyboardAvoiding.h"; sourceTree = "<group>"; };
 		A115BF5C1A32784847F9F8D594B8D8FD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		A130D45ECEFF4B9715C494783C1213A2 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
 		A14CAD390BFC25F3F490E34093C6EA35 /* JSQMessagesBubblesSizeCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSQMessagesBubblesSizeCalculator.m; path = JSQMessagesViewController/Layout/JSQMessagesBubblesSizeCalculator.m; sourceTree = "<group>"; };
 		A17C4CBF3AE7D886B18028FC5C12C745 /* STPCustomer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCustomer.h; path = Stripe/PublicHeaders/STPCustomer.h; sourceTree = "<group>"; };
 		A185FBDD6E623FD05A8B7611AEE03248 /* stp_card_unknown.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_unknown.png; path = Stripe/Resources/Images/stp_card_unknown.png; sourceTree = "<group>"; };
 		A1F2BD07E9344943F7D5BF3DB2DAAA93 /* STPDispatchFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPDispatchFunctions.m; path = Stripe/STPDispatchFunctions.m; sourceTree = "<group>"; };
+		A1F791151BBB9D547E810BAAA61FE078 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A248A7C5E9554866D93058B5B6C53E57 /* STPTelemetryClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPTelemetryClient.m; path = Stripe/STPTelemetryClient.m; sourceTree = "<group>"; };
 		A387FF048927EDA59BE765B561D133DF /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		A39EEA670B0D4F98C75E1DDB40D91241 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
@@ -1581,7 +1583,6 @@
 		AE569EFF3818ED925AA2AC24B5C6C60D /* stp_card_unionpay_en@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_unionpay_en@3x.png"; path = "Stripe/Resources/Images/stp_card_unionpay_en@3x.png"; sourceTree = "<group>"; };
 		AE7FB1D09F04271D52AC8E7EB822F5C7 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		AEAA9A3866F6CE36D286F4CE8FF15FC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF41D76B4E18FE5A8D5FCA9D8E66C32F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		AF51CEE3C09959C9E917614E63CEB376 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		AF5C1CDA7AD538E720EE158BD3A26F39 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
 		AF6E119ADF5A047BC11135CFF146B464 /* stp_card_discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_discover.png; path = Stripe/Resources/Images/stp_card_discover.png; sourceTree = "<group>"; };
@@ -1595,6 +1596,7 @@
 		B0BFE3B01F4B76981EC2578928737F0E /* JSQVideoMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSQVideoMediaItem.h; path = JSQMessagesViewController/Model/JSQVideoMediaItem.h; sourceTree = "<group>"; };
 		B0C4C5D58754812D3583B30D18A094BD /* Pods-padl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-padl.release.xcconfig"; sourceTree = "<group>"; };
 		B10ADDBE1A4D56B852150FCD33A6A3B7 /* FontAwesomeIconFactory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesomeIconFactory.modulemap; sourceTree = "<group>"; };
+		B119DF39301D609F2109B71B6DBDC783 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		B19C18921F570FA9FFC5C7C8AD2C27C4 /* STPCoreTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCoreTableViewController.m; path = Stripe/STPCoreTableViewController.m; sourceTree = "<group>"; };
 		B1A70F70D20D5C26EB7660A8BA7D4E92 /* PKPaymentAuthorizationViewController+Stripe_Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PKPaymentAuthorizationViewController+Stripe_Blocks.m"; path = "Stripe/PKPaymentAuthorizationViewController+Stripe_Blocks.m"; sourceTree = "<group>"; };
 		B1CF2D7449EA597EB57550B90F87DAFE /* comparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comparator.h; path = include/leveldb/comparator.h; sourceTree = "<group>"; };
@@ -1645,7 +1647,6 @@
 		BCAD9D9FA7117FE65470A41D59F6FC32 /* stp_card_amex_template@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex_template@2x.png"; path = "Stripe/Resources/Images/stp_card_amex_template@2x.png"; sourceTree = "<group>"; };
 		BD381B1F33312FC38C06D8B5DC2771FF /* STPAnalyticsClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAnalyticsClient.h; path = Stripe/STPAnalyticsClient.h; sourceTree = "<group>"; };
 		BDA8E04D0A713FA3F54C55A9A3B3FE19 /* UIViewController+Stripe_Promises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Stripe_Promises.h"; path = "Stripe/UIViewController+Stripe_Promises.h"; sourceTree = "<group>"; };
-		BDAE32DDAF8AAEB2584B26D418555A3E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		BDB5385EBBB715D6407C003ED9A4D034 /* stp_card_applepay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_applepay.png; path = Stripe/Resources/Images/stp_card_applepay.png; sourceTree = "<group>"; };
 		BDDDFA339EF874632264742656C29CA8 /* PathSegmentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegmentType.swift; path = Source/model/geom2d/PathSegmentType.swift; sourceTree = "<group>"; };
 		BE6144AF9FE51ACADADA27EE6BC333A4 /* JSQMessagesViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSQMessagesViewController.xcconfig; sourceTree = "<group>"; };
@@ -1686,6 +1687,7 @@
 		C8E794BC758A2938BBD37F4939972581 /* UIViewController+Stripe_NavigationItemProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Stripe_NavigationItemProxy.h"; path = "Stripe/UIViewController+Stripe_NavigationItemProxy.h"; sourceTree = "<group>"; };
 		C94BE0503F2BCECB72C18A263C6AC872 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = Stripe/Fabric.h; sourceTree = "<group>"; };
 		C956FB39E55E2E40C56854A8CD3DB4C0 /* Stripe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stripe-dummy.m"; sourceTree = "<group>"; };
+		C9B46B6D3F7C8E390E9E1D27B5675777 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		C9D79AC5DCA4AD38A2B76841C7D43787 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C9ECFB179B09E5B4C5F5708237282DE5 /* stp_card_amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_amex@3x.png"; path = "Stripe/Resources/Images/stp_card_amex@3x.png"; sourceTree = "<group>"; };
 		CA7DEC5E1919923E87E159BA4C67F561 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1729,6 +1731,7 @@
 		D40B32077F5986E5A4EFD140F074BCC8 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Source/events/Event.swift; sourceTree = "<group>"; };
 		D4B2FD5422AFAC6D8993A399BAE7A6FA /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Source/model/geom2d/Circle.swift; sourceTree = "<group>"; };
 		D4BF39B131A0A29856174AD1177DFF63 /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = Source/bindings/Variable.swift; sourceTree = "<group>"; };
+		D58716F150F9EB0DB4C85B033B75B2A6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		D6B1BC5F5A3DBA8DD15EF01E80CFBBF7 /* MBezierPath+Extension_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MBezierPath+Extension_macOS.swift"; path = "Source/platform/macOS/MBezierPath+Extension_macOS.swift"; sourceTree = "<group>"; };
 		D701FD36F7AD270C8C66C1E5261745B4 /* stp_card_form_back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_form_back@2x.png"; path = "Stripe/Resources/Images/stp_card_form_back@2x.png"; sourceTree = "<group>"; };
 		D732B23C2A68CDE7C378D2837A6DA7F0 /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSQSystemSoundPlayer.h; path = JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
@@ -1736,7 +1739,6 @@
 		D82B020DCA92957EBB5F927A98B2C5E1 /* JSQMessages.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSQMessages.h; path = JSQMessagesViewController/JSQMessages.h; sourceTree = "<group>"; };
 		D88496FDC1BA848868D48CFC26865D84 /* STPFormEncodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormEncodable.h; path = Stripe/PublicHeaders/STPFormEncodable.h; sourceTree = "<group>"; };
 		D8B47AEE27216AD36461529839C48D66 /* snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = db/snapshot.h; sourceTree = "<group>"; };
-		D90404140889DAA5E91E3F6480A19CE1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		D93DB35A7854A058408D58CB198CBA61 /* stp_card_discover_template@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_discover_template@3x.png"; path = "Stripe/Resources/Images/stp_card_discover_template@3x.png"; sourceTree = "<group>"; };
 		D93EA1122BDE3AFFD9BDD24106BE5D50 /* STPAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIClient.m; path = Stripe/STPAPIClient.m; sourceTree = "<group>"; };
 		DAE938CBCFD40C110DCD79B43EF66AB6 /* JSQMessagesCollectionViewCellIncoming.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = JSQMessagesCollectionViewCellIncoming.xib; path = JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib; sourceTree = "<group>"; };
@@ -1753,11 +1755,11 @@
 		DD2A493ECDD4C720C9768EF543D5DCC2 /* STPPaymentMethodsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPPaymentMethodsViewController.m; path = Stripe/STPPaymentMethodsViewController.m; sourceTree = "<group>"; };
 		DD35153F3AE00C824E065512D9864158 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
 		DDE65827BB109ADBF325F1DD4CBDC6D1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		DDF36D38A53ABF0FF2669449134C92F3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		DE1DC32B728A4F66DBCDE122B577C1E9 /* UINavigationController+Stripe_Completion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Stripe_Completion.m"; path = "Stripe/UINavigationController+Stripe_Completion.m"; sourceTree = "<group>"; };
 		DE407659FE11E17643A7432F279FC82C /* log_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_reader.h; path = db/log_reader.h; sourceTree = "<group>"; };
 		DE483D9B5B26D918389C06C45A03B5EC /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
 		DE49679760316D67B6CEC4DB90BF5F2D /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
-		DE9859920E052DFCDAAEDDDE38CED404 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		DF03742959B43A3D8ACC0D44E7ACBF16 /* STPColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPColorUtils.m; path = Stripe/STPColorUtils.m; sourceTree = "<group>"; };
 		DF9E4AAC2139403C5CE28AC050DCDC34 /* JSQMessagesCollectionViewDelegateFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSQMessagesCollectionViewDelegateFlowLayout.h; path = JSQMessagesViewController/Model/JSQMessagesCollectionViewDelegateFlowLayout.h; sourceTree = "<group>"; };
 		E02F8EEBEFDE1D25C29D751684C00327 /* JSQMessagesTypingIndicatorFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = JSQMessagesTypingIndicatorFooterView.xib; path = JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib; sourceTree = "<group>"; };
@@ -1771,7 +1773,6 @@
 		E3EEBFBCB002A365AF6448879C99D99E /* STPCoreScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCoreScrollViewController.m; path = Stripe/STPCoreScrollViewController.m; sourceTree = "<group>"; };
 		E4181EAD066BD828E3179F64A4DBDE17 /* STPAddCardViewController+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPAddCardViewController+Private.h"; path = "Stripe/STPAddCardViewController+Private.h"; sourceTree = "<group>"; };
 		E4BCA39E1620BCDE60FAFD8A1240A8FF /* MDisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink.swift; path = Source/platform/MDisplayLink.swift; sourceTree = "<group>"; };
-		E4BD44E84B7CBACB93E3A40ED998039D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		E5CE7F3A4A688545A15455868BC6E1F6 /* stp_card_unionpay_en.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stp_card_unionpay_en.png; path = Stripe/Resources/Images/stp_card_unionpay_en.png; sourceTree = "<group>"; };
 		E61F36274BC7B20C7C3AAC43877B10E2 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
 		E6462AC2560EB12764C50667827DD082 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/model/scene/Image.swift; sourceTree = "<group>"; };
@@ -1789,7 +1790,6 @@
 		EBB250B0F28DA44A81DA31D4D0F2EBD4 /* Effect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Effect.swift; path = Source/model/draw/Effect.swift; sourceTree = "<group>"; };
 		EBD9A6C8D6E515496868795FE7AA2BC5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		EBF6C87558CC56238F69C2FD85C6B824 /* Macaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Macaw.framework; path = Macaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC0D24FD1F94C321320A7A9AF5C00E4A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		EC1184D5D51CE00A1C13BC9A798AE63A /* Arc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arc.swift; path = Source/model/geom2d/Arc.swift; sourceTree = "<group>"; };
 		ECCCD26692AF2442508D80CF885C9FDE /* stp_card_unionpay_template_zh@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "stp_card_unionpay_template_zh@2x.png"; path = "Stripe/Resources/Images/stp_card_unionpay_template_zh@2x.png"; sourceTree = "<group>"; };
 		ED3243863D056A52E995579BDDE2D98F /* STPFile+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STPFile+Private.h"; path = "Stripe/STPFile+Private.h"; sourceTree = "<group>"; };
@@ -1866,9 +1866,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9666ED9A0A60673AA69328CC380656E5 /* AudioToolbox.framework in Frameworks */,
-				09D29C5FB9B50B63B2FC2F979FE09F3F /* Foundation.framework in Frameworks */,
-				D4A925404417A0AEA2569BE8697B84D0 /* UIKit.framework in Frameworks */,
+				F37A231F9EF15CB2B81A0615812FA558 /* AudioToolbox.framework in Frameworks */,
+				B9E0761C1DC9C829926C434B96970D17 /* Foundation.framework in Frameworks */,
+				32898C616C670B9FAECF9F865B571EB2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1876,12 +1876,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7A4F62AA532FC6DE93C93A2490F861 /* Contacts.framework in Frameworks */,
-				9641B491B9EFBEBF48F47134B919902D /* CoreLocation.framework in Frameworks */,
-				5578C864769D93530F9B38542F1C9B51 /* Foundation.framework in Frameworks */,
-				AB0A76735FA0BF37906D7FA40D3F54D8 /* PassKit.framework in Frameworks */,
-				76029ACA145F5C322AF6C95B852B9814 /* Security.framework in Frameworks */,
-				58A75E7B4605D32631C72C48E3DEA91F /* WebKit.framework in Frameworks */,
+				5C289DA32C834EEA0B1E99E6D051F165 /* Contacts.framework in Frameworks */,
+				0115CE99196CEF52E5291D4761616256 /* CoreLocation.framework in Frameworks */,
+				327A08B2B5DD195AE73626DE03B62558 /* Foundation.framework in Frameworks */,
+				F56A0DB3E98846395A5A2B0BCC871CD1 /* PassKit.framework in Frameworks */,
+				CD8472046FFB8FD649EC69102A44808B /* Security.framework in Frameworks */,
+				AB2C5DAF51398DC69DD0C7701FA21969 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1889,7 +1889,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F1BA081F36DECD056D08ABB5DBA74E /* Foundation.framework in Frameworks */,
+				DD46A11D252BBD0601100FA43BB08741 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1897,7 +1897,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8F914D4CA9F638231996CCACC953C4 /* Foundation.framework in Frameworks */,
+				A40AFF81B238EEFB54FB1208E8ED70EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,7 +1905,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53927224C9956F91B958DD562CDCD045 /* Foundation.framework in Frameworks */,
+				A9745D6BF7C8695C672AE63F2A451159 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1913,7 +1913,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F706D47030E6B108D415559059D33C /* Foundation.framework in Frameworks */,
+				E3E0158E0848BF420FE65AC2A8D8424E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1921,9 +1921,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C16596761D85D0DD3B439AE91F79A8 /* CoreGraphics.framework in Frameworks */,
-				6588DC8F1C4B1AB3E9A8F6EDD938AD33 /* CoreText.framework in Frameworks */,
-				0A61DA50ABB497C35FC193DD168AE4C2 /* Foundation.framework in Frameworks */,
+				487DE653CDC5FEB433F292D637812626 /* CoreGraphics.framework in Frameworks */,
+				3601AC47F4FB8B29F70EA1B06B3A2FD7 /* CoreText.framework in Frameworks */,
+				28DAFF24F8BC2848741416339B590151 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1931,7 +1931,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F656BDDC962F36D4899A8AB5869D181D /* Foundation.framework in Frameworks */,
+				AC719B34C08C22358C38449489ADF8C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1946,8 +1946,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9024F4774BD8DDE03700B223CF7F8164 /* Foundation.framework in Frameworks */,
-				9DA28C3544749A7DB9AB129BEC773550 /* Security.framework in Frameworks */,
+				50090CA13A5A6A5DA5594547582E514A /* Foundation.framework in Frameworks */,
+				AEE3955CB2C1B27D7A52F5465094500E /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1955,8 +1955,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				017A4EC1B38AB50FC4CB46643A0A77F9 /* Foundation.framework in Frameworks */,
-				766C44B923C22D6143C77BAC15E2B7F7 /* UIKit.framework in Frameworks */,
+				E61CED1D5CBC01AF1EBD19FDD75907EB /* Foundation.framework in Frameworks */,
+				7C6E90B7866994E249B221A131026F3C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1964,7 +1964,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3A9028185C10BF269A2C70CCA66D05 /* Foundation.framework in Frameworks */,
+				B7CECD542AFEC95E09AC64904AACE79F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1972,7 +1972,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */,
+				52F333DF6E858B07AEBCB2DBF2A99976 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1980,7 +1980,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+				834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1988,7 +1988,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A1A63A4C67D9828DF94807BC2C3002 /* Foundation.framework in Frameworks */,
+				34B61547FBD32B3AA75E76E284575CC2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1996,7 +1996,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541289ABC41ACA07DD60E7D4FF7F4B17 /* Foundation.framework in Frameworks */,
+				6A6A0E9D396BDA435775D3FF1D653708 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2004,7 +2004,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B843F1A8E9B55C485929693FD3B2D2 /* Foundation.framework in Frameworks */,
+				330D2CF3872BB88C42438CC6E02EC2DF /* Foundation.framework in Frameworks */,
 				2C065C792B818CEE002386ED28BDCBB2 /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2013,13 +2013,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1443D49FB730877409559DF15ED59EAD /* AVFoundation.framework in Frameworks */,
-				CA1D14942DEAAC22F14400DDC83D4740 /* CoreGraphics.framework in Frameworks */,
-				DFC5EB1420796A48FCE6EAA263737F84 /* CoreLocation.framework in Frameworks */,
-				D9CF990A48E13A70612C6A23BFF70FCA /* Foundation.framework in Frameworks */,
+				E5A5E359784D2AAE219310A4902A758F /* AVFoundation.framework in Frameworks */,
+				7AA4771554DA60EEAB631524ED452F40 /* CoreGraphics.framework in Frameworks */,
+				4E68B84CFD16DD7746453D4162C0CD1A /* CoreLocation.framework in Frameworks */,
+				651BDF3B76A7B67F4295125F1E1E5E22 /* Foundation.framework in Frameworks */,
 				997BD5E794C0947A7183BBC413D53D43 /* JSQSystemSoundPlayer.framework in Frameworks */,
-				AE73638A7C2DA0C1C9F0A61D1D1F133E /* MapKit.framework in Frameworks */,
-				1D1D1FE3E3FBAF8A1CD081DF3B41E098 /* QuartzCore.framework in Frameworks */,
+				A8FAA4F07702698B8B8518DD371F8F6D /* MapKit.framework in Frameworks */,
+				6300B879DFE96F385E29C08ED3628137 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3014,6 +3014,26 @@
 			name = decode;
 			sourceTree = "<group>";
 		};
+		A71DB9764B61A157C75F60D2D636DE71 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				674F2CDFB6B0B5803B4FE08332D8FF25 /* AudioToolbox.framework */,
+				1C4816ABEB8D27DCDBE2CA0AD1B5E1B2 /* AVFoundation.framework */,
+				C9B46B6D3F7C8E390E9E1D27B5675777 /* Contacts.framework */,
+				2C9C1EF427ADB9B0DCD6425D1BF78451 /* CoreGraphics.framework */,
+				DDF36D38A53ABF0FF2669449134C92F3 /* CoreLocation.framework */,
+				161E67E53879D8E71BD47B85411461CF /* CoreText.framework */,
+				48C8E1F36FDD352BCDF7C07E6004FEB2 /* Foundation.framework */,
+				6D7F8C90CE309561746250DD3FB95872 /* MapKit.framework */,
+				A130D45ECEFF4B9715C494783C1213A2 /* PassKit.framework */,
+				563099FAEFF96CE3D66112B70300D09B /* QuartzCore.framework */,
+				D58716F150F9EB0DB4C85B033B75B2A6 /* Security.framework */,
+				A1F791151BBB9D547E810BAAA61FE078 /* UIKit.framework */,
+				B119DF39301D609F2109B71B6DBDC783 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		A749D5AFA872AB38A569B02746378E86 /* FontAwesomeIconFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -3077,7 +3097,7 @@
 			children = (
 				24F9EE5D35CE7E34BD7D463B5D7B8DCE /* JSQSystemSoundPlayer.framework */,
 				C37CB67F5237F2B4C67932A2865286FC /* SWXMLHash.framework */,
-				ECA27EDE79630168105A62BC3BF91017 /* iOS */,
+				A71DB9764B61A157C75F60D2D636DE71 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3303,26 +3323,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Nuke";
-			sourceTree = "<group>";
-		};
-		ECA27EDE79630168105A62BC3BF91017 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6BF503C27462DFDEAA4D4AE3F16E8757 /* AudioToolbox.framework */,
-				372495CA37EC564A947D9838E8914D38 /* AVFoundation.framework */,
-				EC0D24FD1F94C321320A7A9AF5C00E4A /* Contacts.framework */,
-				4B3FBEA871CCAAF5D6E9E6FE2C427E6E /* CoreGraphics.framework */,
-				BDAE32DDAF8AAEB2584B26D418555A3E /* CoreLocation.framework */,
-				E4BD44E84B7CBACB93E3A40ED998039D /* CoreText.framework */,
-				2B14B9994399AE41DDA0CD33B232CACB /* Foundation.framework */,
-				38948B2BBC641D2A334CE75E671CC47B /* MapKit.framework */,
-				2C4F54EF1F7EA1DFD05C58DD8394AF1F /* PassKit.framework */,
-				DE9859920E052DFCDAAEDDDE38CED404 /* QuartzCore.framework */,
-				881CE69AEC2A8B52C2B04518413486C3 /* Security.framework */,
-				AF41D76B4E18FE5A8D5FCA9D8E66C32F /* UIKit.framework */,
-				D90404140889DAA5E91E3F6480A19CE1 /* WebKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		F0ABAED0C3D9C1219F109FC54468B238 /* Frameworks */ = {
