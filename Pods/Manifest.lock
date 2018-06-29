@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
   - AlgoliaSearch-Client-Swift (5.1.6)
+  - CFNotify (1.0.2)
   - Firebase/Auth (4.13.0):
     - Firebase/Core
     - FirebaseAuth (= 4.6.1)
@@ -53,12 +54,17 @@ PODS:
   - leveldb-library (1.20)
   - Macaw (0.9.1):
     - SWXMLHash
+  - MarqueeLabel/Swift (3.1.6)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NotificationBannerSwift (1.6.3):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
   - Nuke (7.2.1)
+  - SnapKit (4.0.0)
   - Stripe (13.0.0)
   - SwiftyJSON (4.1.0)
   - SWXMLHash (4.6.0)
@@ -67,6 +73,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlgoliaSearch-Client-Swift
+  - CFNotify
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -75,6 +82,7 @@ DEPENDENCIES:
   - FSPagerView
   - JSQMessagesViewController
   - Macaw (= 0.9.1)
+  - NotificationBannerSwift
   - Nuke (~> 7.0)
   - Stripe
   - SwiftyJSON (~> 4.0)
@@ -84,6 +92,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlgoliaSearch-Client-Swift
+    - CFNotify
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -99,8 +108,11 @@ SPEC REPOS:
     - JSQSystemSoundPlayer
     - leveldb-library
     - Macaw
+    - MarqueeLabel
     - nanopb
+    - NotificationBannerSwift
     - Nuke
+    - SnapKit
     - Stripe
     - SwiftyJSON
     - SWXMLHash
@@ -118,6 +130,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlgoliaSearch-Client-Swift: cd60a80007f00923b37a14ff03af96889083111d
+  CFNotify: e32996ad9034b4d64b30d685e456ea4b83fecb49
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
@@ -133,13 +146,16 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Macaw: 8b13bb7ae2f527b3c7b2787988bbc5461a1c66e3
+  MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NotificationBannerSwift: b231e4c3244848ef300e1c53ce027b9756b9b06f
   Nuke: a4a20e945a32a8da57830628ff1e0ea2a1904d0a
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Stripe: 542f2c4493ce31a99fa041fe4973206e8c868f29
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SWXMLHash: 3c39a53723202800e9e1a87f14b2fe7ac1da98ec
   TKSubmitTransition: 647b907508da58ba864141e3c4382442ec536d40
 
-PODFILE CHECKSUM: 5a35288318102492ce042519ac809827f103d209
+PODFILE CHECKSUM: bebee9d4106019340e08b4c00f85e3a04478afa8
 
 COCOAPODS: 1.5.3

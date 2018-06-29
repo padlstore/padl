@@ -36,6 +36,7 @@
 		E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */; };
 		E2D6FE1B20E68DA20054C08E /* PadlCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6FE1A20E68DA20054C08E /* PadlCollectionView.swift */; };
 		E2D6FE1D20E69BB50054C08E /* Font Awesome 5 Pro-Light-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2D6FE1C20E69BB40054C08E /* Font Awesome 5 Pro-Light-300.otf */; };
+		E2D6FE1F20E6A0DA0054C08E /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6FE1E20E6A0DA0054C08E /* OfferViewController.swift */; };
 		E2F119C820E67C1A0062DDA4 /* OfferImagesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */; };
 		E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */; };
 		FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */; };
@@ -76,6 +77,7 @@
 		E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E2D6FE1A20E68DA20054C08E /* PadlCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlCollectionView.swift; sourceTree = "<group>"; };
 		E2D6FE1C20E69BB40054C08E /* Font Awesome 5 Pro-Light-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Light-300.otf"; sourceTree = "<group>"; };
+		E2D6FE1E20E6A0DA0054C08E /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferImagesScrollView.swift; sourceTree = "<group>"; };
 		E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlSubmitTransitionButton.swift; sourceTree = "<group>"; };
 		FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E25372FA20D1B5ED00E9C5A0 /* ProfileViewController.swift */,
 				E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */,
 				E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */,
+				E2D6FE1E20E6A0DA0054C08E /* OfferViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-padl/Pods-padl-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlgoliaSearch-Client-Swift/AlgoliaSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/CFNotify/CFNotify.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesomeIconFactory/FontAwesomeIconFactory.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -308,8 +312,11 @@
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TKSubmitTransition/TKSubmitTransition.framework",
@@ -320,6 +327,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlgoliaSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CFNotify.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeIconFactory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -327,8 +335,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKSubmitTransition.framework",
@@ -360,6 +371,7 @@
 				E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */,
 				E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */,
 				E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */,
+				E2D6FE1F20E6A0DA0054C08E /* OfferViewController.swift in Sources */,
 				E2D6FE1B20E68DA20054C08E /* PadlCollectionView.swift in Sources */,
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
 				E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */,

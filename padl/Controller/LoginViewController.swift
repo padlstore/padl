@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import FirebaseAuth
+import NotificationBannerSwift
 
 class LoginViewController: PadlBaseViewController {
     
@@ -53,13 +54,21 @@ class LoginViewController: PadlBaseViewController {
         Auth.auth().signIn(withEmail: email, password: password) {
             (user, error) in
             if let error = error, user == nil {
-                let alert = UIAlertController(title: "Sign In Failed",
-                                              message: error.localizedDescription,
-                                              preferredStyle: .alert);
-                alert.addAction(UIAlertAction(title: "OK", style: .default));
-                
-                self.present(alert, animated: true, completion: nil);
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+//                let alert = UIAlertController(title: "Sign In Failed",
+//                                              message: error.localizedDescription,
+//                                              preferredStyle: .alert);
+//                alert.addAction(UIAlertAction(title: "OK", style: .default));
+//
+//                self.present(alert, animated: true, completion: nil);
+                print(error.localizedDescription)
+                let banner = NotificationBanner(title: "Sign In Failed",
+                                                subtitle: "Looks like your email/password combination isn't correct",
+                                                style: .danger);
+                banner.show();
+                Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { timer in
+                    banner.dismiss();
+                }
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
                     self.loginButton.setOriginalState();
                 }
             }

@@ -21,5 +21,7 @@ target 'padl' do
   pod 'Nuke', '~> 7.0'
   pod 'TKSubmitTransition', :git => 'https://github.com/entotsu/TKSubmitTransition.git', :branch => 'swift4'
   pod 'FSPagerView'
+  pod 'CFNotify'
+  pod 'NotificationBannerSwift'
 
 end
