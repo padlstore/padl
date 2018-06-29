@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import NotificationBannerSwift
 
 class RegisterViewController: PadlBaseViewController {
     
@@ -28,6 +29,7 @@ class RegisterViewController: PadlBaseViewController {
         self.auth.addStateDidChangeListener() { auth, user in
             if user != nil {
                 self.registerButton.startFinishAnimation(1) {
+                    print("Registerin")
                     let sb = UIStoryboard(name: "Main", bundle: nil);
                     let vc = sb.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
                     vc.transitioningDelegate = self;
@@ -58,14 +60,21 @@ class RegisterViewController: PadlBaseViewController {
         { response in
             if let error = response.error {
                 print(error);
-                let alert = UIAlertController(title: "Registration Failed",
-                                              message: error.localizedDescription,
-                                              preferredStyle: .alert);
-                alert.addAction(UIAlertAction(title: "OK", style: .default));
+//                let alert = UIAlertController(title: "Registration Failed",
+//                                              message: error.localizedDescription,
+//                                              preferredStyle: .alert);
+//                alert.addAction(UIAlertAction(title: "OK", style: .default));
+//                self.present(alert, animated: true, completion: nil);
                 
-                self.present(alert, animated: true, completion: nil);
+                let banner = NotificationBanner(title: "Registration Failed",
+                                                subtitle: "Something went wrong.", // TODO: get the actual error
+                                                style: .danger);
+                banner.show();
+                Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { timer in
+                    banner.dismiss();
+                }
                 
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
                     self.registerButton.setOriginalState();
                 }
                 return;
@@ -76,13 +85,22 @@ class RegisterViewController: PadlBaseViewController {
             { user, error in
                 // Account login failed, however
                 if let _ = error, user == nil {
-                    let alert = UIAlertController(title: "Login Failed",
-                                                  message: "We couldn't log you in. Please try again!",
-                                                  preferredStyle: .alert);
-                    alert.addAction(UIAlertAction(title: "OK", style: .default));
-                    self.present(alert, animated: true, completion: nil);
+//                    let alert = UIAlertController(title: "Login Failed",
+//                                                  message: "We couldn't log you in. Please try again!",
+//                                                  preferredStyle: .alert);
+//                    alert.addAction(UIAlertAction(title: "OK", style: .default));
+//                    self.present(alert, animated: true, completion: nil);
                     
-                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
+                    let banner = NotificationBanner(title: "Login Failed",
+                                                    subtitle: "You're registered, but we couldn't sign you in. Try again!", // TODO: get the actual error
+                                                    style: .danger);
+                    banner.show();
+                    
+                    Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { timer in
+                        banner.dismiss();
+                    }
+                    
+                    Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
                         self.registerButton.setOriginalState();
                     }
                     

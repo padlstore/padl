@@ -14,6 +14,13 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     // Specify the Home -> Offer segue.
     let homeToOffer: String = "HomeToOffer";
 
+    // Prepare for segue into viewing an offer
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem();
+        backItem.tintColor = UIColor.black;
+        navigationItem.backBarButtonItem = backItem;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
