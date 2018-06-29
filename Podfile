@@ -23,5 +23,6 @@ target 'padl' do
   pod 'FSPagerView'
   pod 'CFNotify'
   pod 'NotificationBannerSwift'
+  pod 'Kingfisher', '~> 4.0'
 
 end

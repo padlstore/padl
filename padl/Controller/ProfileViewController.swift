@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -36,6 +37,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         
         else{
             let cell:ProfileSoldCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "soldCell", for: indexPath) as! ProfileSoldCollectionViewCell
+            
+            
             
             cell.imageView.image = UIImage(named : "MIT.jpg")
             
@@ -72,7 +75,17 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         //UserDefaults.standard.set(self.offers, forKey: "offers")
         
         self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
-        self.propic.image = UserDefaults.standard.object(forKey: "profilePic") as? UIImage
+        
+        //Get profile picture from cache
+        ImageCache.default.retrieveImage(forKey: "profilePic", options: nil) {
+            image, cacheType in
+            if let image = image {
+                self.propic.image = image
+            } else {
+                print("Not exist in cache.")
+            }
+        }
+        
     }
     
 }
