@@ -18,7 +18,7 @@ class ProfileRequest {
     static var displayName : String?;
     static var profileURL : URL?;
     static var profilePic : UIImage?;
-    static var offers : [String]?;
+    static var offers : [String] = [];
     
     static func setupProfile() {
         
@@ -37,7 +37,6 @@ class ProfileRequest {
                             self.displayName = json["displayName"].stringValue
                             self.profileURL = URL(string: json["propic"].stringValue)
                             
-                            
                             let data = try? Data(contentsOf: profileURL!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
                             self.profilePic = UIImage(data: data!)
                             
@@ -49,7 +48,7 @@ class ProfileRequest {
                             }
                             
                             self.offers = offerIdArray
-                            
+                        
                             print(response)
                             
                         }
@@ -65,7 +64,9 @@ class ProfileRequest {
         let defaults = UserDefaults.standard
         defaults.set(self.displayName, forKey: "displayName")
         defaults.set(self.profileURL, forKey: "profileURL")
+        defaults.set(self.offers, forKey: "offers")
         ImageCache.default.store(self.profilePic!, forKey: "profilePic")
+      
         
         /*
         var index = 0;

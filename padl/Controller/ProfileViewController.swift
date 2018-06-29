@@ -11,18 +11,27 @@ import FirebaseAuth
 import Alamofire
 import SwiftyJSON
 import Kingfisher
+import Preheat
+import Nuke
 
 class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var boughtCollectionView: UICollectionView!
-    
     @IBOutlet weak var soldCollectionView: UICollectionView!
     
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var propic: ProfilePictureImageView!
     
+    var soldOfferURLs : [String] = [];
+    let serverURL: String = "https://testing.padl.store";
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if collectionView == self.boughtCollectionView {
+            return 10
+        }
+        else{
+            return min(10, soldOfferURLs.count)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,9 +47,29 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         else{
             let cell:ProfileSoldCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "soldCell", for: indexPath) as! ProfileSoldCollectionViewCell
             
+            let cellID = soldOfferURLs[indexPath.row]
             
+            Alamofire.request(serverURL + "/offers/" + cellID)
+                .responseJSON { response in
+                    
+                    print(response)
+                    
+                    if let json_result = response.result.value {
+                        let json = JSON(json_result)
+                        
+                        for (key,val):(String, JSON) in json["pictures"] {
+                            if key == "0" {
+                                let cellURL = (URL(string : val.stringValue)!)
+                                let data = try? Data(contentsOf: cellURL) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                                cell.imageView.image = UIImage(data: data!)
+                                
+                            }
+                        }
+                    }
+                }
+                
             
-            cell.imageView.image = UIImage(named : "MIT.jpg")
+            //cell.imageView.kf.setImage(with: cellURL)
             
             return cell
         }
@@ -55,6 +84,7 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         soldCollectionView.delegate = self
         boughtCollectionView.dataSource = self
         soldCollectionView.dataSource = self
+
         
         if Auth.auth().currentUser != nil {
             
@@ -63,6 +93,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             ProfileRequest.setupProfile()
             
             self.setProfileInfo()
+            
+            print(soldOfferURLs)
             
         } else {
             // No user is signed in.
@@ -75,6 +107,7 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         //UserDefaults.standard.set(self.offers, forKey: "offers")
         
         self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
+        self.soldOfferURLs = UserDefaults.standard.object(forKey: "offers") as! [String]
         
         //Get profile picture from cache
         ImageCache.default.retrieveImage(forKey: "profilePic", options: nil) {
@@ -85,6 +118,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
                 print("Not exist in cache.")
             }
         }
+        
+        print(soldOfferURLs)
         
     }
     
