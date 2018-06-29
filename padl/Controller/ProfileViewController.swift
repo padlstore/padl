@@ -75,6 +75,20 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
                             let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
                             self.propic.image = UIImage(data: data!)
                             
+                            print("---")
+                            
+                            print(json["offers"])
+                            print("---")
+                            
+                            var offerIdArray = [String]()
+                            for (key,subJson):(String, JSON) in json["offers"] {
+                                if key != "sentinel"{
+                                    offerIdArray.append(key)
+                                }
+                            }
+                            
+                            print(offerIdArray)
+                            
                         }
                         
                 }
