@@ -20,5 +20,6 @@ target 'padl' do
   pod 'Stripe'
   pod 'Nuke', '~> 7.0'
   pod 'TKSubmitTransition', :git => 'https://github.com/entotsu/TKSubmitTransition.git', :branch => 'swift4'
+  pod 'FSPagerView'
 
 end
