@@ -14,7 +14,7 @@ class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerV
     
     @IBOutlet weak var imagePageView: FSPagerView! {
         didSet {
-            self.imagePageView.register(cellClass: FSPagerViewCell.self, forCellWithReuseIdentifer: "cell");
+            self.imagePageView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
         }
     }
     
