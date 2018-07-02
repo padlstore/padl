@@ -10,18 +10,28 @@ import UIKit
 import FirebaseAuth
 import Alamofire
 import SwiftyJSON
+import Kingfisher
+import Preheat
+import Nuke
 
 class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var boughtCollectionView: UICollectionView!
-    
     @IBOutlet weak var soldCollectionView: UICollectionView!
     
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var propic: ProfilePictureImageView!
     
+    var soldOfferURLs : [String] = [];
+    let serverURL: String = "https://testing.padl.store";
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if collectionView == self.boughtCollectionView {
+            return 10
+        }
+        else{
+            return min(10, soldOfferURLs.count)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -37,7 +47,29 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         else{
             let cell:ProfileSoldCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "soldCell", for: indexPath) as! ProfileSoldCollectionViewCell
             
-            cell.imageView.image = UIImage(named : "MIT.jpg")
+            let cellID = soldOfferURLs[indexPath.row]
+            
+            Alamofire.request(serverURL + "/offers/" + cellID)
+                .responseJSON { response in
+                    
+                    print(response)
+                    
+                    if let json_result = response.result.value {
+                        let json = JSON(json_result)
+                        
+                        for (key,val):(String, JSON) in json["pictures"] {
+                            if key == "0" {
+                                let cellURL = (URL(string : val.stringValue)!)
+                                let data = try? Data(contentsOf: cellURL) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                                cell.imageView.image = UIImage(data: data!)
+                                
+                            }
+                        }
+                    }
+                }
+                
+            
+            //cell.imageView.kf.setImage(with: cellURL)
             
             return cell
         }
@@ -52,62 +84,43 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         soldCollectionView.delegate = self
         boughtCollectionView.dataSource = self
         soldCollectionView.dataSource = self
+
         
         if Auth.auth().currentUser != nil {
-            let user = Auth.auth().currentUser
-            if let user = user {
-                // The user's ID, unique to the Firebase project.
-                // Do NOT use this value to authenticate with your backend server,
-                // if you have one. Use getTokenWithCompletion:completion: instead.
-                let uid = user.uid
-                
-                Alamofire.request("https://testing.padl.store/users/" + uid)
-                    .responseJSON { response in
-                        
-                        print(response)
-                        
-                        if let json_result = response.result.value {
-                            let json = JSON(json_result)
-                            
-                            self.displayName.text = json["displayName"].stringValue
-                            
-                            let url = URL(string: json["propic"].stringValue)
-                            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                            self.propic.image = UIImage(data: data!)
-                            
-                            print("---")
-                            
-                            print(json["offers"])
-                            print("---")
-                            
-                            var offerIdArray = [String]()
-                            for (key,subJson):(String, JSON) in json["offers"] {
-                                if key != "sentinel"{
-                                    offerIdArray.append(key)
-                                }
-                            }
-                            
-                            print(offerIdArray)
-                            
-                        }
-                        
-                }
-                
-            }
+            
+            self.setProfileInfo()
+            
+            ProfileRequest.setupProfile()
+            
+            self.setProfileInfo()
+            
+            print(soldOfferURLs)
+            
         } else {
             // No user is signed in.
             // ...
         }
+    }
+    
+    func setProfileInfo() {
         
-        /*
-        if let user = auth.currentUser {
-            // User is authenticated
-            
-        } else {
-            // User is in guest mode
-            print("User is not authenticated.")
+        //UserDefaults.standard.set(self.offers, forKey: "offers")
+        
+        self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
+        self.soldOfferURLs = UserDefaults.standard.object(forKey: "offers") as! [String]
+        
+        //Get profile picture from cache
+        ImageCache.default.retrieveImage(forKey: "profilePic", options: nil) {
+            image, cacheType in
+            if let image = image {
+                self.propic.image = image
+            } else {
+                print("Not exist in cache.")
+            }
         }
-         */
+        
+        print(soldOfferURLs)
+        
     }
     
 }
