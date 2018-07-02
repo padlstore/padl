@@ -23,6 +23,7 @@ target 'padl' do
   pod 'FSPagerView'
   pod 'CFNotify'
   pod 'NotificationBannerSwift'
+  pod 'InstantSearch', '~> 2.0'
   pod 'Kingfisher', '~> 4.0'
   pod "Preheat"
 
