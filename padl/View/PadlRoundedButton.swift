@@ -27,13 +27,18 @@ class PadlRoundedButton: UIButton {
         
         self.layer.cornerRadius = height / 2;
         self.clipsToBounds = true;
-        self.backgroundColor = .clear;
         self.layer.borderWidth = 1.0;
     }
     
     @IBInspectable var borderColor: UIColor? {
         didSet {
             self.layer.borderColor = borderColor?.cgColor
+        }
+    }
+    
+    @IBInspectable override var backgroundColor: UIColor? {
+        didSet {
+            self.layer.backgroundColor = backgroundColor?.cgColor
         }
     }
 }
