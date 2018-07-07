@@ -25,6 +25,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     var soldOfferURLs : [String] = [];
     let serverURL: String = "https://testing.padl.store";
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.boughtCollectionView {
             return 10
@@ -84,15 +86,15 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         soldCollectionView.delegate = self
         boughtCollectionView.dataSource = self
         soldCollectionView.dataSource = self
-
         
+        //boughtCollectionView.prefetchDataSource = self as! UICollectionViewDataSourcePrefetching
+        //soldCollectionView.prefetchDataSource = self as! UICollectionViewDataSourcePrefetching
+
         if Auth.auth().currentUser != nil {
             
             setProfileInfo() //If profile info was cached earlier, will be displayed immediately
             
             ProfileRequest.setupProfile(profileVC: self) //Then make another request to check if info has changed/if not cached earlier
-            
-            print(soldOfferURLs)
             
         } else {
             // No user is signed in.
@@ -119,9 +121,6 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
                 print("Not exist in cache.")
             }
         }
-        
-        print(soldOfferURLs)
-        
     }
     
 }
