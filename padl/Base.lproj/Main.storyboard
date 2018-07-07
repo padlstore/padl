@@ -203,7 +203,31 @@
                     <view key="view" contentMode="scaleToFill" id="YHG-Xw-3dj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJf-Zk-Ycd">
+                                <rect key="frame" x="147" y="567" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="14V-YW-Z6S"/>
+                                    <constraint firstAttribute="width" constant="80" id="9Qh-2x-N3P"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="QJf-Zk-Ycd" secondAttribute="bottom" constant="20" id="cx1-Vd-Lha"/>
+                            <constraint firstItem="QJf-Zk-Ycd" firstAttribute="centerX" secondItem="YHG-Xw-3dj" secondAttribute="centerX" id="dJD-1J-Rih"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="egz-nA-A9v"/>
                     </view>
                 </viewController>

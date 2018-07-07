@@ -29,7 +29,7 @@ class PadlSubmitTransitionButton: TKTransitionSubmitButton {
         self.layer.borderWidth = 1.0;
     }
 
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable override var borderColor: UIColor? {
         didSet {
             self.layer.borderColor = borderColor?.cgColor
         }
