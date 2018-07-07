@@ -49,9 +49,7 @@ class ProfileRequest {
                             
                             self.offers = offerIdArray
                         
-                            store()
-                            profileVC.setProfileInfo()
-                            
+                            setupOffers(profileVC: profileVC)
                         }
                 }
             }
@@ -87,7 +85,6 @@ class ProfileRequest {
                             self.offers = offerIdArray
                             
                             setupOffers()
-                            
                         }
                 }
             }
@@ -115,6 +112,31 @@ class ProfileRequest {
                     }
                 }
 
+        }
+    }
+    
+    static func setupOffers(profileVC : ProfileViewController) {
+        for offer in self.offers {
+            Alamofire.request(serverURL + "/offers/" + offer)
+                .responseJSON { response in
+                    
+                    if let json_result = response.result.value {
+                        let json = JSON(json_result)
+                        
+                        for (key,val):(String, JSON) in json["pictures"] {
+                            if key == "0" {
+                                self.offersURL.append(val.stringValue)
+                            }
+                        }
+                    }
+                    
+                    // if offer is last element
+                    if self.offers[self.offers.count - 1] == offer {
+                        store()
+                        profileVC.setProfileInfo()
+                    }
+            }
+            
         }
     }
     

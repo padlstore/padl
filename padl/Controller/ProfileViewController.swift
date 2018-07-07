@@ -25,7 +25,6 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     var soldOfferURLs : [URL] = [];
     let serverURL: String = "https://testing.padl.store";
     
-    
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
         if collectionView != self.boughtCollectionView {
             
@@ -36,18 +35,9 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
                 urls.append(offerURL)
             }
             
-            print("HERE IN PREFETCHING")
-
-//            for offerID in self.soldOfferURLs {
-//                urls.append(URL(string : serverURL + "/offers/" + offerID)!)
-//            }
-
             urls = indexPaths.flatMap {_ in urls}
-
             ImagePrefetcher(urls: urls).start()
         }
-        
-        print("TEST")
     }
     
     func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]){
@@ -70,7 +60,6 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             let cell:ProfileBoughtCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "boughtCell", for: indexPath) as! ProfileBoughtCollectionViewCell
             
             cell.imageView.image = UIImage(named: "MIT.jpg")
-            
             return cell
         }
         
@@ -78,9 +67,7 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             let cell:ProfileSoldCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "soldCell", for: indexPath) as! ProfileSoldCollectionViewCell
             
             let cellURL = soldOfferURLs[indexPath.row]
-
             cell.imageView.kf.setImage(with: cellURL)
-            
             return cell
         }
     }
