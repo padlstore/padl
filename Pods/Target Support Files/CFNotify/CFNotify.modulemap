@@ -1,6 +1,0 @@
-framework module CFNotify {
-  umbrella header "CFNotify-umbrella.h"
-
-  export *
-  module * { export * }
-}
