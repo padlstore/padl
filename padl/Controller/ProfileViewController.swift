@@ -88,7 +88,9 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         
         if Auth.auth().currentUser != nil {
             
-            ProfileRequest.setupProfile(profileVC: self)
+            setProfileInfo() //If profile info was cached earlier, will be displayed immediately
+            
+            ProfileRequest.setupProfile(profileVC: self) //Then make another request to check if info has changed/if not cached earlier
             
             print(soldOfferURLs)
             
@@ -100,8 +102,13 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     
     func setProfileInfo() {
         
-        self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
-        self.soldOfferURLs = UserDefaults.standard.object(forKey: "offers") as! [String]
+        if let displayText = UserDefaults.standard.object(forKey: "displayName") as? String {
+            self.displayName.text = displayText
+        }
+        
+        if let soldOffers = UserDefaults.standard.object(forKey: "offers") {
+            self.soldOfferURLs = soldOffers as! [String]
+        }
         
         //Get profile picture from cache
         ImageCache.default.retrieveImage(forKey: "profilePic", options: nil) {
