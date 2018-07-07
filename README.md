@@ -21,3 +21,5 @@
 # Other Development Resources
 * Good explanation of `AppDelegate.swift`
   * https://insights.dice.com/2014/09/17/how-to-build-apps-in-swift/
+* Force update on CocoaPods:
+  * https://gist.github.com/mbinna/4202236
