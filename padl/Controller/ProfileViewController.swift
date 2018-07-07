@@ -14,7 +14,7 @@ import Kingfisher
 import Preheat
 import Nuke
 
-class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDataSourcePrefetching {
     
     @IBOutlet weak var boughtCollectionView: UICollectionView!
     @IBOutlet weak var soldCollectionView: UICollectionView!
@@ -22,9 +22,37 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var propic: ProfilePictureImageView!
     
-    var soldOfferURLs : [String] = [];
+    var soldOfferURLs : [URL] = [];
     let serverURL: String = "https://testing.padl.store";
     
+    
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        if collectionView != self.boughtCollectionView {
+            
+            var urls = [URL]();
+            
+            for indexPath in indexPaths{
+                let offerURL = self.soldOfferURLs[indexPath.row]
+                urls.append(offerURL)
+            }
+            
+            print("HERE IN PREFETCHING")
+
+//            for offerID in self.soldOfferURLs {
+//                urls.append(URL(string : serverURL + "/offers/" + offerID)!)
+//            }
+
+            urls = indexPaths.flatMap {_ in urls}
+
+            ImagePrefetcher(urls: urls).start()
+        }
+        
+        print("TEST")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]){
+        print("Cancelling prefetching")
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -49,51 +77,32 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         else{
             let cell:ProfileSoldCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "soldCell", for: indexPath) as! ProfileSoldCollectionViewCell
             
-            let cellID = soldOfferURLs[indexPath.row]
-            
-            Alamofire.request(serverURL + "/offers/" + cellID)
-                .responseJSON { response in
-                    
-                    print(response)
-                    
-                    if let json_result = response.result.value {
-                        let json = JSON(json_result)
-                        
-                        for (key,val):(String, JSON) in json["pictures"] {
-                            if key == "0" {
-                                let cellURL = (URL(string : val.stringValue)!)
-                                let data = try? Data(contentsOf: cellURL) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                                cell.imageView.image = UIImage(data: data!)
-                                
-                            }
-                        }
-                    }
-                }
-                
-            
-            //cell.imageView.kf.setImage(with: cellURL)
+            let cellURL = soldOfferURLs[indexPath.row]
+
+            cell.imageView.kf.setImage(with: cellURL)
             
             return cell
         }
     }
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad();
         
         boughtCollectionView.delegate = self
         soldCollectionView.delegate = self
+        
         boughtCollectionView.dataSource = self
         soldCollectionView.dataSource = self
         
-        //boughtCollectionView.prefetchDataSource = self as! UICollectionViewDataSourcePrefetching
-        //soldCollectionView.prefetchDataSource = self as! UICollectionViewDataSourcePrefetching
+        boughtCollectionView.prefetchDataSource = self as UICollectionViewDataSourcePrefetching
+        
+        soldCollectionView.prefetchDataSource = self as UICollectionViewDataSourcePrefetching
+        soldCollectionView.isPrefetchingEnabled = true
 
         if Auth.auth().currentUser != nil {
             
             setProfileInfo() //If profile info was cached earlier, will be displayed immediately
-            
             ProfileRequest.setupProfile(profileVC: self) //Then make another request to check if info has changed/if not cached earlier
             
         } else {
@@ -108,8 +117,10 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             self.displayName.text = displayText
         }
         
-        if let soldOffers = UserDefaults.standard.object(forKey: "offers") {
-            self.soldOfferURLs = soldOffers as! [String]
+        if let soldOffers = UserDefaults.standard.object(forKey: "offers"){
+            for soldOffer in soldOffers as! [String] {
+                self.soldOfferURLs.append(URL(string : soldOffer)!)
+            }
         }
         
         //Get profile picture from cache
@@ -122,5 +133,6 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             }
         }
     }
-    
 }
+
+

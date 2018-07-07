@@ -19,6 +19,7 @@ class ProfileRequest {
     static var profileURL : URL?;
     static var profilePic : UIImage?;
     static var offers : [String] = [];
+    static var offersURL : [String] = [];
     
     static func setupProfile(profileVC : ProfileViewController) {
         
@@ -85,10 +86,35 @@ class ProfileRequest {
                             
                             self.offers = offerIdArray
                             
-                            store()                            
+                            setupOffers()
+                            
                         }
                 }
             }
+        }
+    }
+    
+    static func setupOffers() {
+        for offer in self.offers {
+            Alamofire.request(serverURL + "/offers/" + offer)
+                .responseJSON { response in
+
+                    if let json_result = response.result.value {
+                        let json = JSON(json_result)
+
+                        for (key,val):(String, JSON) in json["pictures"] {
+                            if key == "0" {
+                                self.offersURL.append(val.stringValue)
+                            }
+                        }
+                    }
+                    
+                    // if offer is last element
+                    if self.offers[self.offers.count - 1] == offer {
+                        store()
+                    }
+                }
+
         }
     }
     
@@ -96,7 +122,7 @@ class ProfileRequest {
         let defaults = UserDefaults.standard
         defaults.set(self.displayName, forKey: "displayName")
         defaults.set(self.profileURL, forKey: "profileURL")
-        defaults.set(self.offers, forKey: "offers")
+        defaults.set(self.offersURL, forKey: "offers")
         ImageCache.default.store(self.profilePic!, forKey: "profilePic")
     
     }
