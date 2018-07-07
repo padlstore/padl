@@ -188,10 +188,28 @@
                         <viewLayoutGuide key="safeArea" id="raZ-ED-TbR"/>
                     </view>
                     <navigationItem key="navigationItem" id="063-X2-1fY"/>
+                    <connections>
+                        <segue destination="Bm4-zZ-sJp" kind="presentation" identifier="openCamera" id="AH1-Q5-tMo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddl-nq-7OX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1801" y="2351"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="hSc-Az-Ur5">
+            <objects>
+                <viewController id="Bm4-zZ-sJp" customClass="CameraViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHG-Xw-3dj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="egz-nA-A9v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyu-AB-01p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="3084"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="6cA-m7-954">
@@ -856,6 +874,6 @@
         <image name="MIT.jpg" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OXt-ir-iPt"/>
+        <segue reference="xNG-ce-0SC"/>
     </inferredMetricsTieBreakers>
 </document>

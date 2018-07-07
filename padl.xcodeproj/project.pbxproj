@@ -40,6 +40,7 @@
 		E2F119C820E67C1A0062DDA4 /* OfferImagesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */; };
 		E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */; };
 		FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */; };
+		FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF70A620F177FE009443C4 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferImagesScrollView.swift; sourceTree = "<group>"; };
 		E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlSubmitTransitionButton.swift; sourceTree = "<group>"; };
 		FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
+		FADF70A620F177FE009443C4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */,
 				E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */,
 				E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */,
+				FADF70A620F177FE009443C4 /* CameraViewController.swift */,
 				E25372F920D1B5EC00E9C5A0 /* LoginViewController.swift */,
 				E25372FD20D1B5ED00E9C5A0 /* NotificationsViewController.swift */,
 				E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */,
@@ -385,6 +388,7 @@
 				E2D6FE1B20E68DA20054C08E /* PadlCollectionView.swift in Sources */,
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
 				E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */,
+				FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */,
 				92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */,
 				FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */,
 				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
@@ -531,7 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47S2N53K33;
+				DEVELOPMENT_TEAM = KQZNC92LC2;
 				INFOPLIST_FILE = padl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = store.padl.padl;
@@ -547,7 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47S2N53K33;
+				DEVELOPMENT_TEAM = KQZNC92LC2;
 				INFOPLIST_FILE = padl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = store.padl.padl;

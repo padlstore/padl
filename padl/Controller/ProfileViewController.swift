@@ -94,7 +94,8 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
             
         } else {
             // No user is signed in.
-            // ...
+            
+            
         }
     }
     
