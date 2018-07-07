@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import InstantSearch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure();
         
+        InstantSearch.shared.configure(appID: "5OCES8XKP1",
+                                       apiKey: "ea78d7dd3d71364fc423c86d938263ff",
+                                       index: "offers");
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+
         let navBarAppearance = UINavigationBar.appearance();
         navBarAppearance.isTranslucent = true
         navBarAppearance.tintColor = .white;
