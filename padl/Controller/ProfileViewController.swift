@@ -88,11 +88,7 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
         
         if Auth.auth().currentUser != nil {
             
-            self.setProfileInfo()
-            
-            ProfileRequest.setupProfile()
-            
-            self.setProfileInfo()
+            ProfileRequest.setupProfile(profileVC: self)
             
             print(soldOfferURLs)
             
@@ -103,8 +99,6 @@ class ProfileViewController: PadlBaseViewController, UICollectionViewDelegate, U
     }
     
     func setProfileInfo() {
-        
-        //UserDefaults.standard.set(self.offers, forKey: "offers")
         
         self.displayName.text = UserDefaults.standard.object(forKey: "displayName") as? String
         self.soldOfferURLs = UserDefaults.standard.object(forKey: "offers") as! [String]
