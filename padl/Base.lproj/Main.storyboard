@@ -483,90 +483,6 @@
             </objects>
             <point key="canvasLocation" x="156" y="3084.1079460269866"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="GTK-ci-3Y6">
-            <objects>
-                <viewController id="ag7-eu-m6w" customClass="HomeViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2zn-Lk-nOB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ypz-i3-MRu" customClass="HitsCollectionWidget" customModule="InstantSearch">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7mD-At-cva">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="offerCell" id="fHg-fF-AuU" customClass="HomeOfferCollectionViewCell" customModule="padl" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-Wx-i8U" userLabel="offerImage">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiV-NZ-olY" userLabel="priceLabel">
-                                                    <rect key="frame" x="0.0" y="24" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="fiV-NZ-olY" secondAttribute="bottom" constant="5" id="2hK-0S-2Zx"/>
-                                            <constraint firstItem="lIZ-Wx-i8U" firstAttribute="top" secondItem="fHg-fF-AuU" secondAttribute="top" id="8Gk-Y7-Vrd"/>
-                                            <constraint firstAttribute="bottom" secondItem="lIZ-Wx-i8U" secondAttribute="bottom" id="MQf-If-pYm"/>
-                                            <constraint firstItem="lIZ-Wx-i8U" firstAttribute="leading" secondItem="fHg-fF-AuU" secondAttribute="leading" id="NK1-Tf-R13"/>
-                                            <constraint firstAttribute="trailing" secondItem="fiV-NZ-olY" secondAttribute="trailing" constant="8" id="qK2-sS-tI6"/>
-                                            <constraint firstAttribute="trailing" secondItem="lIZ-Wx-i8U" secondAttribute="trailing" id="sF0-3q-NeP"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="imageView" destination="lIZ-Wx-i8U" id="vry-jd-ogP"/>
-                                            <outlet property="priceLabel" destination="fiV-NZ-olY" id="pFx-yp-reJ"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="infiniteScrolling" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="9vV-Ov-wix" appends="YES" id="IPa-JO-6jG"/>
-                                </connections>
-                            </collectionView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHS-vc-BOK" customClass="SearchBarWidget" customModule="InstantSearch">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="hgu-fP-HGU"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="9vV-Ov-wix" appends="YES" id="ZXi-TN-UpS"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="1HQ-QW-oRd"/>
-                    <connections>
-                        <outlet property="hitsCollection" destination="Ypz-i3-MRu" id="jtH-9u-qH2"/>
-                        <outlet property="searchBar" destination="iHS-vc-BOK" id="7RC-Dx-QDd"/>
-                        <segue destination="L7X-49-NXE" kind="show" identifier="HomeToOffer" id="JKX-lE-cQp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x6B-Pd-QBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer cancelsTouchesInView="NO" id="9vV-Ov-wix"/>
-            </objects>
-            <point key="canvasLocation" x="156" y="2350.9745127436286"/>
-        </scene>
         <!--MessagingTableViewController-->
         <scene sceneID="hbm-t1-nSw">
             <objects>
@@ -889,7 +805,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ag7-eu-m6w" kind="relationship" relationship="rootViewController" id="Tcz-pk-TTd"/>
+                        <segue destination="9O1-2L-KS8" kind="relationship" relationship="rootViewController" id="dxe-vj-n7k"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U5-HO-W3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -916,7 +832,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mht-3q-i41" kind="presentation" id="g1B-D3-78H"/>
+                        <segue destination="mht-3q-i41" kind="relationship" relationship="rootViewController" id="WNO-SA-cQD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yw9-uS-kLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
