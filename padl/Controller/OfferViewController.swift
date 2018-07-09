@@ -41,19 +41,10 @@ class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerV
         super.viewDidLoad();
         
         messageBuyView.backgroundColor = .white;
-        let blurEffect = UIBlurEffect(style: .prominent);
-        let blurEffectView = UIVisualEffectView(effect: blurEffect);
-        blurEffectView.frame = messageBuyView.frame;
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight];
-        blurEffectView.alpha = 1.0;
-        mainView.insertSubview(blurEffectView, at: 1);
-
         messageBuyView.layer.shadowRadius = 2.5;
         messageBuyView.layer.shadowOpacity = 0.6;
         messageBuyView.layer.shadowOffset = CGSize(width: 0, height: -0.4);
         messageBuyView.layer.shadowColor = UIColor.gray.cgColor
-        
-        blurEffectView.layer.masksToBounds = false;
 
         self.imagePageView.dataSource = self
         self.imagePageView.delegate = self
