@@ -10,6 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Font Awesome 5 Pro-Light-300.otf">
+            <string>FontAwesome5ProLight</string>
+        </array>
+        <array key="Font Awesome 5 Pro-Solid-900.otf">
+            <string>FontAwesome5ProSolid</string>
+        </array>
         <array key="FuturaPTBook.otf">
             <string>FuturaPT-Book</string>
         </array>
@@ -222,18 +228,94 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-Bt-Cxv" customClass="NIKFontAwesomeButton">
+                                <rect key="frame" x="325" y="625" width="37" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Lgy-Rk-UFs"/>
+                                    <constraint firstAttribute="width" constant="37" id="wpT-Gj-Six"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5ProSolid" family="Font Awesome 5 Pro" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f079"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="swapCamera:" destination="Bm4-zZ-sJp" eventType="touchUpInside" id="UhP-vu-VZh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-G1-con" customClass="NIKFontAwesomeButton">
+                                <rect key="frame" x="13" y="623" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FoO-0R-2sI"/>
+                                    <constraint firstAttribute="width" constant="46" id="IUM-dG-gTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5ProLight" family="Font Awesome 5 Pro" pointSize="17"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f03e"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="photoLibrary:" destination="Bm4-zZ-sJp" eventType="touchUpInside" id="G49-UK-XnY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGA-bB-hdS" customClass="NIKFontAwesomeButton">
+                                <rect key="frame" x="13" y="13" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3kI-ba-lsu"/>
+                                    <constraint firstAttribute="width" constant="30" id="WXq-XP-AU0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f00d"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeCamera:" destination="Bm4-zZ-sJp" eventType="touchUpInside" id="OZ3-0r-0a5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="q2e-Bt-Cxv" secondAttribute="bottom" constant="13" id="0em-H2-E9V"/>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="z8E-G1-con" secondAttribute="bottom" constant="13" id="GB5-1H-jch"/>
+                            <constraint firstItem="z8E-G1-con" firstAttribute="leading" secondItem="egz-nA-A9v" secondAttribute="leading" constant="13" id="Zb6-3R-Mww"/>
                             <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="QJf-Zk-Ycd" secondAttribute="bottom" constant="20" id="cx1-Vd-Lha"/>
                             <constraint firstItem="QJf-Zk-Ycd" firstAttribute="centerX" secondItem="YHG-Xw-3dj" secondAttribute="centerX" id="dJD-1J-Rih"/>
+                            <constraint firstItem="mGA-bB-hdS" firstAttribute="leading" secondItem="egz-nA-A9v" secondAttribute="leading" constant="13" id="mC4-3t-nhg"/>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="z8E-G1-con" secondAttribute="bottom" constant="13" id="pkK-uc-nRN"/>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="trailing" secondItem="q2e-Bt-Cxv" secondAttribute="trailing" constant="13" id="rTD-tq-8rD"/>
+                            <constraint firstItem="egz-nA-A9v" firstAttribute="bottom" secondItem="z8E-G1-con" secondAttribute="bottom" constant="14" id="rhQ-8R-NfT"/>
+                            <constraint firstItem="mGA-bB-hdS" firstAttribute="top" secondItem="YHG-Xw-3dj" secondAttribute="top" constant="13" id="vkI-WM-Poc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="egz-nA-A9v"/>
                     </view>
+                    <connections>
+                        <segue destination="MF8-iR-q6Y" kind="show" identifier="closeCamera" animates="NO" id="xO4-qG-SB0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyu-AB-01p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1801" y="3084"/>
+            <point key="canvasLocation" x="1800.8" y="3083.2083958020994"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="6cA-m7-954">
@@ -988,6 +1070,6 @@
         <image name="MIT.jpg" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xNG-ce-0SC"/>
+        <segue reference="xO4-qG-SB0"/>
     </inferredMetricsTieBreakers>
 </document>

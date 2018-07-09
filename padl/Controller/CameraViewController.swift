@@ -41,19 +41,25 @@ import AVFoundation
     }
 }
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var captureSession = AVCaptureSession()
     var backCamera: AVCaptureDevice?
     var frontCamera: AVCaptureDevice?
     var currentCamera: AVCaptureDevice?
     
+    var captureDeviceInput:AVCaptureInput?
+    
     var photoOutput: AVCapturePhotoOutput?
     
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     
+    let picker = UIImagePickerController()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
         
         setupCaptureSession()
         setupDevice()
@@ -84,8 +90,8 @@ class CameraViewController: UIViewController {
     
     func setupInputOutput(){
         do {
-            let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)
-            captureSession.addInput(captureDeviceInput)
+            self.captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)
+            captureSession.addInput(self.captureDeviceInput!)
             photoOutput?.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])], completionHandler: nil)
         } catch {
             print(error)
@@ -109,7 +115,55 @@ class CameraViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
+    
+    @IBAction func closeCamera(_ sender: Any) {
+        self.performSegue(withIdentifier: "closeCamera", sender: nil);
+    }
+    
+    @IBAction func photoLibrary(_ sender: Any) {
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        picker.modalPresentationStyle = .popover
+        present(picker, animated: true, completion: nil)
+        picker.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
+    }
+    
+    @IBAction func swapCamera(_ sender: Any) {
+        captureSession.stopRunning()
+        captureSession.removeInput(self.captureDeviceInput!)
+        
+        if self.currentCamera == self.backCamera {
+            self.currentCamera = self.frontCamera
+        }
+        else {
+            self.currentCamera = self.backCamera
+        }
+        
+        setupCaptureSession()
+        // setupDevice() Taken care of above
+        setupInputOutput()
+        setupPreviewLayer()
+        startRunningCaptureSession()
+    }
+    
+    //MARK: - Delegates
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+        
+        dismiss(animated:true, completion: nil) //5
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
