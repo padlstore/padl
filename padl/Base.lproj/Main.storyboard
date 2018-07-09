@@ -309,6 +309,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="egz-nA-A9v"/>
                     </view>
+                    <connections>
+                        <segue destination="8dp-ck-1wV" kind="show" identifier="closeCamera" id="089-qN-izK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyu-AB-01p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -377,7 +380,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3c-un-B81">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-7F-D8L">
                                         <rect key="frame" x="13" y="459" width="348" height="152"/>
@@ -408,19 +411,19 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74R-ac-mTg">
-                                        <rect key="frame" x="113" y="378" width="155" height="20"/>
+                                        <rect key="frame" x="113" y="378" width="127.5" height="22"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t9-aA-gkM">
-                                        <rect key="frame" x="291.5" y="378" width="48.5" height="20"/>
+                                        <rect key="frame" x="298" y="378" width="42" height="22"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8V-BO-b7B">
-                                        <rect key="frame" x="274" y="406" width="66" height="20"/>
+                                        <rect key="frame" x="284.5" y="408" width="55.5" height="22"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -488,7 +491,7 @@
                                 </constraints>
                             </scrollView>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-8K-BJM">
-                                <rect key="frame" x="0.0" y="548" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qax-GT-poR" customClass="PadlRoundedButton" customModule="padl" customModuleProvider="target">
                                         <rect key="frame" x="19" y="9" width="160" height="50"/>
@@ -977,6 +980,7 @@
         <image name="MIT.jpg" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="089-qN-izK"/>
         <segue reference="OXt-ir-iPt"/>
     </inferredMetricsTieBreakers>
 </document>
