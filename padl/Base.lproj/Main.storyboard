@@ -310,7 +310,7 @@
                         <viewLayoutGuide key="safeArea" id="egz-nA-A9v"/>
                     </view>
                     <connections>
-                        <segue destination="8dp-ck-1wV" kind="show" identifier="closeCamera" id="089-qN-izK"/>
+                        <segue destination="MF8-iR-q6Y" kind="show" identifier="closeCamera" animates="NO" id="xO4-qG-SB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyu-AB-01p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -377,7 +377,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3c-un-B81">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-7F-D8L">
                                         <rect key="frame" x="13" y="459" width="348" height="152"/>
@@ -1070,7 +1070,6 @@
         <image name="MIT.jpg" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="089-qN-izK"/>
-        <segue reference="OXt-ir-iPt"/>
+        <segue reference="xO4-qG-SB0"/>
     </inferredMetricsTieBreakers>
 </document>
