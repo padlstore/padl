@@ -196,13 +196,13 @@
         <!--View Offer-->
         <scene sceneID="ULa-Sx-bTQ">
             <objects>
-                <viewController title="View Offer" id="L7X-49-NXE" customClass="OfferViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OfferViewController" title="View Offer" id="L7X-49-NXE" customClass="OfferViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zn9-8s-Leg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3c-un-B81">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-7F-D8L">
                                         <rect key="frame" x="13" y="459" width="348" height="152"/>
@@ -313,7 +313,7 @@
                                 </constraints>
                             </scrollView>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-8K-BJM">
-                                <rect key="frame" x="0.0" y="548" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qax-GT-poR" customClass="PadlRoundedButton" customModule="padl" customModuleProvider="target">
                                         <rect key="frame" x="19" y="9" width="160" height="50"/>
@@ -333,6 +333,9 @@
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="messageSellerButton:" destination="L7X-49-NXE" eventType="touchUpInside" id="Me5-Kp-ap9"/>
+                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6n-9O-N1C" customClass="PadlSubmitTransitionButton" customModule="padl" customModuleProvider="target">
                                         <rect key="frame" x="194" y="9" width="160" height="50"/>
@@ -352,6 +355,9 @@
                                                 <color key="value" red="0.4483436965" green="0.85326776650000002" blue="0.68561360250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="purchaseOffer:" destination="L7X-49-NXE" eventType="touchUpInside" id="UbC-Y3-atj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -381,6 +387,12 @@
                         <outlet property="imagePageView" destination="GDP-5U-YO8" id="1Gf-PS-fqS"/>
                         <outlet property="mainView" destination="Zn9-8s-Leg" id="k5D-OL-2Bc"/>
                         <outlet property="messageBuyView" destination="OeI-8K-BJM" id="y68-TA-LoK"/>
+                        <outlet property="offerDescriptionLabel" destination="t2D-wE-NzT" id="SzC-bO-FtX"/>
+                        <outlet property="offerLocationLabel" destination="y8V-BO-b7B" id="RRJ-Zl-48r"/>
+                        <outlet property="offerNameLabel" destination="XHJ-pO-yOK" id="7BM-YV-GJj"/>
+                        <outlet property="offerPriceLabel" destination="9t9-aA-gkM" id="jqv-5Y-Zy8"/>
+                        <outlet property="sellerNameLabel" destination="74R-ac-mTg" id="jOA-tv-9IY"/>
+                        <outlet property="sellerProfilePic" destination="WYY-zs-huf" id="f6V-2k-kz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GX-ar-7U7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -455,15 +467,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="hgu-fP-HGU"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="9vV-Ov-wix" appends="YES" id="ZXi-TN-UpS"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="1HQ-QW-oRd"/>
                     <connections>
                         <outlet property="hitsCollection" destination="Ypz-i3-MRu" id="jtH-9u-qH2"/>
                         <outlet property="searchBar" destination="iHS-vc-BOK" id="7RC-Dx-QDd"/>
-                        <segue destination="L7X-49-NXE" kind="show" identifier="HomeToOffer" id="JKX-lE-cQp"/>
+                        <segue destination="L7X-49-NXE" kind="presentation" identifier="HomeToOffer" id="G6y-qP-uo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6B-Pd-QBj" userLabel="First Responder" sceneMemberID="firstResponder"/>

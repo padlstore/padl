@@ -61,14 +61,22 @@ class HomeViewController: PadlBaseViewController, HitsCollectionViewDataSource, 
         (cell as! HomeOfferCollectionViewCell).imageView.kf.setImage(with: url)
         (cell as! HomeOfferCollectionViewCell).priceLabel.text = hit["price"] as? String
 
-        print("test")
-
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath,
                                  containing hit: [String : Any]) {
-        print("hit \(String(describing: hit["name"]!)) has been clicked!")
+//        print("hit \(String(describing: hit["name"]!)) has been clicked!")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let offerVC = storyboard.instantiateViewController(withIdentifier: "OfferViewController")
+        let offer = Offer(offerId: hit["offerId"] as! String, name: hit["name"] as! String, location: hit["location"] as! String,
+                          desc: hit["description"] as! String, price: hit["price"] as! Int, sellerId: hit["seller"] as! String,
+                          images: hit["pictures"] as! [String : String], dict: hit)
+        
+        (offerVC as! OfferViewController).offer = offer
+        
+//        offerVC.performSegue(withIdentifier: self.homeToOffer, sender: self)
+        self.present(offerVC, animated: true, completion: nil)
     }
 }
 
@@ -77,8 +85,6 @@ extension HitsController: UICollectionViewDelegateFlowLayout {
 
         let width = collectionView.frame.size.width / 3.0
         let height = width
-
-        print("width \(width)")
 
         return CGSize(width: width, height: height)
     }
