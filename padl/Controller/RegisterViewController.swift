@@ -29,7 +29,7 @@ class RegisterViewController: PadlBaseViewController {
         self.auth.addStateDidChangeListener() { auth, user in
             if user != nil {
                 self.registerButton.startFinishAnimation(1) {
-                    print("Registerin")
+                    print("Registering")
                     let sb = UIStoryboard(name: "Main", bundle: nil);
                     let vc = sb.instantiateViewController(withIdentifier: "MainInterfaceTabBarController");
                     vc.transitioningDelegate = self;

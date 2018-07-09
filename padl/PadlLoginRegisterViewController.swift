@@ -18,10 +18,11 @@ class PadlLoginRegisterViewController: PadlBaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
         
+        // DEBUG: automatically signout for debugging only
         do {
             try Auth.auth().signOut();
         } catch {
-            
+
         }
 
         Auth.auth().addStateDidChangeListener() { auth, user in
