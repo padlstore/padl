@@ -6,13 +6,23 @@
 //
 
 import UIKit
+import InstantSearch
+import Alamofire
+import Kingfisher
 
-private let reuseIdentifier = "Cell"
+fileprivate let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0);
 
-class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class HomeViewController: PadlBaseViewController, HitsCollectionViewDataSource, HitsCollectionViewDelegate {
     
     // Specify the Home -> Offer segue.
-    let homeToOffer: String = "HomeToOffer";
+    let homeToOffer: String = "HomeToOffer"
+    
+    var instantSearch: InstantSearch!
+    @IBOutlet weak var hitsCollection: HitsCollectionWidget!
+    @IBOutlet weak var searchBar: SearchBarWidget!
+    var hitsController: HitsController!
+
+    fileprivate let reuseIdentifier = "offerCell";
 
     // Prepare for segue into viewing an offer
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -24,90 +34,70 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hitsController = HitsController(collection: hitsCollection)
+        hitsCollection.dataSource = hitsController
+        hitsCollection.delegate = hitsController
+        hitsController.collectionDataSource = self
+        hitsController.collectionDelegate = self
+
+        InstantSearch.shared.registerAllWidgets(in: self.view);
+
+        // Set up search
+        searchBar.placeholder = "Search for items"
+
         //Set up profile
         ProfileRequest.setupProfile()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        self.collectionView!.register(HomeOfferCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 50
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: HomeOfferCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "offerCell", for: indexPath) as! HomeOfferCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath,
+                                 containing hit: [String : Any]) -> UICollectionViewCell {
+        let cell = hitsCollection.dequeueReusableCell(withReuseIdentifier: self.reuseIdentifier, for: indexPath)
         
-        cell.imageView.image = UIImage(named: "MIT.jpg")
-        
+        cell.backgroundColor = UIColor.blue
+//        print(hit)
+        let urlStr = (hit["pictures"] as? [String: Any])?["0"] as? String
+        let url = URL(string: urlStr!)
+        (cell as! HomeOfferCollectionViewCell).imageView.kf.setImage(with: url)
+        (cell as! HomeOfferCollectionViewCell).priceLabel.text = hit["price"] as? String
+
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath,
+                                 containing hit: [String : Any]) {
+//        print("hit \(String(describing: hit["name"]!)) has been clicked!")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let offerVC = storyboard.instantiateViewController(withIdentifier: "OfferViewController")
+        let offer = Offer(offerId: hit["offerId"] as! String, name: hit["name"] as! String, location: hit["location"] as! String,
+                          desc: hit["description"] as! String, price: hit["price"] as! Int, sellerId: hit["seller"] as! String,
+                          images: hit["pictures"] as! [String : String], dict: hit)
+        
+        (offerVC as! OfferViewController).offer = offer
+        
+//        offerVC.performSegue(withIdentifier: self.homeToOffer, sender: self)
+        self.present(offerVC, animated: true, completion: nil)
     }
-    */
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath);
-        let cell = collectionView.cellForItem(at: indexPath);
-        self.performSegue(withIdentifier: self.homeToOffer, sender: cell);
-    }
+}
 
+extension HitsController: UICollectionViewDelegateFlowLayout {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let width = collectionView.frame.size.width / 3.0
+        let height = width
+
+        return CGSize(width: width, height: height)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(0.0)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) ->  CGFloat {
+        return CGFloat(0.0)
+    }
 }

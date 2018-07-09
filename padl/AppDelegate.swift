@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import InstantSearch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure();
+        
+        InstantSearch.shared.configure(
+            appID: AppConfig.APP_ID,
+            apiKey: AppConfig.API_KEY,
+            index: AppConfig.ALGOLIA_INDEX
+        )
         
         let navBarAppearance = UINavigationBar.appearance();
         navBarAppearance.isTranslucent = true

@@ -12,22 +12,31 @@ import Nuke
 
 class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerViewDataSource {
     
+    public var offer: Offer? = nil
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     @IBOutlet weak var imagePageView: FSPagerView! {
         didSet {
             self.imagePageView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
         }
     }
-    
-    @IBOutlet var mainView: UIView!
-    
-    @IBOutlet weak var messageBuyView: UIView!
-    
     @IBOutlet weak var imagePageControl: FSPageControl!
     
-    var imgURLs: [String] = ["https://s3.amazonaws.com/padl.storage1/profile_pictures/cat.jpg",
-                             "https://s3.amazonaws.com/padl.storage1/profile_pictures/dog.png",
-                             "https://s3.amazonaws.com/padl.storage1/profile_pictures/dolphin.jpg"];
+    @IBOutlet weak var offerNameLabel: UILabel!
+    @IBOutlet weak var offerPriceLabel: UILabel!
+    @IBOutlet weak var offerLocationLabel: UILabel!
+    @IBOutlet weak var offerDescriptionLabel: UILabel!
     
+    @IBOutlet weak var sellerNameLabel: UILabel!
+    @IBOutlet weak var sellerProfilePic: UIImageView!
+    
+    @IBOutlet var mainView: UIView!
+    @IBOutlet weak var messageBuyView: UIView!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad();
         
@@ -60,13 +69,13 @@ class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerV
     }
     
     public func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return self.imgURLs.count;
+        return self.offer!.offerImages.count - 1; // -1 because of sentinel value
     }
     
     public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index);
         
-        Nuke.loadImage(with: URL.init(string: self.imgURLs[index])!,
+        Nuke.loadImage(with: URL.init(string: self.offer!.offerImages[String(index)]!)!,
                        into: cell.imageView!);
         cell.imageView!.contentMode = UIViewContentMode.scaleAspectFill;
         cell.imageView!.clipsToBounds = true;
@@ -76,5 +85,16 @@ class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerV
     
     func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
         self.imagePageControl.currentPage = targetIndex;
+    }
+    
+    /* Called when the "Message Seller" button is pressed */
+    @IBAction func messageSellerButton(_ sender: PadlRoundedButton) {
+        print("Message Seller button pressed!")
+    }
+    
+    /* Called when the "Purchase Offer" button is pressed */
+    @IBAction func purchaseOffer(_ sender: PadlSubmitTransitionButton) {
+        print("Purchase Offer button pressed!")
+        
     }
 }
