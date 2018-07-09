@@ -48,9 +48,14 @@ class CameraViewController: UIViewController {
     var frontCamera: AVCaptureDevice?
     var currentCamera: AVCaptureDevice?
     
+    var captureDeviceInput:AVCaptureInput?
+    
     var photoOutput: AVCapturePhotoOutput?
     
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,8 +89,8 @@ class CameraViewController: UIViewController {
     
     func setupInputOutput(){
         do {
-            let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)
-            captureSession.addInput(captureDeviceInput)
+            self.captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)
+            captureSession.addInput(self.captureDeviceInput!)
             photoOutput?.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])], completionHandler: nil)
         } catch {
             print(error)
@@ -109,7 +114,38 @@ class CameraViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
+    
+    @IBAction func closeCamera(_ sender: Any) {
+    }
+    
+    @IBAction func photoLibrary(_ sender: Any) {
+    }
+    
+    @IBAction func swapCamera(_ sender: Any) {
+        captureSession.stopRunning()
+        captureSession.removeInput(self.captureDeviceInput!)
+        
+        if self.currentCamera == self.backCamera {
+            self.currentCamera = self.frontCamera
+            print("HERE")
+        }
+        else {
+            self.currentCamera = self.backCamera
+        }
+        
+        setupCaptureSession()
+        // setupDevice() Taken care of above
+        setupInputOutput()
+        setupPreviewLayer()
+        startRunningCaptureSession()
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
