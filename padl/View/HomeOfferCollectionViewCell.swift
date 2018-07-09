@@ -11,5 +11,6 @@ import UIKit
 class HomeOfferCollectionViewCell: OfferCollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var priceLabel: UILabel!
     
 }
