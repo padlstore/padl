@@ -20,6 +20,7 @@
 		92BA287620D347E1003977A4 /* HomeOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA287520D347E1003977A4 /* HomeOfferCollectionViewCell.swift */; };
 		A104ED77ABE49D100A19557C /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1979FD75632677554F78944 /* Pods_padl.framework */; };
 		E2236DB320F3F7430028120F /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2236DB220F3F7430028120F /* Offer.swift */; };
+		E2236DB520F416540028120F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2236DB420F416540028120F /* AppConfig.swift */; };
 		E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */; };
 		E25372F520D1993200E9C5A0 /* PadlLoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */; };
 		E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */; };
@@ -62,6 +63,7 @@
 		B1979FD75632677554F78944 /* Pods_padl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_padl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE3DC2766D932ABED3FF04 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
 		E2236DB220F3F7430028120F /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		E2236DB420F416540028120F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E25372F220D17CB600E9C5A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E25372F420D1993200E9C5A0 /* PadlLoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PadlLoginRegisterViewController.swift; path = ../PadlLoginRegisterViewController.swift; sourceTree = "<group>"; };
 		E25372F820D1B5EC00E9C5A0 /* CameraSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSceneViewController.swift; sourceTree = "<group>"; };
@@ -186,8 +188,8 @@
 			children = (
 				E2C7854920D32A07005E838C /* ServerRequest.swift */,
 				FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */,
-				E2CD272220F1146D0087A225 /* AppConfig.swift */,
 				E2236DB220F3F7430028120F /* Offer.swift */,
+				E2236DB420F416540028120F /* AppConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +394,7 @@
 				E2D6FE1B20E68DA20054C08E /* PadlCollectionView.swift in Sources */,
 				E253731420D1CC3000E9C5A0 /* StyleUtils.swift in Sources */,
 				E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */,
+				E2236DB520F416540028120F /* AppConfig.swift in Sources */,
 				FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */,
 				92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */,
 				FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */,
@@ -399,7 +402,6 @@
 				E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
 				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,
-				E2CD272320F1146D0087A225 /* AppConfig.swift in Sources */,
 				E2236DB320F3F7430028120F /* Offer.swift in Sources */,
 				E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */,
 				E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */,
