@@ -33,6 +33,7 @@
 		E2C7854620D31763005E838C /* MainInterfaceTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */; };
 		E2C7854820D31D2B005E838C /* ProfilePictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */; };
 		E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7854920D32A07005E838C /* ServerRequest.swift */; };
+		E2CD272320F1146D0087A225 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD272220F1146D0087A225 /* AppConfig.swift */; };
 		E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */; };
 		E2D6FE1B20E68DA20054C08E /* PadlCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6FE1A20E68DA20054C08E /* PadlCollectionView.swift */; };
 		E2D6FE1D20E69BB50054C08E /* Font Awesome 5 Pro-Light-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2D6FE1C20E69BB40054C08E /* Font Awesome 5 Pro-Light-300.otf */; };
@@ -75,6 +76,7 @@
 		E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceTabBarController.swift; sourceTree = "<group>"; };
 		E2C7854720D31D2B005E838C /* ProfilePictureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureImageView.swift; sourceTree = "<group>"; };
 		E2C7854920D32A07005E838C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
+		E2CD272220F1146D0087A225 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E2CEDE8320D34FFC000D79AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E2D6FE1A20E68DA20054C08E /* PadlCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlCollectionView.swift; sourceTree = "<group>"; };
 		E2D6FE1C20E69BB40054C08E /* Font Awesome 5 Pro-Light-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Light-300.otf"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				E2C7854920D32A07005E838C /* ServerRequest.swift */,
 				FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */,
+				E2CD272220F1146D0087A225 /* AppConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
 				E25372F320D17CB600E9C5A0 /* RegisterViewController.swift in Sources */,
+				E2CD272320F1146D0087A225 /* AppConfig.swift in Sources */,
 				E2C7854A20D32A07005E838C /* ServerRequest.swift in Sources */,
 				E253731620D1D12700E9C5A0 /* PadlRoundedButton.swift in Sources */,
 			);
