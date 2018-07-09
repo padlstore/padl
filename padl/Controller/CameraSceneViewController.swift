@@ -10,4 +10,10 @@ import UIKit
 
 class CameraSceneViewController: UIViewController {
     
+    let openCamera = "openCamera";
+    
+    override func viewDidLoad() {
+        self.performSegue(withIdentifier: self.openCamera, sender: nil);
+    }
+    
 }
