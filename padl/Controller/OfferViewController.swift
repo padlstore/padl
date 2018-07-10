@@ -36,10 +36,29 @@ class OfferViewController: PadlBaseViewController, FSPagerViewDelegate, FSPagerV
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var messageBuyView: UIView!
     
+    @IBOutlet weak var buyButton: PadlSubmitTransitionButton!
+    
+    private func priceToString(price: Int) -> String {
+        let dollars: Int = price / 100
+        let cents: String = String(price % 100).padding(toLength: 2, withPad: "0", startingAt: 0)
+        return "$\(dollars).\(cents)"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad();
         
+        offerNameLabel.text = self.offer?.offerName
+        
+        let priceString = self.priceToString(price: (self.offer?.offerPrice)!)
+        offerPriceLabel.text = priceString
+        offerLocationLabel.text = self.offer?.offerLocation
+        offerDescriptionLabel.text = self.offer?.offerDesc
+        
+        offerDescriptionLabel.sizeToFit()
+        
+        buyButton.setTitle("Purchase (\(priceString))", for: UIControlState.normal)
+//        sellerNameLabel.text = self.offer?.sellerId
+
         messageBuyView.backgroundColor = .white;
         messageBuyView.layer.shadowRadius = 2.5;
         messageBuyView.layer.shadowOpacity = 0.6;

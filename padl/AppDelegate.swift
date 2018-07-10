@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import InstantSearch
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             apiKey: AppConfig.API_KEY,
             index: AppConfig.ALGOLIA_INDEX
         )
+        
+        STPPaymentConfiguration.shared().publishableKey = "pk_test_rS3HR1Gtp6UhzMXj2Dr6rNJF"
         
         let navBarAppearance = UINavigationBar.appearance();
         navBarAppearance.isTranslucent = true

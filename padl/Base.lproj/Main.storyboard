@@ -382,9 +382,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-7F-D8L">
                                         <rect key="frame" x="13" y="459" width="348" height="152"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-wE-NzT">
-                                                <rect key="frame" x="8" y="0.0" width="332" height="152"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-wE-NzT">
+                                                <rect key="frame" x="8" y="0.0" width="332" height="22"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -392,10 +391,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="t2D-wE-NzT" secondAttribute="trailing" constant="8" id="8uv-Q3-JE5"/>
                                             <constraint firstItem="t2D-wE-NzT" firstAttribute="top" secondItem="AEM-7F-D8L" secondAttribute="top" id="CRM-KV-PEO"/>
                                             <constraint firstItem="t2D-wE-NzT" firstAttribute="leading" secondItem="AEM-7F-D8L" secondAttribute="leading" constant="8" id="D3c-MW-DH7"/>
-                                            <constraint firstAttribute="bottom" secondItem="t2D-wE-NzT" secondAttribute="bottom" id="OGx-Lf-y3m"/>
                                             <constraint firstAttribute="height" constant="152" id="osf-2C-Mnu"/>
                                             <constraint firstItem="t2D-wE-NzT" firstAttribute="centerX" secondItem="AEM-7F-D8L" secondAttribute="centerX" id="wuC-cc-MS7"/>
                                         </constraints>
@@ -558,6 +555,7 @@
                         <viewLayoutGuide key="safeArea" id="7Jk-Jz-td1"/>
                     </view>
                     <connections>
+                        <outlet property="buyButton" destination="h6n-9O-N1C" id="RNT-xx-PWI"/>
                         <outlet property="imagePageControl" destination="iXx-pA-CjN" id="hpB-BC-w0F"/>
                         <outlet property="imagePageView" destination="GDP-5U-YO8" id="1Gf-PS-fqS"/>
                         <outlet property="mainView" destination="Zn9-8s-Leg" id="k5D-OL-2Bc"/>
@@ -647,7 +645,6 @@
                     <connections>
                         <outlet property="hitsCollection" destination="Ypz-i3-MRu" id="jtH-9u-qH2"/>
                         <outlet property="searchBar" destination="iHS-vc-BOK" id="7RC-Dx-QDd"/>
-                        <segue destination="L7X-49-NXE" kind="presentation" identifier="HomeToOffer" id="G6y-qP-uo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6B-Pd-QBj" userLabel="First Responder" sceneMemberID="firstResponder"/>

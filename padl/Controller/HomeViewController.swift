@@ -76,7 +76,8 @@ class HomeViewController: PadlBaseViewController, HitsCollectionViewDataSource, 
         (offerVC as! OfferViewController).offer = offer
         
 //        offerVC.performSegue(withIdentifier: self.homeToOffer, sender: self)
-        self.present(offerVC, animated: true, completion: nil)
+//        self.present(offerVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(offerVC, animated: true)
     }
 }
 
