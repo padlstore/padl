@@ -12,6 +12,17 @@ import Stripe
 
 class CheckoutViewController: PadlBaseViewController {
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var infoTableView: UITableView!
+    
+    @IBAction func cancelDidTouchUpInside(_ sender: PadlRoundedButton) {
+        
+    }
+    
+    @IBAction func confirmDidTouchUpInside(_ sender: PadlSubmitTransitionButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Checkout"

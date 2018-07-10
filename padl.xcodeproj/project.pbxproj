@@ -42,6 +42,7 @@
 		E2F119C820E67C1A0062DDA4 /* OfferImagesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */; };
 		E2F119CA20E682CD0062DDA4 /* PadlSubmitTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */; };
 		E2FE0FCA20F4BFE00086A3B8 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE0FC920F4BFE00086A3B8 /* CheckoutViewController.swift */; };
+		E2FE0FCC20F54B4C0086A3B8 /* CheckoutTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE0FCB20F54B4C0086A3B8 /* CheckoutTableCell.swift */; };
 		FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */; };
 		FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF70A620F177FE009443C4 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferImagesScrollView.swift; sourceTree = "<group>"; };
 		E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlSubmitTransitionButton.swift; sourceTree = "<group>"; };
 		E2FE0FC920F4BFE00086A3B8 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		E2FE0FCB20F54B4C0086A3B8 /* CheckoutTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableCell.swift; sourceTree = "<group>"; };
 		FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
 		FADF70A620F177FE009443C4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 				E2F119C720E67C1A0062DDA4 /* OfferImagesScrollView.swift */,
 				E2F119C920E682CD0062DDA4 /* PadlSubmitTransitionButton.swift */,
 				E2D6FE1A20E68DA20054C08E /* PadlCollectionView.swift */,
+				E2FE0FCB20F54B4C0086A3B8 /* CheckoutTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */,
 				92BA287220D33EDC003977A4 /* ProfileBoughtCollectionViewCell.swift in Sources */,
 				FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */,
+				E2FE0FCC20F54B4C0086A3B8 /* CheckoutTableCell.swift in Sources */,
 				E253730520D1B5EF00E9C5A0 /* ProfileViewController.swift in Sources */,
 				E2CEDE8420D34FFC000D79AD /* HomeViewController.swift in Sources */,
 				E253730820D1B5EF00E9C5A0 /* NotificationsViewController.swift in Sources */,
