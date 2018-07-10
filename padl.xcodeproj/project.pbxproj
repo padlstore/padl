@@ -44,6 +44,7 @@
 		E2FE0FCA20F4BFE00086A3B8 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE0FC920F4BFE00086A3B8 /* CheckoutViewController.swift */; };
 		E2FE0FCC20F54B4C0086A3B8 /* CheckoutTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE0FCB20F54B4C0086A3B8 /* CheckoutTableCell.swift */; };
 		FA3F2F1120E6BD1B00222964 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */; };
+		FA76ECCD20F55B4D009722AC /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76ECCC20F55B4D009722AC /* CreateViewController.swift */; };
 		FADF70A720F177FE009443C4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF70A620F177FE009443C4 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		E2FE0FC920F4BFE00086A3B8 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		E2FE0FCB20F54B4C0086A3B8 /* CheckoutTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableCell.swift; sourceTree = "<group>"; };
 		FA3F2F1020E6BD1B00222964 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
+		FA76ECCC20F55B4D009722AC /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		FADF70A620F177FE009443C4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 				E2C7854520D31762005E838C /* MainInterfaceTabBarController.swift */,
 				E28BBC9020D34CBD00BD0D8B /* ControllerUtils.swift */,
 				E2D6FE1E20E6A0DA0054C08E /* OfferViewController.swift */,
+				FA76ECCC20F55B4D009722AC /* CreateViewController.swift */,
 				E2FE0FC920F4BFE00086A3B8 /* CheckoutViewController.swift */,
 			);
 			path = Controller;
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E253730420D1B5EF00E9C5A0 /* LoginViewController.swift in Sources */,
+				FA76ECCD20F55B4D009722AC /* CreateViewController.swift in Sources */,
 				92BA287020D33AFD003977A4 /* OfferCollectionViewCell.swift in Sources */,
 				E253730320D1B5EF00E9C5A0 /* CameraSceneViewController.swift in Sources */,
 				92BA287620D347E1003977A4 /* HomeOfferCollectionViewCell.swift in Sources */,
